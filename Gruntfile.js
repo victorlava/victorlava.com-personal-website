@@ -9,8 +9,8 @@ module.exports = function(grunt) {
     },
 
     sass: {
-      options: {
-        includePaths: []   
+     options: {
+           includePaths: ['bower_components/bootstrap/scss']  
       },
       dist: {
         options: {
@@ -18,20 +18,20 @@ module.exports = function(grunt) {
         },
         files: {
           'www/css/style.css': 'scss/style.scss'
-        }        
+        }
       }
     },
 
     watch: {
-      grunt: { 
-        files: ['Gruntfile.js', 'www/*/**'] 
+      grunt: {
+        files: ['Gruntfile.js', 'www/*/**']
       },
       sass: {
         files: 'scss/**/*.scss',
         tasks: ['sass']
       },
-      options: { 
-        livereload: true, 
+      options: {
+        livereload: true,
         host: 'localhost',
         port: 35729
       } //Add Live Reload Chrome Extension for this to work
@@ -48,7 +48,7 @@ module.exports = function(grunt) {
         }],
       },
     },
-    
+
     cssmin: {
       target: {
         files: [{
