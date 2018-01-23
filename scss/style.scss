@@ -1,0 +1,21 @@
+/* 01. Base */
+@import "01-base/settings"; 
+@import "01-base/fonts"; 
+@import "01-base/helpers";
+@import "01-base/animations";
+@import "01-base/IE9"; 
+          
+/* 02. Partials/Layout */
+@import "02-partials/footer";
+@import "02-partials/navigation";
+
+/* 03. Components */
+@import "03-components/tiny"; // Very small components
+@import "03-components/heading";
+@import "03-components/section";
+
+/* 04. Pages */
+@import "04-pages/home";
+@import "04-pages/about";
+@import "04-pages/contact";
+@import "04-pages/404";
