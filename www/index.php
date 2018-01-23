@@ -1,6 +1,6 @@
 <?php include('partials/head.php'); ?>
 
-<body id="home-page">
+<body id="home">
 <!-- start of #home-page -->
 
 <!-- end of #home-page -->
