@@ -7,7 +7,7 @@
         </li>
         <li>
             <a href="#">
-                <img src="/img/logo.png" width="109" height="38" alt="UI/UX dizaineris">
+                <img class="logo" src="/img/logo.png" width="109" height="72" alt="UI/UX dizaineris">
             </a>
         </li>
         <li>
