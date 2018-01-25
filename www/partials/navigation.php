@@ -1,4 +1,4 @@
-<nav class="navigation">
+<nav id="navigation">
     <ul>
         <li>
             <a href="#">

@@ -1,11 +1,20 @@
 /* 01. Base */
 body {
   background: grey;
+  margin: 0;
 }
 
-ul {
+a {
+  transition: color .2s ease;
+}
+
+ul, blockquote {
   margin: 0;
   padding: 0;
+}
+
+blockquote footer, blockquote span {
+  display: inline;
 }
 
 .logo {
@@ -33,24 +42,30 @@ h1, h2, h3, h4, h5 {
 }
 
 h1, h2 {
-  font-size: 2.9rem;
+  font-size: 3.157rem;
 }
 
 h3 {
-  font-size: 0.7rem;
+  font-size: 0.75rem;
   text-transform: uppercase;
 }
 
 h4 {
-  font-size: 2.1rem;
+  font-size: 2.369rem;
 }
 
 h5 {
   font-size: 1rem;
+  margin-bottom: .86rem;
+  font-weight: 500;
 }
 
 h6 {
-  font-size: 0.72rem;
+  font-size: 0.75rem;
+}
+
+blockquote {
+  line-height: 1.3rem;
 }
 
 .text-center {
@@ -58,7 +73,64 @@ h6 {
 }
 
 /* 02. Partials/Layout */
-.navigation {
+#footer {
+  font-family: "Raleway", serif;
+  padding: 2rem 0;
+  background-color: #000;
+  color: #FFF;
+}
+
+#footer a {
+  color: #CAC8E2;
+}
+
+#footer a:hover {
+  color: rgba(202, 200, 226, 0.75);
+}
+
+#footer .title {
+  margin-top: 0;
+}
+
+#footer .row > div:first-child {
+  text-align: right;
+  font-size: 0.75rem;
+}
+
+#footer ul {
+  list-style: none;
+}
+
+#footer ul li {
+  font-size: 0.75rem;
+}
+
+#footer blockquote {
+  font-size: 0.7rem;
+}
+
+#footer blockquote footer {
+  font-size: 0.55rem;
+  color: rgba(202, 200, 226, 0.75);
+}
+
+#footer p {
+  font-size: 0.563rem;
+  text-align: center;
+  width: 100%;
+  color: rgba(202, 200, 226, 0.5);
+}
+
+#footer p a {
+  color: rgba(202, 200, 226, 0.5);
+  font-size: 0.563rem;
+}
+
+#footer p a:hover {
+  color: rgba(202, 200, 226, 0.4) !important;
+}
+
+#navigation {
   font-family: "Raleway", serif;
   text-transform: uppercase;
   font-size: .63rem;
@@ -66,13 +138,13 @@ h6 {
   padding: 11px 0;
 }
 
-.navigation ul {
+#navigation ul {
   display: flex;
   justify-content: space-around;
   list-style: none;
 }
 
-.navigation ul li .logo {
+#navigation ul li .logo {
   vertical-align: middle;
 }
 

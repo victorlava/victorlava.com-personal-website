@@ -1,10 +1,22 @@
 body {
     background: grey;
+    margin: 0;
 }
 
-ul {
+a {
+    transition: color .2s ease;
+}
+
+ul, blockquote {
     margin: 0;
     padding: 0;
+}
+
+blockquote {
+
+    footer { 
+        display: inline;
+    }
 }
 
 .logo {

@@ -1,5 +1,58 @@
-.footer {
-	&.footer-default {}
-	&.footer-primary {}
-	&.footer-secondary {}
+$gray-more: rgba($grey, 0.75);
+
+#footer {
+	font-family: $primary-font;
+	padding: 2rem 0;
+	background-color: $black;
+	color: $white;
+
+	a {
+		color: $grey;
+		&:hover {
+			color: $gray-more;
+		}
+	}
+
+	.title { margin-top: 0;}
+
+	.row {
+		> div {
+			&:first-child {
+				text-align: right;
+				font-size: $font-size-3;
+			}
+		}
+	}
+
+	ul {
+		list-style: none;
+
+		li {
+			font-size: $font-size-3;
+		}
+	}
+
+	blockquote {
+		font-size: $font-size-3rem;
+
+		footer {
+			font-size: $font-size-4;
+			color: $gray; 
+		}
+	}
+
+	p {
+		font-size: $font-size-4;
+		text-align: center;
+		width: 100%;
+		color: rgba($gray-more, 0.5);
+		a {
+			color: rgba($gray-more, 0.5);
+			font-size: $font-size-4;
+
+			&:hover {
+				color: rgba($gray-more, 0.4) !important;
+			}
+		}
+	}
 }
