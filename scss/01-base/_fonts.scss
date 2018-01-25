@@ -1,4 +1,38 @@
-@font-face {
+html {
+    font-size: $font-size;
+}
 
+body {
+    font-size: 1rem;
+    line-height: 2rem;
+    font-family: $secondary-font;
+}
 
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: $primary-font;
+}
+
+h1, h2 {
+    font-size: 2.9rem;
+}
+
+h3 {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 2.1rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+h6 {
+    font-size: 0.72rem;
 }

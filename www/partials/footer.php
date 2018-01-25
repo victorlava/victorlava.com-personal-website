@@ -12,8 +12,8 @@
 				<a href="mailto:hello@victorlava.com">hello@victorlava.com</a>
 			</div>
 			<div class="col-3">
-				<!--  TODO: h6 really? -->
-				<h6 class="title">Navigacija</h6>
+				<!--  TODO: h5 really? -->
+				<h5 class="title">Navigacija</h5>
 				<ul>
 					<li>
 						<a href="/paslaugos/web-dizainas/" title="Web dizaino paslaugos">
@@ -28,9 +28,9 @@
 				</ul>
 			</div>
 			<div class="col-3">
-				<h6 class="title hidden-xs hidden-sm">
+				<h5 class="title hidden-xs hidden-sm">
 					Daugiau projektų
-				</h6>
+				</h5>
 				<ul>
 					<li>
 						<a href="/apie-mane/" title="Apie mane">
@@ -45,7 +45,7 @@
 				</ul>
 			</div>
 			<div class="col-3">
-				<h6 class="title">Būk socialus</h6>
+				<h5 class="title">Būk socialus</h5>
 				<ul>
 					<li class="facebook">
 						<a title="Facebook" target="_blank" href="https://www.facebook.com/vvictorlava">
@@ -62,7 +62,7 @@
 			</div>
 		</div>
 	</footer>
-	
+
 	<script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
 </body>
 </html>

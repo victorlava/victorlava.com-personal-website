@@ -1,10 +1,109 @@
 /* 01. Base */
-@font-face {}.text-center {
+body {
+  background: black;
+}
+
+html {
+  font-size: 22px;
+}
+
+body {
+  font-size: 1rem;
+  line-height: 2rem;
+  font-family: "Merriweather", serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Raleway", serif;
+}
+
+h1, h2 {
+  font-size: 2.9rem;
+}
+
+h3 {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-size: 2.1rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.72rem;
+}
+
+.text-center {
   text-align: center;
 }
 
 /* 02. Partials/Layout */
 /* 03. Components */
+.btn {
+  font-size: .7rem;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  font-family: "Raleway", serif;
+  padding: .6rem 1.03rem;
+  border-radius: 47px;
+  font-weight: 800;
+}
+
+.btn.btn-animate-boom {
+  position: relative;
+}
+
+.btn.btn-animate-boom:hover:before {
+  animation: boom .3s .3s forwards;
+}
+
+.btn.btn-animate-scale {
+  position: relative;
+}
+
+.btn.btn-animate-scale:hover:before {
+  animation: scale .3s .3s forwards;
+}
+
+.btn.btn-primary {
+  background-color: #da4033;
+  color: white;
+}
+
+.btn.btn-primary:hover {
+  color: #da4033;
+  background-color: white;
+  transition: background-color .1s .3s,color .1s .3s;
+}
+
+@keyframes scale {
+  60% {
+    transform: scale3d(0.8, 0.8, 1);
+  }
+  85% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes boom {
+  to {
+    opacity: 0;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
 /* 04. Pages */
 /* 05. Bootstrap Grid */
 /*!
