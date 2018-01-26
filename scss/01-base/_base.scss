@@ -12,9 +12,13 @@ ul, blockquote {
     padding: 0;
 }
 
+section {
+    background-color: $black;
+}
+
 blockquote {
 
-    footer { 
+    footer {
         display: inline;
     }
 }

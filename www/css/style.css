@@ -13,6 +13,10 @@ ul, blockquote {
   padding: 0;
 }
 
+section {
+  background-color: #000;
+}
+
 blockquote footer {
   display: inline;
 }
@@ -148,6 +152,9 @@ blockquote {
   font-size: .63rem;
   letter-spacing: 2.5px;
   padding: 11px 0;
+  position: absolute;
+  width: 100%;
+  top: 0;
 }
 
 #navigation ul {
@@ -240,7 +247,31 @@ section.cta .title {
   margin: 0;
 }
 
+.text span:nth-child(1) {
+  opacity: .9;
+}
+
+.text span:nth-child(2) {
+  opacity: .8;
+}
+
+.text span:nth-child(3) {
+  opacity: .7;
+}
+
+.text span:nth-child(4) {
+  opacity: .6;
+}
+
 /* 04. Pages */
+#home {
+  color: #FFF;
+}
+
+#home #start .container {
+  max-width: 620px;
+}
+
 /* 05. Bootstrap Grid */
 /*!
  * Bootstrap Grid v4.0.0 (https://getbootstrap.com)

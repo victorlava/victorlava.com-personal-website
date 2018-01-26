@@ -5,20 +5,21 @@
     <main>
         <?php include('partials/navigation.php'); ?>
 
-            <section id="start">
+        <section id="start" class="text-center">
+            <div class="container">
                 <div data-depth="0.3" class="layer background-me"></div>
 
                 <div class="me-wrapper">
                   <div class="layer me" data-depth="0.4"></div>
                 </div>
 
-                <div class="wrapper vertical-align horizontal-align fadeAwesome">
+                <div class="">
                     <header>
                       <h1>Hall</h1><span class="typed-cursor">|</span>
                       <h2>Hello!</h2>
                     </header>
 
-                    <p class="text fading-text">
+                    <p class="text text-fading">
                       <span>esu laisvai samdomas web programuotojas ir lektorius iš</span>
                       <span>Vilniaus. Kuriu internetines svetaines pastaruosius</span>
                       <span>6 metus Lietuvos, Švedijos ir Australijos rinkoms</span>
@@ -29,10 +30,10 @@
                 </div>
 
                 <i class="mouse-icon"></i>
+            </div>
+        </section>
 
-            </section>
-
-            <?php include('components/cta.php'); ?>
+        <?php include('components/cta.php'); ?>
     </main> <!-- .container -->
 <!-- end of #home-page -->
 <?php include('partials/footer.php') ?>
