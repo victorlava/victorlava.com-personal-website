@@ -64,7 +64,7 @@
 			</div>
 
 			<div class="row">
-				<p>
+				<p class="copyright">
 					Visos teisės saugomos © 2012-2018, <a href="/" title="Web programuotojas - Viktoras Lava">viktoraslava.lt</a>
 				</p>
 			</div>

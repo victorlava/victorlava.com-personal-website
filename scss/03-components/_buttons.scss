@@ -8,7 +8,7 @@
     border-radius: 47px;
     font-weight: 800;
 
-    &.btn-animate-boom {    
+    &.btn-animate-boom {
         position: relative;
 
         &:hover {
@@ -43,16 +43,30 @@
 
     }
 
+    &.btn-primary,
+    &.btn-secondary {
+        &:hover {
+            background-color: white;
+            transition: background-color .1s .3s,color .1s .3s;
+        }
+    }
+
     &.btn-primary {
         background-color: $color-primary;
         color: white;
 
         &:hover {
             color: $color-primary;
-            background-color: white;
-            transition: background-color .1s .3s,color .1s .3s;
         }
+    }
 
+    &.btn-secondary {
+        background-color: $black;
+        color: white;
+
+        &:hover {
+            color: $black;
+        }
     }
 }
 

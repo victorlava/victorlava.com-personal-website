@@ -13,7 +13,7 @@ ul, blockquote {
   padding: 0;
 }
 
-blockquote footer, blockquote span {
+blockquote footer {
   display: inline;
 }
 
@@ -52,6 +52,7 @@ h3 {
 
 h4 {
   font-size: 2.369rem;
+  font-weight: 500;
 }
 
 h5 {
@@ -65,7 +66,7 @@ h6 {
 }
 
 blockquote {
-  line-height: 1.3rem;
+  line-height: 1.2rem;
 }
 
 .text-center {
@@ -75,8 +76,11 @@ blockquote {
 /* 02. Partials/Layout */
 #footer {
   font-family: "Raleway", serif;
-  padding: 2rem 0;
+  padding: 3rem 0 0 0;
   background-color: #000;
+  background-image: url("../img/footer.jpg");
+  background-size: cover;
+  background-blend-mode: multiply;
   color: #FFF;
 }
 
@@ -88,8 +92,16 @@ blockquote {
   color: rgba(202, 200, 226, 0.75);
 }
 
+#footer .logo {
+  vertical-align: middle;
+}
+
 #footer .title {
   margin-top: 0;
+}
+
+#footer .copyright {
+  padding: 1.5rem 0 0 0;
 }
 
 #footer .row > div:first-child {
@@ -106,12 +118,12 @@ blockquote {
 }
 
 #footer blockquote {
-  font-size: 0.7rem;
+  font-size: 0.75rem;
 }
 
 #footer blockquote footer {
-  font-size: 0.55rem;
-  color: rgba(202, 200, 226, 0.75);
+  font-size: 0.563rem;
+  color: #CAC8E2;
 }
 
 #footer p {
@@ -175,6 +187,11 @@ blockquote {
   animation: scale .3s .3s forwards;
 }
 
+.btn.btn-primary:hover, .btn.btn-secondary:hover {
+  background-color: white;
+  transition: background-color .1s .3s,color .1s .3s;
+}
+
 .btn.btn-primary {
   background-color: #da4033;
   color: white;
@@ -182,8 +199,15 @@ blockquote {
 
 .btn.btn-primary:hover {
   color: #da4033;
-  background-color: white;
-  transition: background-color .1s .3s,color .1s .3s;
+}
+
+.btn.btn-secondary {
+  background-color: #000;
+  color: white;
+}
+
+.btn.btn-secondary:hover {
+  color: #000;
 }
 
 @keyframes scale {
@@ -203,6 +227,17 @@ blockquote {
     opacity: 0;
     transform: scale3d(1, 1, 1);
   }
+}
+
+section.cta {
+  text-align: center;
+  background-color: #da4033;
+  padding: 3.5rem .5rem;
+  color: white;
+}
+
+section.cta .title {
+  margin: 0;
 }
 
 /* 04. Pages */
