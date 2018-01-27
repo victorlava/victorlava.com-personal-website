@@ -6,11 +6,11 @@
         <?php include('partials/navigation.php'); ?>
 
             <section id="start" class="section section-full">
-                <div data-depth="0.3" class="layer background-me"></div>
-
+                <div id="background" data-depth="0.3"></div>
+                <div class="victor" data-depth="0.4"></div>
+<!--
                 <div class="me-wrapper">
-                  <div class="layer me" data-depth="0.4"></div>
-                </div>
+                </div> -->
 
                 <div class="heading">
                     <header>

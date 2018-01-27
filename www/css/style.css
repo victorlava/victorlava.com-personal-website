@@ -167,6 +167,7 @@ blockquote {
   position: absolute;
   width: 100%;
   top: 0;
+  z-index: 2;
 }
 
 #navigation ul {
@@ -301,6 +302,14 @@ p.text span:nth-child(4) {
   display: inline-block;
 }
 
+.victor {
+  width: 400px;
+  height: 613px;
+  background-image: url("/img/victor-lava.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
 /* 04. Pages */
 #home {
   color: #FFF;
@@ -310,10 +319,37 @@ p.text span:nth-child(4) {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  position: relative;
+}
+
+#home #start .heading {
+  z-index: 2;
+  position: relative;
 }
 
 #home #start .container {
   max-width: 620px;
+}
+
+#home #background {
+  position: absolute !important;
+  z-index: 1;
+  width: 105% !important;
+  height: 105% !important;
+  left: -2% !important;
+  top: -4% !important;
+  background-image: url("/img/background.jpg");
+  background-size: 100% !important;
+  background-repeat: no-repeat !important;
+}
+
+#home .victor {
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 1;
 }
 
 /* 05. Bootstrap Grid */
