@@ -1,5 +1,7 @@
 .section {
-	&.section-default {}
-	&.section-primary {}
-	&.section-secondary {}
+
+	&.section-full {
+		height: 100vh;
+		min-height: 477px;
+	}
 }

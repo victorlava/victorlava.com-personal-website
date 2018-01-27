@@ -1,5 +1,7 @@
-.text {
+p.text {
     span {
+        display: block;
+        
         &:nth-child(1) { opacity: .9; }
         &:nth-child(2) { opacity: .8; }
         &:nth-child(3) { opacity: .7; }

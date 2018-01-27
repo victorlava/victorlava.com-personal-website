@@ -15,6 +15,7 @@ ul, blockquote {
 
 section {
   background-color: #000;
+  padding: 3.5rem 0;
 }
 
 blockquote footer {
@@ -41,12 +42,13 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, .heading header {
   font-family: "Raleway", serif;
 }
 
-h1, h2 {
+h1, h2, .heading header, .typed-cursor {
   font-size: 3.157rem;
+  font-weight: 800;
 }
 
 h3 {
@@ -75,6 +77,16 @@ blockquote {
 
 .text-center {
   text-align: center;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 /* 02. Partials/Layout */
@@ -172,6 +184,15 @@ blockquote {
   text-align: center;
 }
 
+.heading h1 {
+  margin: 0;
+}
+
+.section.section-full {
+  height: 100vh;
+  min-height: 477px;
+}
+
 .btn {
   font-size: .7rem;
   letter-spacing: 2.5px;
@@ -243,7 +264,6 @@ blockquote {
 section.cta {
   text-align: center;
   background-color: #da4033;
-  padding: 3.5rem .5rem;
   color: white;
 }
 
@@ -271,9 +291,25 @@ p.text span:nth-child(4) {
   opacity: .6;
 }
 
+.typed-cursor {
+  padding-left: 12px;
+  opacity: 1;
+  animation: blink .7s infinite;
+}
+
+.js-typed, .typed-cursor {
+  display: inline-block;
+}
+
 /* 04. Pages */
 #home {
   color: #FFF;
+}
+
+#home #start {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #home #start .container {

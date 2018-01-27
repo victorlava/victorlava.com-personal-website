@@ -13,12 +13,13 @@ a {
     text-decoration: none;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, .heading header {
     font-family: $primary-font;
 }
 
-h1, h2 {
+h1, h2, .heading header, .typed-cursor {
     font-size: $font-size-1;
+    font-weight: 800;
 }
 
 h3 {

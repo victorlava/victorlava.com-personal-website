@@ -71,6 +71,18 @@
 		</div>
 	</footer>
 
+	<script type="text/javascript">
+
+	$(document).ready(function(){
+		$(".js-typed").typed({
+				strings: ["Sveiki...", "Hallå...", "Hello...", "Bonjour...", "¡Hola..."],
+				typeSpeed: 150,
+				backSpeed: 100,
+				loop: true
+			});
+	})
+	</script>
+
 	<script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
 </body>
 </html>

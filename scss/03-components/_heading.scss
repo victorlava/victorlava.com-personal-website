@@ -1,5 +1,9 @@
 .heading {
-	&.heading-default {}
-	&.heading-primary {}
-	&.heading-secondary {}
+
+	text-align: center;
+
+	h1 {
+		margin: 0;
+	}
+
 }

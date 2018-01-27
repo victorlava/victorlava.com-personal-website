@@ -1,7 +1,14 @@
 #home {
     color: $white;
 
-    #start .container {
-        max-width: 620px;
+    #start {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .container {
+            max-width: 620px;
+        }
+
     }
 }

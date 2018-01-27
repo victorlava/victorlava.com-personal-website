@@ -5,7 +5,7 @@
     <main>
         <?php include('partials/navigation.php'); ?>
 
-            <section id="start">
+            <section id="start" class="section section-full">
                 <div data-depth="0.3" class="layer background-me"></div>
 
                 <div class="me-wrapper">
@@ -14,8 +14,7 @@
 
                 <div class="heading">
                     <header>
-                      <h1>Hall</h1><span class="typed-cursor">|</span>
-                      <h2>Hello!</h2>
+                      <h1 class="js-typed">Hello!</h1>
                     </header>
 
                     <p class="text fading-text">
