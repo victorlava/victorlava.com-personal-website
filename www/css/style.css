@@ -168,6 +168,10 @@ blockquote {
 }
 
 /* 03. Components */
+.heading {
+  text-align: center;
+}
+
 .btn {
   font-size: .7rem;
   letter-spacing: 2.5px;
@@ -247,19 +251,23 @@ section.cta .title {
   margin: 0;
 }
 
-.text span:nth-child(1) {
+p.text span {
+  display: block;
+}
+
+p.text span:nth-child(1) {
   opacity: .9;
 }
 
-.text span:nth-child(2) {
+p.text span:nth-child(2) {
   opacity: .8;
 }
 
-.text span:nth-child(3) {
+p.text span:nth-child(3) {
   opacity: .7;
 }
 
-.text span:nth-child(4) {
+p.text span:nth-child(4) {
   opacity: .6;
 }
 

@@ -12,7 +12,7 @@
                   <div class="layer me" data-depth="0.4"></div>
                 </div>
 
-                <div class="wrapper vertical-align horizontal-align fadeAwesome">
+                <div class="heading">
                     <header>
                       <h1>Hall</h1><span class="typed-cursor">|</span>
                       <h2>Hello!</h2>
