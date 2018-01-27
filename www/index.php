@@ -40,7 +40,7 @@
                     <a href="/paslaugos/web-dizainas/" class="btn btn-primary">Paslaugos</a>
                 </div>
 
-                <i class="mouse-icon"></i>
+                <a href="#" class="icon icon-mouse"></a>
 
             </section>
 

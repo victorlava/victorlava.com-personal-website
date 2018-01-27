@@ -17,6 +17,12 @@
             max-width: 620px;
         }
 
+        .icon.icon-mouse {
+            position: absolute;
+            bottom: 30px;
+            z-index: 3;
+        }
+
     }
 
     #background {
