@@ -7,4 +7,5 @@
 	<link href="https://fonts.googleapis.com/css?family=Merriweather|Raleway:400,700" rel="stylesheet">
 	<script type="text/javascript" src="js/jquery-3.3.1.slim.min.js"></script>
 	<script type="text/javascript" src="js/typed.min.js"></script>
+	<script type="text/javascript" src="js/depth.js"></script>
 </head>
