@@ -6,8 +6,11 @@
         <?php include('partials/navigation.php'); ?>
 
             <section id="start" class="section section-full">
-                <div id="background" data-depth="0.3"></div>
-                <div class="victor" data-depth="0.4"></div>
+                
+                <div class="depth-js">
+                    <div id="background" data-depth="0.3"></div>
+                    <div class="victor" data-depth="0.4"></div>
+                </div>
 <!--
                 <div class="me-wrapper">
                 </div> -->
