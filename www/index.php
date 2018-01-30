@@ -11,7 +11,7 @@
                     <div class="background" data-depth="0.3"></div>
                     <div class="victor" data-depth="0.4"></div>
                 </div>
-                
+
                 <script type="text/javascript">
 
                     var depth = new Depth({
@@ -39,6 +39,28 @@
 
                 <a href="#" class="icon icon-mouse"></a>
 
+            </section>
+
+            <section class="section section-project">
+                <div class="container">
+                    <div class="heading">
+                        <header>
+                          <h2>Lenndy</h2>
+                        </header>
+
+                        <p class="text fading-text">
+                          <span>Lenndy yra pirmoji Lietuvoje sutelktinio finansavimo platforma skirta verslui.</span>
+                          <span>Šiuo metu platforma yra pritraukusi virš 250,000€ investicijų.</span>
+                        </p>
+
+                    </div>
+
+                    <div class="btn-wrapper">
+                        <a href="#" class="btn btn-primary">Peržiūrėti</a>
+                        <span class="btn btn-line"></span>
+                        <h3>Web dizainas ir front-end</h3>
+                    </div>
+                </div>
             </section>
 
             <?php include('components/cta.php'); ?>

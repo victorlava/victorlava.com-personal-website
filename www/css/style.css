@@ -204,22 +204,6 @@ blockquote {
   font-weight: 800;
 }
 
-.btn.btn-animate-boom {
-  position: relative;
-}
-
-.btn.btn-animate-boom:hover:before {
-  animation: boom .3s .3s forwards;
-}
-
-.btn.btn-animate-scale {
-  position: relative;
-}
-
-.btn.btn-animate-scale:hover:before {
-  animation: scale .3s .3s forwards;
-}
-
 .btn.btn-primary:hover, .btn.btn-secondary:hover {
   background-color: white;
   transition: background-color .1s .3s,color .1s .3s;
@@ -241,6 +225,29 @@ blockquote {
 
 .btn.btn-secondary:hover {
   color: #000;
+}
+
+.btn.btn-line {
+  min-width: 277px;
+  height: 1px;
+  background-color: #FFF;
+  padding: 0;
+}
+
+.btn.btn-animate-boom {
+  position: relative;
+}
+
+.btn.btn-animate-boom:hover:before {
+  animation: boom .3s .3s forwards;
+}
+
+.btn.btn-animate-scale {
+  position: relative;
+}
+
+.btn.btn-animate-scale:hover:before {
+  animation: scale .3s .3s forwards;
 }
 
 @keyframes scale {
@@ -341,6 +348,12 @@ p.text span:nth-child(4) {
 /* 04. Pages */
 #home {
   color: #FFF;
+}
+
+#home .btn-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #home #start {
