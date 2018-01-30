@@ -334,6 +334,10 @@ p.text span:nth-child(4) {
   transform: translateY(0);
 }
 
+.icon.icon-mouse:hover:before {
+  transform: translateY(15px);
+}
+
 /* 04. Pages */
 #home {
   color: #FFF;
@@ -362,16 +366,16 @@ p.text span:nth-child(4) {
   z-index: 3;
 }
 
-#home #background {
-  position: absolute !important;
+#home .background {
+  position: absolute;
   z-index: 1;
-  width: 105% !important;
-  height: 105% !important;
-  left: -2% !important;
-  top: -4% !important;
+  width: 105%;
+  height: 105%;
+  left: -2%;
+  top: -4%;
   background-image: url("/img/background.jpg");
-  background-size: 100% !important;
-  background-repeat: no-repeat !important;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 #home .victor {
