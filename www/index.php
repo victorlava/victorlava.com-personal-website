@@ -60,6 +60,33 @@
                         <span class="btn btn-line"></span>
                         <h3>Web dizainas ir front-end</h3>
                     </div>
+
+                    <img src="img/projects/lenndy-crowdfunding.jpg" class="image image-border" alt="">
+                </div>
+            </section>
+
+
+            <section class="section section-project section-fading">
+                <div class="container">
+                    <div class="heading">
+                        <header>
+                          <h2>Amplify</h2>
+                        </header>
+
+                        <p class="text fading-text">
+                          <span>Mano tikslas buvo sukurti naują dizainą "Amplify Digital Stockholm"</span>
+                          <span>įmonei ir pritaikyti jį WordPress turinio valdymo sistemai.</span>
+                        </p>
+
+                    </div>
+
+                    <div class="btn-wrapper">
+                        <a href="#" class="btn btn-primary">Peržiūrėti</a>
+                        <span class="btn btn-line"></span>
+                        <h3>Web dizainas ir Wordpress</h3>
+                    </div>
+
+                    <img src="img/projects/amplify-digital-stockholm.jpg" class="image image-border" alt="">
                 </div>
             </section>
 

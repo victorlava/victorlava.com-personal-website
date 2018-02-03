@@ -5,8 +5,44 @@
     text-transform: uppercase;
     font-family: $primary-font;
     padding: .6rem 1.03rem;
+    line-height: 1.2;
     border-radius: 47px;
     font-weight: 800;
+
+
+    &.btn-primary,
+    &.btn-secondary {
+        &:hover {
+            background-color: white;
+            transition: background-color .1s .3s,color .1s .3s;
+        }
+    }
+
+    &.btn-primary {
+        background-color: $color-primary;
+        color: white;
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+
+    &.btn-secondary {
+        background-color: $black;
+        color: white;
+
+        &:hover {
+            color: $black;
+        }
+    }
+
+    &.btn-line {
+        min-width: 277px;
+        height: 1px;
+        background-color: $white;
+        padding: 0;
+        margin: 0 3rem;
+    }
 
     &.btn-animate-boom {
         position: relative;
@@ -41,32 +77,6 @@
             }
         }
 
-    }
-
-    &.btn-primary,
-    &.btn-secondary {
-        &:hover {
-            background-color: white;
-            transition: background-color .1s .3s,color .1s .3s;
-        }
-    }
-
-    &.btn-primary {
-        background-color: $color-primary;
-        color: white;
-
-        &:hover {
-            color: $color-primary;
-        }
-    }
-
-    &.btn-secondary {
-        background-color: $black;
-        color: white;
-
-        &:hover {
-            color: $black;
-        }
     }
 }
 

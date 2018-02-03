@@ -4,4 +4,33 @@
 		height: 100vh;
 		min-height: 477px;
 	}
+
+	&.section-project {
+		overflow: hidden;
+		padding-bottom: 0;
+
+		.image {
+			position: relative;
+			bottom: -1rem;
+			border-bottom-left-radius: 0;
+			border-bottom-right-radius: 0;
+			border-bottom: 0;
+		}
+	}
+
+	&.section-fading:before {
+			content:" ";
+			width: 100%;
+			height: 100px;
+			// display: none;
+			position: absolute;
+			top: -100px;
+			left: 0;
+			background: -moz-linear-gradient(top,transparent 0,rgba(0,0,0,.65) 100%);
+			background: -webkit-linear-gradient(top,transparent 0,rgba(0,0,0,.65) 100%);
+			background: linear-gradient(to bottom,transparent 0,rgba(0,0,0,.65) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000', GradientType=0 );
+			pointer-events: none;
+
+	}
 }

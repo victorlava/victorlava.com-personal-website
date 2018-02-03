@@ -1,6 +1,15 @@
 #home {
     color: $white;
 
+    .btn-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        * > {
+            // display: flex;
+        }
+    }
+
     #start {
         display: flex;
         justify-content: center;
@@ -25,16 +34,16 @@
 
     }
 
-    #background {
-        position: absolute!important;
+    .background {
+        position: absolute;
         z-index: 1;
-        width: 105%!important;
-        height: 105%!important;
-        left: -2%!important;
-        top: -4%!important;
+        width: 105%;
+        height: 105%;
+        left: -2%;
+        top: -4%;
         background-image: url('/img/background.jpg');
-        background-size: 100%!important;
-        background-repeat: no-repeat!important;
+        background-size: 100%;
+        background-repeat: no-repeat;
     }
 
     .victor {
