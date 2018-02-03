@@ -1,26 +1,16 @@
 <?php include('partials/head.php'); ?>
 
-<body id="home">
+<body id="home" data-hijacking="off" data-animation="scaleDown">
 <!-- start of #home-page -->
     <main>
         <?php include('partials/navigation.php'); ?>
 
-            <section id="start" class="section section-full">
+            <section id="start" class="section section-full cd-section visible">
 
                 <div class="depth-js">
                     <div class="background" data-depth="0.3"></div>
                     <div class="victor" data-depth="0.4"></div>
                 </div>
-
-                <script type="text/javascript">
-
-                    var depth = new Depth({
-                        parent: "#start",
-                        children: '.depth-js',
-                        intesity: 1
-                    })
-
-                </script>
 
                 <div class="heading">
                     <header>
@@ -41,7 +31,7 @@
 
             </section>
 
-            <section class="section section-project">
+            <section class="section section-project section-fading cd-section">
                 <div class="container">
                     <div class="heading">
                         <header>
@@ -66,7 +56,7 @@
             </section>
 
 
-            <section class="section section-project section-fading">
+            <section class="section section-project section-fading cd-section">
                 <div class="container">
                     <div class="heading">
                         <header>
@@ -92,5 +82,20 @@
 
             <?php include('components/cta.php'); ?>
     </main> <!-- .container -->
+    <script src="/js/jquery-2.1.4.js"></script>
+    <script src="/js/velocity.min.js"></script>
+    <script src="/js/velocity.ui.min.js"></script>
+    <script type="text/javascript" src="js/typed.min.js"></script>
+    <script type="text/javascript" src="js/depth.js"></script>
+    <script type="text/javascript">
+
+        var depth = new Depth({
+            parent: "#start",
+            children: '.depth-js',
+            intesity: 1
+        })
+
+    </script>
+    <script src="/js/main.js"></script> <!-- Resource jQuery -->
 <!-- end of #home-page -->
 <?php include('partials/footer.php') ?>
