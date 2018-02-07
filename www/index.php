@@ -88,13 +88,7 @@
     <script type="text/javascript" src="js/typed.min.js"></script>
     <script type="text/javascript" src="js/depth.js"></script>
     <script type="text/javascript">
-
-        $(document).ready(function() {
-
-            app.animateLinks('#navigation');
-
-        });
-
+    
         var depth = new Depth({
             parent: "#start",
             children: '.depth-js',

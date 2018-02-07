@@ -2748,6 +2748,12 @@ blockquote {
   height: 45px;
 }
 
+@media (min-width: 992px) {
+  #navigation #navigation-open {
+    display: none;
+  }
+}
+
 #navigation #navigation-open.animated:before {
   display: block;
   transform: scale(30);
@@ -2784,7 +2790,7 @@ blockquote {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   #navigation ul {
     display: flex;
     justify-content: space-around;

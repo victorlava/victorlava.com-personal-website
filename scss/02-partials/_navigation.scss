@@ -17,6 +17,10 @@
 		background-color: white;
 		height: 45px;
 
+		@include media-breakpoint-up(lg) {
+			display: none;
+		}
+
 		&.animated:before {
 			display: block;
 			transform: scale(30);
@@ -53,7 +57,7 @@
 			a { color: black; }
 		}
 
-		@include media-breakpoint-up(md) {
+		@include media-breakpoint-up(lg) {
 			display: flex;
 			justify-content: space-around;
 			list-style: none;
