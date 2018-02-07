@@ -73,7 +73,7 @@
                     <div class="btn-wrapper">
                         <a href="#" class="btn btn-primary">Peržiūrėti</a>
                         <span class="btn btn-line d-none d-md-block"></span>
-                        <h3>Web dizainas ir Wordpress</h3>
+                        <h3 class="slide-in-parent">Web dizainas ir Wordpress</h3>
                     </div>
 
                     <img src="img/projects/amplify-digital-stockholm.jpg" class="image image-border" alt="">
@@ -88,6 +88,12 @@
     <script type="text/javascript" src="js/typed.min.js"></script>
     <script type="text/javascript" src="js/depth.js"></script>
     <script type="text/javascript">
+
+        $(document).ready(function() {
+
+            app.animateLinks('#navigation');
+
+        });
 
         var depth = new Depth({
             parent: "#start",

@@ -18,12 +18,12 @@
 					<h5 class="title">Navigacija</h5>
 					<ul>
 						<li>
-							<a href="/paslaugos/web-dizainas/" title="Web dizaino paslaugos">
+							<a href="/paslaugos/web-dizainas/" title="Web dizaino paslaugos" class="slide-in-parent">
 								Paslaugos
 							</a>
 						</li>
 						<li>
-							<a href="/projektai/" title="Interneto projektai">
+							<a href="/projektai/" title="Interneto projektai" class="slide-in-parent">
 								Projektai
 							</a>
 						</li>
@@ -35,12 +35,12 @@
 					</h5>
 					<ul>
 						<li>
-							<a href="/apie-mane/" title="Apie mane">
+							<a href="/apie-mane/" title="Apie mane" class="slide-in-parent">
 								Apie mane
 							</a>
 						</li>
 						<li>
-							<a href="/kontaktai/" title="Susisiekti">
+							<a href="/kontaktai/" title="Susisiekti" class="slide-in-parent">
 								Susisiekti
 							</a>
 						</li>
@@ -50,13 +50,13 @@
 					<h5 class="title">Būk socialus</h5>
 					<ul>
 						<li class="facebook">
-							<a title="Facebook" target="_blank" href="https://www.facebook.com/vvictorlava">
+							<a title="Facebook" target="_blank" class="slide-in-parent" href="https://www.facebook.com/vvictorlava">
 								Facebook
 							</a>
 						</li>
 						<li class="linkedin">
 							<!--  TODO: add linkedin -->
-							<a title="LinkedIn" target="_blank" href="">
+							<a title="LinkedIn" target="_blank" class="slide-in-parent" href="">
 								LinkedIn
 							</a>
 						</li>

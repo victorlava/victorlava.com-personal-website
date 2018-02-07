@@ -1,8 +1,60 @@
+.slide-in {
+    // position: relative;
+
+
+
+        content: " ";
+        top: 0;
+        // left: 0;
+        height: 100%;
+        display: block;
+        background-color: $color-primary;
+        position: absolute;
+        color: red !important;
+        // transition: all 0.3s ease;
+    
+    &.animated {
+        // animation: slide-in-text 1s ease;
+        // animation-iteration-count: 3;
+        // animation-direction: reverse;
+    }
+    &.animated:before {
+        animation: slide-in 1s ease;
+        // animation-iteration-count: 3;
+        animation-direction: reverse;
+    }
+}
+
+@keyframes slide-in-text {
+    0% {
+        opacity: 0;
+    }
+    99% {
+        opacity: 0;
+    }
+    100% {opacity: 1;}
+}
+
+@keyframes slide-in {
+    0% {
+        width: 0;
+        right: 0;
+    }
+    50% {
+        width: 100%;
+        right: -100%;
+    }
+    100% {
+        width: 0%;
+    }
+}
+
 @keyframes blink{
     0%,
     100% {
         opacity:1
     }
+
     50% {
         opacity:0
     }

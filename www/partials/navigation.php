@@ -1,7 +1,7 @@
 <nav id="navigation">
     <ul>
         <li>
-            <a href="#">
+            <a href="#" class="slide-in-parent">
                 Projektai
             </a>
         </li>
@@ -11,7 +11,7 @@
             </a>
         </li>
         <li>
-            <a href="#">
+            <a href="#" class="slide-in-parent">
                 Kontaktai
             </a>
         </li>
