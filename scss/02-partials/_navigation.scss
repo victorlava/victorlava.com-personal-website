@@ -7,14 +7,39 @@
 	position: absolute;
 	width: 100%;
 	top: 0;
-	z-index: 2;
+	z-index: 4;
+
+
+	#navigation-open {
+		position: absolute;
+		top: 0;
+		z-index: 1;
+	}
 
 	ul {
-		display: flex;
-		justify-content: space-around;
-		list-style: none;
+		display: none;
+		@include media-breakpoint-down(md) {
+			// display: none;
+			background: black;
+			width: 100%;
+			height: 100vh;
+			position: fixed;
+			top: 0;
+			// z-index: 4;
+			text-align: center;
+		}
+
+		@include media-breakpoint-up(md) {
+			display: flex;
+			justify-content: space-around;
+			list-style: none;
+		}
 
 		li {
+			@include media-breakpoint-down(md) {
+				display: block;
+				padding: 2rem 0;
+			}
 			.logo { vertical-align: middle; }
 		}
 	}

@@ -1,5 +1,17 @@
 var app = {
 
+    openNavigation: function() {
+
+        var nav = $('#navigation'),
+            open = nav.find('#navigation-open'),
+            menu = nav.find('ul');
+
+            menu.toggle();
+            // app.animateLinks()
+            this.animateLinks(nav);
+        // menu.show();
+
+    },
     animateLinks: function(parent) {
 
         $(parent).find('.slide-in-parent').each(function() {
