@@ -47,7 +47,7 @@
 
                     <div class="btn-wrapper">
                         <a href="#" class="btn btn-primary">Peržiūrėti</a>
-                        <span class="btn btn-line"></span>
+                        <span class="btn btn-line d-none d-md-block"></span>
                         <h3>Web dizainas ir front-end</h3>
                     </div>
 
@@ -72,7 +72,7 @@
 
                     <div class="btn-wrapper">
                         <a href="#" class="btn btn-primary">Peržiūrėti</a>
-                        <span class="btn btn-line"></span>
+                        <span class="btn btn-line d-none d-md-block"></span>
                         <h3>Web dizainas ir Wordpress</h3>
                     </div>
 

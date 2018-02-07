@@ -1,7 +1,10 @@
 .image {
 
     &.image-border {
-        border: 15px solid #ebebeb;;
+        border: 10px solid #ebebeb;
         border-radius: 1em;
+        @include media-breakpoint-up(md) {
+            border: 15px solid #ebebeb;
+        }
     }
 }

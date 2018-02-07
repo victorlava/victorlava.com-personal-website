@@ -10,6 +10,11 @@ $gray-more: rgba($grey, 0.75);
 	color: $white;
 	z-index: 1;
 	position: relative;
+	text-align: center;
+
+	@include media-breakpoint-up(md) {
+		text-align: initial;
+	}
 
 	a {
 		color: $grey;
@@ -26,8 +31,14 @@ $gray-more: rgba($grey, 0.75);
 
 	.row {
 		> div {
+			padding-bottom: 2rem;
+
 			&:first-child {
-				text-align: right;
+
+				@include media-breakpoint-up(lg) {
+					text-align: right;
+				}
+
 				font-size: $font-size-3;
 			}
 		}
@@ -43,6 +54,14 @@ $gray-more: rgba($grey, 0.75);
 
 	blockquote {
 		font-size: $font-size-3;
+
+		span {
+			display: block;
+
+			@include media-breakpoint-up(lg) {
+				display: inline-block;
+			}
+		}
 
 		footer {
 			font-size: $font-size-4;

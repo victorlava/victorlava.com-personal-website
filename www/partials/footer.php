@@ -1,18 +1,19 @@
 	<footer id="footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-3">
+				<div class="col-sm-12 col-md-3">
 					<a href="/" title="Web Developer &amp; UI Designer">
 						<img class="logo" src="/img/logo.png" width="67" height="67" alt="Web Developer &amp; UI Designer">
 					</a>
 					<!-- TODO: change quote -->
 					<blockquote>
-						Dizainas nėra tai, kaip tai atrodo ar ką primena. Dizainas yra tai, kaip tai veikia.
+					 	<span>Dizainas nėra tai, kaip tai atrodo ar ką primena.</span>
+						<span>Dizainas yra tai, kaip tai veikia.</span>
 						<footer>- Steve Jobs</footer>
 					</blockquote >
 					<a href="mailto:hello@victorlava.com">hello@victorlava.com</a>
 				</div>
-				<div class="col-3">
+				<div class="col-sm-6 col-md-3">
 					<!--  TODO: h5 really? -->
 					<h5 class="title">Navigacija</h5>
 					<ul>
@@ -28,9 +29,9 @@
 						</li>
 					</ul>
 				</div>
-				<div class="col-3">
-					<h5 class="title hidden-xs hidden-sm">
-						Daugiau projektų
+				<div class="col-sm-6 col-md-3">
+					<h5 class="title">
+						Daugiau
 					</h5>
 					<ul>
 						<li>
@@ -45,7 +46,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="col-3">
+				<div class="col-sm-12 col-md-3">
 					<h5 class="title">Būk socialus</h5>
 					<ul>
 						<li class="facebook">

@@ -51,8 +51,11 @@ body[data-hijacking="on"] {
 }
 
 .section-parallax {
-	height: 200vh;
 	position: relative;
+
+    @include media-breakpoint-up(lg) {
+        height: 200vh;
+    }
 
 	&:first-of-type > div {
 

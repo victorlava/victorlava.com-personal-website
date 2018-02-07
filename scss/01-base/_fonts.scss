@@ -1,5 +1,7 @@
 html {
-    font-size: $font-size;
+    @include media-breakpoint-up(md) {
+        font-size: $font-size;
+    }
 }
 
 body {
@@ -15,6 +17,7 @@ a {
 
 h1, h2, h3, h4, h5, .heading header {
     font-family: $primary-font;
+    line-height: 1.1;
 }
 
 h1, h2, .heading header, .typed-cursor {

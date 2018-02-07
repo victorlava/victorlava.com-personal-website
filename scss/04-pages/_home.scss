@@ -2,11 +2,12 @@
     color: $white;
 
     .btn-wrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        * > {
-            // display: flex;
+        text-align: center;
+        @include media-breakpoint-up(md) {
+            text-align: inherit;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
     }
 
