@@ -1,3 +1,9 @@
+html {
+    @include media-breakpoint-down(md) {
+        border: 12px solid white;
+    }
+}
+
 body {
     background: grey;
     margin: 0;

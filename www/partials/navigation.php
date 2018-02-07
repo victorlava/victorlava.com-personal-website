@@ -1,7 +1,11 @@
 <nav id="navigation">
-    <a href="#" id="navigation-open" class="d-sm-block d-md-none" onclick="app.openNavigation();">
-        Open
-    </a>
+
+    <div id="navigation-open" class="hamburger hamburger--spring" type="button" onclick="app.openNavigation();">
+      <div class="hamburger-box">
+        <div class="hamburger-inner"></div>
+      </div>
+  </div>
+
     <ul>
         <li class="d-sm-block d-md-none">
             <a href="#">

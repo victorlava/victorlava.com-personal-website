@@ -6,6 +6,7 @@ var app = {
             open = nav.find('#navigation-open'),
             menu = nav.find('ul');
 
+            open.toggleClass('animated');
             menu.toggle();
             // app.animateLinks()
             this.animateLinks(nav);
