@@ -1,6 +1,6 @@
 p.text {
     span {
-        @include media-breakpoint-up(sm) {
+        @include media-breakpoint-up(md) {
             display: block;
         }
 

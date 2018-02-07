@@ -52,8 +52,12 @@ body[data-hijacking="on"] {
 
 .section-parallax {
 	position: relative;
-
+    
     @include media-breakpoint-up(lg) {
+        height: 150vh;
+    }
+
+    @include media-breakpoint-up(xl) {
         height: 200vh;
     }
 

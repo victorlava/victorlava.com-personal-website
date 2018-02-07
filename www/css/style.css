@@ -1553,7 +1553,6 @@ a {
 
 h1, h2, h3, h4, h5, .heading header {
   font-family: "Raleway", serif;
-  line-height: 1.1;
 }
 
 h1, h2, .heading header, .typed-cursor {
@@ -1570,6 +1569,7 @@ h3 {
 h4 {
   font-size: 2.369rem;
   font-weight: 500;
+  line-height: 1.1;
 }
 
 h5 {
@@ -1794,6 +1794,12 @@ Main Components
 
 @media (min-width: 992px) {
   .section-parallax {
+    height: 150vh;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section-parallax {
     height: 200vh;
   }
 }
@@ -2004,7 +2010,7 @@ section.cta .title {
   margin: 0;
 }
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   p.text span {
     display: block;
   }
