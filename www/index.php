@@ -27,11 +27,11 @@
                     <a href="/paslaugos/web-dizainas/" class="btn btn-primary">Paslaugos</a>
                 </div>
 
-                <a href="#" class="icon icon-mouse"></a>
+                <?php include('partials/icon-mouse.php'); ?>
 
             </section>
 
-            <section class="section section-project section-fading section-parallax">
+            <section id="lenndy" class="section section-project section-fading section-parallax">
                 <div class="container">
                     <div class="heading">
                         <header>
@@ -84,7 +84,6 @@
 
     <?php include('components/cta.php'); ?>
 
-    <script src="/js/jquery-2.1.4.js"></script>
     <script src="/js/velocity.min.js"></script>
     <script type="text/javascript" src="js/typed.min.js"></script>
     <script type="text/javascript" src="js/depth.js"></script>
