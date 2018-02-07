@@ -86,7 +86,6 @@
 
     <script src="/js/jquery-2.1.4.js"></script>
     <script src="/js/velocity.min.js"></script>
-    <script src="/js/velocity.ui.min.js"></script>
     <script type="text/javascript" src="js/typed.min.js"></script>
     <script type="text/javascript" src="js/depth.js"></script>
     <script type="text/javascript">
