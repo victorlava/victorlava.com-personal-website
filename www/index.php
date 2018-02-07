@@ -1,11 +1,11 @@
 <?php include('partials/head.php'); ?>
 
-<body id="home" data-hijacking="off" data-animation="scaleDown">
+<body id="home" data-hijacking="off" data-animation="parallax">
 <!-- start of #home-page -->
     <main>
         <?php include('partials/navigation.php'); ?>
 
-            <section id="start" class="section section-full cd-section visible">
+            <section id="start" class="section section-full">
 
                 <div class="depth-js">
                     <div class="background" data-depth="0.3"></div>
@@ -31,7 +31,7 @@
 
             </section>
 
-            <section class="section section-project section-fading cd-section">
+            <section class="section section-project section-fading section-parallax">
                 <div class="container">
                     <div class="heading">
                         <header>
@@ -56,7 +56,7 @@
             </section>
 
 
-            <section class="section section-project section-fading cd-section">
+            <section class="section section-project section-fading section-parallax">
                 <div class="container">
                     <div class="heading">
                         <header>
@@ -80,8 +80,10 @@
                 </div>
             </section>
 
-            <?php include('components/cta.php'); ?>
     </main> <!-- .container -->
+
+    <?php include('components/cta.php'); ?>
+
     <script src="/js/jquery-2.1.4.js"></script>
     <script src="/js/velocity.min.js"></script>
     <script src="/js/velocity.ui.min.js"></script>

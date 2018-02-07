@@ -4,6 +4,11 @@ body {
   margin: 0;
 }
 
+main {
+  z-index: 0;
+  position: relative;
+}
+
 img {
   max-width: 100%;
 }
@@ -103,6 +108,8 @@ blockquote {
   background-size: cover;
   background-blend-mode: multiply;
   color: #FFF;
+  z-index: 1;
+  position: relative;
 }
 
 #footer a {
@@ -200,7 +207,6 @@ blockquote {
 }
 
 .section.section-project {
-  overflow: hidden;
   padding-bottom: 0;
 }
 
@@ -224,6 +230,151 @@ blockquote {
   background: linear-gradient(to bottom, transparent 0, rgba(0, 0, 0, 0.65) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000', GradientType=0 );
   pointer-events: none;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body::before {
+  /* never visible - this is used in jQuery to check the current MQ */
+  content: 'mobile';
+  display: none;
+}
+
+@media only screen and (min-width: 1050px) {
+  body::before {
+    /* never visible - this is used in jQuery to check the current MQ */
+    content: 'desktop';
+  }
+}
+
+/* --------------------------------
+
+Main Components
+
+-------------------------------- */
+@media only screen and (min-width: 1050px) {
+  body[data-hijacking="on"] {
+    overflow: hidden;
+  }
+}
+
+.section-parallax {
+  height: 200vh;
+  position: relative;
+}
+
+.section-parallax:first-of-type > div::before {
+  /* alert -> all scrolling effects are not visible on small devices */
+  content: 'Effects not visible on mobile!';
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 20px;
+  z-index: 2;
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+[data-animation="parallax"] .section-parallax > div,
+[data-animation="fixed"] .section-parallax > div,
+[data-animation="opacity"] .section-parallax > div {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (min-width: 1050px) {
+  [data-hijacking="on"] .section-parallax {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  [data-hijacking="on"] .section-parallax > div {
+    visibility: visible;
+  }
+  [data-hijacking="off"] .section-parallax > div {
+    opacity: 0;
+  }
+  [data-animation="rotate"] .section-parallax {
+    /* enable a 3D-space for children elements */
+    perspective: 1800px;
+  }
+  [data-hijacking="on"][data-animation="rotate"] .section-parallax:not(:first-of-type) {
+    perspective-origin: center 0;
+  }
+  [data-animation="opacity"] .section-parallax.visible > div {
+    z-index: 1;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  .section-parallax:first-of-type > div::before {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  .section-parallax > div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    right: 0;
+    /* Force Hardware Acceleration */
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
+  [data-hijacking="on"] .section-parallax > div {
+    position: absolute;
+  }
+  [data-animation="rotate"] .section-parallax > div {
+    transform-origin: center bottom;
+  }
+}
+
+.cd-vertical-nav {
+  /* lateral navigation */
+  position: fixed;
+  z-index: 1;
+  right: 3%;
+  top: 50%;
+  bottom: auto;
+  display: none;
+}
+
+.cd-vertical-nav a {
+  display: block;
+  height: 40px;
+  width: 40px;
+  /* image replace */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: url(../img/cd-icon-arrow.svg) no-repeat center center;
+}
+
+.cd-vertical-nav a.cd-prev {
+  transform: rotate(180deg);
+  margin-bottom: 10px;
+}
+
+.cd-vertical-nav a.inactive {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.2s 0s, visibility 0s 0.2s;
+}
+
+@media only screen and (min-width: 1050px) {
+  .cd-vertical-nav {
+    display: block;
+  }
 }
 
 .btn {
@@ -307,6 +458,8 @@ section.cta {
   text-align: center;
   background-color: #da4033;
   color: white;
+  z-index: 1;
+  position: relative;
 }
 
 section.cta .title {

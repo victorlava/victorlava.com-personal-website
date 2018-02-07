@@ -1,7 +1,7 @@
 @mixin vertical-align($position: relative) {
-  position: $position; 
+  position: $position;
   top: 50%;
-  @include transformY(-50%); 
+  @include transformY(-50%);
 }
 
 @mixin horizontal-align($position: relative) {
@@ -16,5 +16,31 @@
   ::-webkit-input-placeholder {@content}
   :-moz-placeholder           {@content}
   ::-moz-placeholder          {@content}
-  :-ms-input-placeholder      {@content}  
+  :-ms-input-placeholder      {@content}
+}
+
+@mixin center($xy:xy) {
+  @if $xy == xy {
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    // @include transform(translateX(-50%) translateY(-50%));
+  }
+  @else if $xy == x {
+    left: 50%;
+    right: auto;
+    // @include transform(translateX(-50%));
+  }
+  @else if $xy == y {
+    top: 50%;
+    bottom: auto;
+    // @include transform(translateY(-50%));
+  }
+}
+
+// antialiasing mode font rendering
+@mixin font-smoothing {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }

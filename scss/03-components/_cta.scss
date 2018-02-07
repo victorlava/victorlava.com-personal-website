@@ -2,6 +2,8 @@ section.cta {
     text-align: center;
     background-color: $red;
     color: white;
+    z-index: 1;
+    position: relative;
 
     .title {
         margin: 0;

@@ -8,6 +8,8 @@ $gray-more: rgba($grey, 0.75);
 	background-size: cover;
 	background-blend-mode: multiply;
 	color: $white;
+	z-index: 1;
+	position: relative;
 
 	a {
 		color: $grey;

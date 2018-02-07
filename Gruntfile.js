@@ -10,7 +10,8 @@ module.exports = function(grunt) {
 
     sass: {
      options: {
-           includePaths: ['bower_components/bootstrap/scss']  
+           includePaths: ['bower_components/bootstrap/scss',
+                          'bower_components/bourbon/core']  
       },
       dist: {
         options: {
