@@ -2580,6 +2580,10 @@ blockquote {
   text-align: center;
 }
 
+.slide-in-parent {
+  position: relative;
+}
+
 .slide-in {
   content: " ";
   top: 0;
@@ -2588,37 +2592,6 @@ blockquote {
   background-color: #da4033;
   position: absolute;
   color: red !important;
-}
-
-.slide-in.animated:before {
-  animation: slide-in 1s ease;
-  animation-direction: reverse;
-}
-
-@keyframes slide-in-text {
-  0% {
-    opacity: 0;
-  }
-  99% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes slide-in {
-  0% {
-    width: 0;
-    right: 0;
-  }
-  50% {
-    width: 100%;
-    right: -100%;
-  }
-  100% {
-    width: 0%;
-  }
 }
 
 @keyframes blink {

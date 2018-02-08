@@ -1,17 +1,27 @@
 var app = {
-
+    navigationOpened: false,
     openNavigation: function() {
 
         var nav = $('#navigation'),
             open = nav.find('#navigation-open'),
             menu = nav.find('ul');
 
-            open.toggleClass('animated');
+            open.toggleClass('animated is-active');
             menu.toggle();
+            // this.navigationOpened = true;
+
             // app.animateLinks
-            setTimeout(function() {
-                this.animateLinks(nav);
-            }.bind(this), 600);
+
+            if(open.hasClass('is-active')) {
+                alert('opened');
+                setTimeout(function() {
+                    this.animateLinks(nav);
+                }.bind(this), 600);
+            }
+            else {
+                alert('closed');
+                this.hideLinks();
+            }
         // menu.show();
 
     },
@@ -22,7 +32,7 @@ var app = {
         for(i = 0; i < elements.length; i++) {
             elements[i].style.color = 'rgba(0,0,0,0)';
         }
-        // $('.slide-in-parent').css('color', 'rgba(0,0,0,0)');
+
     },
     animateLinks: function(parent) {
 
@@ -32,8 +42,7 @@ var app = {
                 // element.css('color', 'rgba(0,0,0,0)');
 
                 element.css({
-                    color: 'rgba(0,0,0,0)',
-                    position: 'relative' 
+                    color: 'rgba(0,0,0,0)'
                 })
 
             $(this).append(slideIn);
@@ -44,7 +53,9 @@ var app = {
                 width: '100%'
             }, function(){
 
-                element.css('color', '');
+                element.css({
+                    color: ''
+                })
 
                 slideIn.css('right', '0px');
                 slideIn.animate({
@@ -58,5 +69,3 @@ var app = {
     }
 
 }
-
-app.hideLinks();

@@ -75,6 +75,8 @@
 	<script type="text/javascript">
 
 	$(document).ready(function(){
+		app.hideLinks();
+		
 		$(".js-typed").typed({
 				strings: ["Sveiki...", "Hallå...", "Hello...", "Bonjour...", "¡Hola..."],
 				typeSpeed: 150,

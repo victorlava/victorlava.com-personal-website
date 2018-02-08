@@ -8,7 +8,7 @@ var Depth = function(settings) {
 
     // Add neccesery attributes to movable objects
     var center = this.getCenterCoordinates(this.parent);
-    console.log(center);
+    // console.log(center);
 
     // Start mouse tracking on parent element
     this.parent.addEventListener('mousemove', function(e) {
@@ -21,7 +21,7 @@ var Depth = function(settings) {
         this.setIntensity(settings.intesity);
         this.moveElements();
 
-        console.log(this);
+        // console.log(this);
     }.bind(this));
 
 
