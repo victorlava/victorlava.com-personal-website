@@ -1,0 +1,23 @@
+{
+  "name": "victorlava",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Victor Lava <hello@victorlava.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "bourbon": "^5.0.0",
+    "css-hamburgers": "^0.9.3"
+  }
+}
