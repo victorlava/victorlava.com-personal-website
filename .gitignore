@@ -2,3 +2,5 @@ bower_components/*
 node_modules/*
 bower_components
 node_modules
+www/css/style.css
+package-lock.json
