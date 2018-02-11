@@ -76,7 +76,8 @@
 
 	$(document).ready(function(){
 		app.hideLinks();
-		
+		app.animateLinks('#navigation'); // animate navigation links
+
 		$(".js-typed").typed({
 				strings: ["Sveiki...", "Hallå...", "Hello...", "Bonjour...", "¡Hola..."],
 				typeSpeed: 150,

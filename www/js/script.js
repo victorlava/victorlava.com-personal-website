@@ -45,6 +45,7 @@ var app = {
                     color: 'rgba(0,0,0,0)'
                 })
 
+            $(this).find('.slide-in').remove(); // remove old slide in to avoid stacking up elements
             $(this).append(slideIn);
 
             // element.css('position', 'relative');
