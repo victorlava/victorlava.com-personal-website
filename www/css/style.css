@@ -2594,6 +2594,26 @@ blockquote {
   color: red !important;
 }
 
+.slide-up, .slide-down {
+  transition: transform .3s ease;
+}
+
+.slide-down {
+  transform: translateY(-70px);
+}
+
+.slide-down.animated {
+  transform: translateY(0px);
+}
+
+.slide-up {
+  transform: translateY(90px);
+}
+
+.slide-up.animated {
+  transform: translateY(0px);
+}
+
 @keyframes blink {
   0%,
   100% {

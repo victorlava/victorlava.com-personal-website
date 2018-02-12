@@ -17,7 +17,7 @@
                 Projektai
             </a>
         </li>
-        <li class="d-none d-lg-block">
+        <li class="logo-wrapper slide-down d-none d-lg-block">
             <a href="#">
                 <img class="logo" src="/img/logo.png" width="109" height="72" alt="UI/UX dizaineris">
             </a>

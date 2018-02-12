@@ -75,11 +75,15 @@
 	<script type="text/javascript">
 
 	$(document).ready(function(){
+		app.hideLinks();
 
 		var sectionOffset = 300;
 
-		app.hideLinks();
-		app.animateLinks('#navigation'); // animate navigation links
+		app.animateHomePage();
+		setTimeout(function() {
+			app.animateLinks('#navigation'); // animate navigation links
+		}, 400);
+
 
 
 		// Lenndy waypoint
@@ -91,7 +95,7 @@
 			  if(direction == 'down') {
 				  app.animateLinks('#lenndy');
 			  }
-			  
+
 		  }
 		})
 

@@ -15,6 +15,26 @@
 
 }
 
+.slide-up, .slide-down {
+    transition: transform .3s ease;
+}
+
+// For menu navigation
+.slide-down {
+    transform: translateY(-70px);
+    &.animated {
+        transform: translateY(0px);
+    }
+}
+
+// For mouse icon
+.slide-up {
+    transform: translateY(90px);
+    &.animated {
+        transform: translateY(0px);
+    }
+}
+
 
 @keyframes blink{
     0%,

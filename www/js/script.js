@@ -16,7 +16,7 @@ var app = {
                 alert('opened');
                 setTimeout(function() {
                     this.animateLinks(nav);
-                }.bind(this), 2600);
+                }.bind(this), 600);
             }
             else {
                 alert('closed');
@@ -24,6 +24,10 @@ var app = {
             }
         // menu.show();
 
+    },
+    animateHomePage: function() {
+        $('#navigation .logo-wrapper').addClass('animated'); // Animate navigation on page load
+		$('#start .icon-mouse').addClass('animated'); // Animate mouse icon on page load
     },
     hideLinks: function(){
         var elements = document.querySelectorAll('body .slide-in-parent');
