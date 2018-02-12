@@ -2791,6 +2791,15 @@ blockquote {
   margin: 0;
 }
 
+.heading h2.slide-in-parent {
+  display: table;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 18px 10px;
+}
+
 .section.section-full {
   height: 100vh;
   min-height: 477px;

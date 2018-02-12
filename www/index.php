@@ -35,7 +35,7 @@
                 <div class="container">
                     <div class="heading">
                         <header>
-                          <h2>Lenndy</h2>
+                          <h2 class="slide-in-parent">Lenndy</h2>
                         </header>
 
                         <p class="text fading-text">
@@ -47,8 +47,8 @@
 
                     <div class="btn-wrapper">
                         <a href="#" class="btn btn-primary">Peržiūrėti</a>
-                        <span class="btn btn-line d-none d-md-block"></span>
-                        <h3>Web dizainas ir front-end</h3>
+                        <span class="btn btn-line d-none d-md-block slide-in-parent"></span>
+                        <h3 class="slide-in-parent">Web dizainas ir front-end</h3>
                     </div>
 
                     <img src="img/projects/lenndy-crowdfunding.jpg" class="image image-border" alt="">
@@ -56,11 +56,11 @@
             </section>
 
 
-            <section class="section section-project section-fading section-parallax">
+            <section id="amplify" class="section section-project section-fading section-parallax">
                 <div class="container">
                     <div class="heading">
                         <header>
-                          <h2>Amplify</h2>
+                          <h2 class="slide-in-parent">Amplify</h2>
                         </header>
 
                         <p class="text fading-text">
@@ -72,7 +72,7 @@
 
                     <div class="btn-wrapper">
                         <a href="#" class="btn btn-primary">Peržiūrėti</a>
-                        <span class="btn btn-line d-none d-md-block"></span>
+                        <span class="btn btn-line d-none d-md-block slide-in-parent"></span>
                         <h3 class="slide-in-parent">Web dizainas ir Wordpress</h3>
                     </div>
 
@@ -88,7 +88,7 @@
     <script type="text/javascript" src="js/typed.min.js"></script>
     <script type="text/javascript" src="js/depth.js"></script>
     <script type="text/javascript">
-    
+
         var depth = new Depth({
             parent: "#start",
             children: '.depth-js',

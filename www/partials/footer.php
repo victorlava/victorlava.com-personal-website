@@ -75,8 +75,48 @@
 	<script type="text/javascript">
 
 	$(document).ready(function(){
+
+		var sectionOffset = 300;
+
 		app.hideLinks();
 		app.animateLinks('#navigation'); // animate navigation links
+
+
+		// Lenndy waypoint
+		var waypoint = new Waypoint({
+		  element: document.getElementById('lenndy'),
+		  offset: sectionOffset,
+		  handler: function(direction) {
+
+			  if(direction == 'down') {
+				  app.animateLinks('#lenndy');
+			  }
+			  
+		  }
+		})
+
+		// Amplify waypoint
+		var waypoint = new Waypoint({
+		  element: document.getElementById('amplify'),
+		  offset: sectionOffset,
+		  handler: function(direction) {
+
+			  if(direction == 'down') {
+				  app.animateLinks('#amplify');
+			  }
+
+		  }
+		})
+
+        // Footer waypoint
+		var waypoint = new Waypoint({
+		  element: document.getElementById('cta'),
+		  handler: function(direction) {
+			  if(direction == 'down') {
+				  app.animateLinks('#footer');
+			  }
+		  }
+		})
 
 		$(".js-typed").typed({
 				strings: ["Sveiki...", "Hallå...", "Hello...", "Bonjour...", "¡Hola..."],
