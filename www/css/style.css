@@ -2614,6 +2614,15 @@ blockquote {
   transform: translateY(0px);
 }
 
+.fade-in {
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+
+.fade-in.animated {
+  opacity: 1;
+}
+
 @keyframes blink {
   0%,
   100% {

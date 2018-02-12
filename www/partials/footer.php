@@ -75,16 +75,19 @@
 	<script type="text/javascript">
 
 	$(document).ready(function(){
-		app.hideLinks();
 
 		var sectionOffset = 300;
 
 		app.animateHomePage();
+
 		setTimeout(function() {
 			app.animateLinks('#navigation'); // animate navigation links
 		}, 400);
 
-
+		setTimeout(function() {
+			$('#start .fade-in').addClass('animated');
+			// $('#start .fade-in').addClass('animated');
+		}, 1000);
 
 		// Lenndy waypoint
 		var waypoint = new Waypoint({

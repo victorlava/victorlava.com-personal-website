@@ -29,3 +29,6 @@
         </li>
     </ul>
 </nav><!-- .navigation -->
+<script type="text/javascript">
+    app.hideLinks();
+</script>

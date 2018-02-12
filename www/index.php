@@ -12,7 +12,7 @@
                     <div class="victor" data-depth="0.4"></div>
                 </div>
 
-                <div class="heading">
+                <div class="heading fade-in">
                     <header>
                       <h1 class="js-typed">Hello!</h1>
                     </header>

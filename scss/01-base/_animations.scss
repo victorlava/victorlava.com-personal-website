@@ -35,6 +35,14 @@
     }
 }
 
+.fade-in {
+    opacity: 0;
+    transition: opacity .3s ease;
+    &.animated {
+        opacity: 1;
+    }
+}
+
 
 @keyframes blink{
     0%,
