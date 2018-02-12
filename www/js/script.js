@@ -16,7 +16,7 @@ var app = {
                 alert('opened');
                 setTimeout(function() {
                     this.animateLinks(nav);
-                }.bind(this), 600);
+                }.bind(this), 2600);
             }
             else {
                 alert('closed');

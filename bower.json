@@ -18,6 +18,7 @@
   "dependencies": {
     "bootstrap": "^4.0.0",
     "bourbon": "^5.0.0",
-    "css-hamburgers": "^0.9.3"
+    "css-hamburgers": "^0.9.3",
+    "waypoints": "^4.0.1"
   }
 }

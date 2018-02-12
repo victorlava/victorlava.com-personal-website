@@ -9,7 +9,7 @@
     <ul>
         <li class="d-sm-block d-md-none">
             <a href="#">
-                <img class="logo" src="/img/logo.png" width="109" height="72" alt="UI/UX dizaineris">
+                <img class="logo" src="/img/logo-inverse.png" width="109" height="72" alt="UI/UX dizaineris">
             </a>
         </li>
         <li>
