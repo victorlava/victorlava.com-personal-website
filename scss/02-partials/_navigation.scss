@@ -1,4 +1,4 @@
-#navigation {
+.navigation {
 	font-family: $primary-font;
 	text-transform: uppercase;
 	font-size: .63rem;
@@ -7,7 +7,6 @@
 	position: absolute;
 	width: 100%;
 	z-index: 4;
-
 
 	#navigation-open {
 		position: fixed;
@@ -72,5 +71,34 @@
 		}
 	}
 
+
+}
+
+.navigation-blog {
+	position: relative;
+	background-color: white;
+	border-bottom: 1px solid #D7D7D7;
+
+	a {
+		color: $color-secondary;
+	}
+
+	ul {
+		@include media-breakpoint-up(lg) {
+			justify-content: flex-start;
+		}
+
+		li {
+			padding-left: 1.5rem;
+			padding-right: 1.5rem;
+			&.logo-wrapper {
+				order: 1;
+			}
+			&:not(.logo-wrapper) {
+				order: 2;
+			}
+		}
+
+	}
 
 }

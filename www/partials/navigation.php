@@ -1,4 +1,4 @@
-<nav id="navigation">
+<nav id="navigation" class="navigation navigation-blog">
 
     <div id="navigation-open" class="hamburger hamburger--spring" type="button" onclick="app.openNavigation();">
       <div class="hamburger-box">
