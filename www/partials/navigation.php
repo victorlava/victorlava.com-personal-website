@@ -4,7 +4,7 @@
       <div class="hamburger-box">
         <div class="hamburger-inner"></div>
       </div>
-  </div>
+    </div>
 
     <ul>
         <li class="d-sm-block d-md-none">
@@ -14,7 +14,7 @@
         </li>
         <li>
             <a href="#" class="slide-in-parent">
-                Projektai
+                Projects
             </a>
         </li>
         <li class="logo-wrapper slide-down d-none d-lg-block">
@@ -24,7 +24,7 @@
         </li>
         <li>
             <a href="#" class="slide-in-parent">
-                Kontaktai
+                Blog
             </a>
         </li>
     </ul>

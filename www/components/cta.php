@@ -1,4 +1,4 @@
-<section id="cta" class="cta">
+<section id="cta" class="section cta">
     <div class="container">
         <h4 class="title">Norėtumėte dirbti su manimi?</h4>
         <p>Susisiekite ir galėsime aptarti bendradarbiavimo galimybes.</p>

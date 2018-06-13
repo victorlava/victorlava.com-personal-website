@@ -15,39 +15,49 @@
 				</div>
 				<div class="col-sm-6 col-md-3">
 					<!--  TODO: h5 really? -->
-					<h5 class="title">Navigacija</h5>
+					<h5 class="title">Menu</h5>
 					<ul>
 						<li>
 							<a href="/paslaugos/web-dizainas/" title="Web dizaino paslaugos" class="slide-in-parent">
-								Paslaugos
+								Home
 							</a>
 						</li>
 						<li>
 							<a href="/projektai/" title="Interneto projektai" class="slide-in-parent">
-								Projektai
+								Projects
+							</a>
+						</li>
+						<li>
+							<a href="/projektai/" title="Interneto projektai" class="slide-in-parent">
+								Blog
 							</a>
 						</li>
 					</ul>
 				</div>
 				<div class="col-sm-6 col-md-3">
 					<h5 class="title">
-						Daugiau
+						More
 					</h5>
 					<ul>
 						<li>
 							<a href="/apie-mane/" title="Apie mane" class="slide-in-parent">
-								Apie mane
+								About me
+							</a>
+						</li>
+						<li>
+							<a href="/apie-mane/" title="Apie mane" class="slide-in-parent">
+								Services
 							</a>
 						</li>
 						<li>
 							<a href="/kontaktai/" title="Susisiekti" class="slide-in-parent">
-								Susisiekti
+								Contact
 							</a>
 						</li>
 					</ul>
 				</div>
 				<div class="col-sm-12 col-md-3">
-					<h5 class="title">Būk socialus</h5>
+					<h5 class="title">Be social</h5>
 					<ul>
 						<li class="facebook">
 							<a title="Facebook" target="_blank" class="slide-in-parent" href="https://www.facebook.com/vvictorlava">
@@ -58,6 +68,12 @@
 							<!--  TODO: add linkedin -->
 							<a title="LinkedIn" target="_blank" class="slide-in-parent" href="">
 								LinkedIn
+							</a>
+						</li>
+						<li class="linkedin">
+							<!--  TODO: add linkedin -->
+							<a title="LinkedIn" target="_blank" class="slide-in-parent" href="">
+								Instagram
 							</a>
 						</li>
 					</ul>

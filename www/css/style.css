@@ -2510,11 +2510,6 @@ ul, blockquote {
   padding: 0;
 }
 
-section {
-  background-color: #000;
-  padding: 3.5rem 1.5rem;
-}
-
 blockquote footer {
   display: inline;
 }
@@ -2811,6 +2806,101 @@ blockquote {
   vertical-align: middle;
 }
 
+.sidebar {
+  background-color: #eee;
+  padding: 4em 3.5em;
+}
+
+.article-feed {
+  background-color: white;
+  padding-bottom: 2.5rem;
+}
+
+.article a {
+  color: #c7c7c7;
+  letter-spacing: 1px;
+}
+
+.article .article-title,
+.article .article-information,
+.article .article-content {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.article .article-title {
+  font-size: 2.441em;
+  margin-bottom: .7rem;
+}
+
+.article .article-content {
+  border-bottom: 1px solid #D7D7D7;
+}
+
+.article-information {
+  font-family: "Raleway", serif;
+  display: flex;
+  position: relative;
+  line-height: 1;
+}
+
+.article-information .article-information-category,
+.article-information .article-information-tags {
+  padding: .55rem .75rem;
+}
+
+.article-information .article-information-category {
+  display: block;
+  background-color: #da4033;
+  color: white;
+}
+
+.article-information .article-information-tags {
+  border: 1px solid #DFDFDF;
+}
+
+.article-information .article-information-tags a {
+  color: #06041D;
+}
+
+.date {
+  position: absolute;
+  display: block;
+  margin-left: -4em;
+  top: 0;
+  z-index: 1;
+  padding-top: 0;
+}
+
+.date a {
+  color: #06041D;
+}
+
+.date .date-number {
+  background: #da4033;
+  color: white;
+  width: 58px;
+  height: 58px;
+  border-radius: 10em;
+  text-align: center;
+  line-height: 50px;
+  font-size: 21px;
+  border: 5px solid white;
+  font-family: 'Varela Round', sans-serif;
+  position: absolute;
+}
+
+.date .date-month {
+  margin-top: 47px;
+  padding: 0;
+  left: -70px;
+  top: 107px;
+  position: relative;
+  width: 200px;
+  display: table;
+  transform: rotate(90deg);
+}
+
 /* 03. Components */
 .heading {
   text-align: center;
@@ -2827,6 +2917,11 @@ blockquote {
   margin-left: auto;
   margin-right: auto;
   padding: 18px 10px;
+}
+
+.section {
+  background-color: #000;
+  padding: 3.5rem 1.5rem;
 }
 
 .section.section-full {
@@ -3250,4 +3345,14 @@ p.text span:nth-child(4) {
   position: absolute;
   z-index: 1;
   top: 10%;
+}
+
+#blog {
+  color: #06041D;
+  font-size: 16px;
+}
+
+#blog p {
+  font-size: 1em;
+  line-height: 1.8;
 }
