@@ -16,6 +16,7 @@
 @import "02-partials/navigation";
 @import "02-partials/sidebar";
 @import "02-partials/article-feed";
+@import "02-partials/sticky";
 
 /* 03. Components */
 @import "03-components/tiny"; // Very small components
@@ -29,6 +30,7 @@
 @import "03-components/victor";
 @import "03-components/icon-mouse";
 @import "03-components/image";
+@import "03-components/featured";
 
 /* 04. Pages */
 @import "04-pages/home";

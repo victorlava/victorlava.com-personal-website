@@ -9,6 +9,10 @@
     border-radius: 47px;
     font-weight: 800;
 
+    &.btn-square {
+        border-radius: 0;
+    }
+
 
     &.btn-primary,
     &.btn-secondary {

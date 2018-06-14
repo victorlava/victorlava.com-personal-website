@@ -2908,6 +2908,7 @@ blockquote {
   top: 0;
   z-index: 1;
   padding-top: 0;
+  width: 0;
 }
 
 .date a {
@@ -2937,6 +2938,11 @@ blockquote {
   width: 200px;
   display: table;
   transform: rotate(90deg);
+}
+
+.sticky {
+  background-color: white;
+  padding-top: 1.75rem;
 }
 
 /* 03. Components */
@@ -3160,6 +3166,10 @@ Main Components
   font-weight: 800;
 }
 
+.btn.btn-square {
+  border-radius: 0;
+}
+
 .btn.btn-primary:hover, .btn.btn-secondary:hover {
   background-color: white;
   transition: background-color .1s .3s,color .1s .3s;
@@ -3321,6 +3331,56 @@ p.text span:nth-child(4) {
   .image.image-border {
     border: 15px solid #ebebeb;
   }
+}
+
+.featured {
+  border: 4px solid #eee;
+  /* padding: .5em 1.5em; */
+  background-color: #FFF;
+  margin-bottom: 1em;
+}
+
+.featured ul {
+  padding-left: 1rem;
+  padding-top: .5rem;
+  padding-bottom: 1rem;
+}
+
+.featured ul li {
+  padding-bottom: .05rem;
+  line-height: 1.5;
+}
+
+.featured a {
+  color: #06041D;
+  font-size: 0.8em;
+}
+
+.featured .btn {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+.featured .featured-title {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+  padding: 1em 1.5em;
+  background-color: #06041D;
+  margin-bottom: 1em;
+  line-height: 1.5;
+  font-size: 0.8em;
+}
+
+.featured .featured-image {
+  overflow: hidden;
+  max-height: 100px;
+}
+
+.featured .featured-image img {
+  width: 100%;
 }
 
 /* 04. Pages */

@@ -61,7 +61,8 @@
     }
 
     .article-information-tags {
-            border: 1px solid #DFDFDF;
+        border: 1px solid #DFDFDF;
+
         a {
             color: $color-secondary;
         }
@@ -75,6 +76,7 @@
     top: 0;
     z-index: 1;
     padding-top: 0;
+    width: 0;
 
     a {
         color: $color-secondary;
