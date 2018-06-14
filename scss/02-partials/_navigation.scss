@@ -1,3 +1,6 @@
+svg path {
+	fill: black !important;
+}
 .navigation {
 	font-family: $primary-font;
 	text-transform: uppercase;
@@ -7,6 +10,10 @@
 	position: absolute;
 	width: 100%;
 	z-index: 4;
+
+	.logo-mobile .logo {
+		margin: 0 auto;
+	}
 
 	#navigation-open {
 		position: fixed;

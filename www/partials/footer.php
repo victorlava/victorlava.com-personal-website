@@ -2,8 +2,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12 col-md-3">
-					<a href="/" title="Web Developer &amp; UI Designer">
-						<img class="logo" src="/img/logo.png" width="67" height="67" alt="Web Developer &amp; UI Designer">
+					<a href="/" title="Web Developer &amp; UI Designer" class="logo logo-white logo-xs">
+						<?php include('components/logo.php'); ?>
 					</a>
 					<!-- TODO: change quote -->
 					<blockquote>

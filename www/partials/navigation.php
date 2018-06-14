@@ -1,4 +1,4 @@
-<nav id="navigation" class="navigation navigation-blog">
+<nav id="navigation" class="navigation">
 
     <div id="navigation-open" class="hamburger hamburger--spring" type="button" onclick="app.openNavigation();">
       <div class="hamburger-box">
@@ -7,19 +7,21 @@
     </div>
 
     <ul>
-        <li class="d-sm-block d-md-none">
-            <a href="#">
-                <img class="logo" src="/img/logo-inverse.png" width="109" height="72" alt="UI/UX dizaineris">
-            </a>
+        <li class="logo-mobile d-sm-block d-md-none">
+            <div class="logo logo-black logo-xs ">
+                <a href="#">
+                    <?php include('components/logo.php'); ?>
+                </a>
+            </div>
         </li>
         <li>
             <a href="#" class="slide-in-parent">
                 Projects
             </a>
         </li>
-        <li class="logo-wrapper slide-down d-none d-lg-block">
+        <li class="logo logo-white logo-xs logo-wrapper slide-down d-none d-lg-block">
             <a href="#">
-                <img class="logo" src="/img/logo.png" width="109" height="72" alt="UI/UX dizaineris">
+                <?php include('components/logo.php'); ?>
             </a>
         </li>
         <li>

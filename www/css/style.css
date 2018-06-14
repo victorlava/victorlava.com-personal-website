@@ -2725,6 +2725,10 @@ blockquote {
   color: rgba(202, 200, 226, 0.4) !important;
 }
 
+svg path {
+  fill: black !important;
+}
+
 .navigation {
   font-family: "Raleway", serif;
   text-transform: uppercase;
@@ -2734,6 +2738,10 @@ blockquote {
   position: absolute;
   width: 100%;
   z-index: 4;
+}
+
+.navigation .logo-mobile .logo {
+  margin: 0 auto;
 }
 
 .navigation #navigation-open {
@@ -3381,6 +3389,19 @@ p.text span:nth-child(4) {
 
 .featured .featured-image img {
   width: 100%;
+}
+
+.logo.logo-xs svg {
+  width: 57px;
+  height: 37px;
+}
+
+.logo.logo-white svg path {
+  fill: white !important;
+}
+
+.logo.logo-black svg path {
+  fill: black !important;
 }
 
 /* 04. Pages */
