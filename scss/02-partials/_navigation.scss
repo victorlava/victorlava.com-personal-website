@@ -85,6 +85,8 @@ svg path {
 	position: relative;
 	background-color: white;
 	border-bottom: 1px solid #D7D7D7;
+	padding-left: $container-padding-x;
+	padding-right: $container-padding-x;
 
 	a {
 		color: $color-secondary;
@@ -96,10 +98,11 @@ svg path {
 		}
 
 		li {
-			padding-left: 1.5rem;
-			padding-right: 1.5rem;
+			padding-left: .75rem;
+			padding-right: .75rem;
 			&.logo-wrapper {
 				order: 1;
+				padding-left: 0;
 			}
 			&:not(.logo-wrapper) {
 				order: 2;

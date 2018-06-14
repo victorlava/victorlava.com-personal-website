@@ -1,4 +1,4 @@
-<nav id="navigation" class="navigation">
+<nav id="navigation" class="navigation navigation-blog">
 
     <div id="navigation-open" class="hamburger hamburger--spring" type="button" onclick="app.openNavigation();">
       <div class="hamburger-box">
@@ -8,19 +8,17 @@
 
     <ul>
         <li class="logo-mobile d-sm-block d-md-none">
-            <div class="logo logo-black logo-xs ">
-                <a href="#">
-                    <?php include('components/logo.php'); ?>
-                </a>
-            </div>
+            <a href="#" class="logo logo-black logo-xs">
+                <?php include('components/logo.php'); ?>
+            </a>
         </li>
         <li>
             <a href="#" class="slide-in-parent">
                 Projects
             </a>
         </li>
-        <li class="logo logo-white logo-xs logo-wrapper slide-down d-none d-lg-block">
-            <a href="#">
+        <li class="logo-wrapper slide-down d-none d-lg-block">
+            <a href="#" class="logo logo-black logo-xs">
                 <?php include('components/logo.php'); ?>
             </a>
         </li>

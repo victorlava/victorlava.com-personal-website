@@ -3,7 +3,7 @@
 <body id="blog" data-hijacking="off" data-animation="parallax">
     <?php include('partials/navigation.php'); ?>
     <!-- start of #home-page -->
-    <main>
+    <main class="container-fluid">
 
         <div class="row">
 

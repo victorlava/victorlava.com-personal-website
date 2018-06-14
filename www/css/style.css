@@ -2818,6 +2818,8 @@ svg path {
   position: relative;
   background-color: white;
   border-bottom: 1px solid #D7D7D7;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
 }
 
 .navigation-blog a {
@@ -2831,12 +2833,13 @@ svg path {
 }
 
 .navigation-blog ul li {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: .75rem;
+  padding-right: .75rem;
 }
 
 .navigation-blog ul li.logo-wrapper {
   order: 1;
+  padding-left: 0;
 }
 
 .navigation-blog ul li:not(.logo-wrapper) {
