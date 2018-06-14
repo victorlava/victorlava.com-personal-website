@@ -47,7 +47,12 @@
                         </div>
                     </header>
 
+                    <div class="article-image">
+                        <img src="https://freeforcommercialuse.net/wp-content/uploads/2018/02/msp_1711_8601.jpg" alt="">
+                    </div>
+
                     <div class="article-content">
+
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                 </article>
