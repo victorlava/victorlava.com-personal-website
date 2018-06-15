@@ -9,6 +9,18 @@
 
     }
 
+    .article-return {
+        padding-left: 0;
+        padding-top: 32px;
+        margin-left: $container-padding-x;
+        // margin-top: 32px;
+        display: inline-block;
+    }
+
+    .article-return + .article-title {
+        margin-top: 0;
+    }
+
     .article-title,
     .article-information,
     .article-content {

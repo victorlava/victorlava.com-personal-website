@@ -2861,6 +2861,17 @@ svg path {
   padding-bottom: 2.5rem;
 }
 
+.article .article-return {
+  padding-left: 0;
+  padding-top: 32px;
+  margin-left: 2rem;
+  display: inline-block;
+}
+
+.article .article-return + .article-title {
+  margin-top: 0;
+}
+
 .article .article-title,
 .article .article-information,
 .article .article-content {
@@ -3244,6 +3255,15 @@ Main Components
 
 .btn.btn-animate-scale:hover:before {
   animation: scale .3s .3s forwards;
+}
+
+.btn.btn-xs {
+  font-size: 0.8em;
+}
+
+.btn.btn-text {
+  background: transparent;
+  color: #06041D;
 }
 
 @keyframes scale {

@@ -85,6 +85,16 @@
         }
 
     }
+
+    &.btn-xs {
+        font-size: $font-size-blog-6;
+    }
+
+
+    &.btn-text {
+        background: transparent;
+        color: $color-secondary;
+    }
 }
 
 @keyframes scale {

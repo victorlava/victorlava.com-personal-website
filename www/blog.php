@@ -37,35 +37,8 @@
             <section class="article-feed col-6">
                 <?php foreach (range(1, 5) as $x) : ?>
                 <article class="article">
-                    <header class="article-header">
-                        <h2 class="article-title">
-                            <a href="#">Hell world!</a>
-                        </h2>
-
-                        <div class="article-information">
-
-                            <div class="date">
-                                <span class="date-number">
-                                    12
-                                </span>
-
-                                <a href="#" class="date-month">
-                                    <time datetime="2018-06-12T20:38:26+00:00">
-                                        June<span class="hidden">12</span>, <strong>2018</strong>
-                                    </time>
-                                </a>
-                            </div>
-
-                            <a href="#" class="article-information-category">
-                                Category
-                            </a>
-
-                            <div class="article-information-tags">
-                                <a href="#">style</a>,
-                                <a href="#">web design</a>
-                            </div>
-                        </div>
-                    </header>
+                    
+                    <?php include('partials/article-header.php'); ?>
 
                     <div class="article-image">
                         <img src="https://freeforcommercialuse.net/wp-content/uploads/2018/02/msp_1711_8601.jpg" alt="">
