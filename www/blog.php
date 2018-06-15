@@ -7,38 +7,13 @@
 
         <div class="row">
 
-            <aside class="sidebar col-3">
-                <div class="author-widget">
-                    <img src="/img/victor-lava.jpeg" alt="">
-                    <h5 class="sidebar-title">About the author</h5>
-                    <p>
-                        I'm Victor Lava, the author of this blog. I'm a full-stack web developer, lecturer at Baltic Talents Academy and a private consultant. You can read more about me <a href="#">here</a>.
-                    </p>
-                    <ul>
-                        <li>
-                            <a href="https://www.linkedin.com/in/victorlava/">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/victor_lava/ ">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/victor-lava">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </aside>
+            <?php include('partials/sidebar.php'); ?>
 
             <section class="article-feed col-6">
                 <?php foreach (range(1, 5) as $x) : ?>
                 <article class="article">
-                    
-                    <?php include('partials/article-header.php'); ?>
+
+                    <?php include('partials/feed-header.php'); ?>
 
                     <div class="article-image">
                         <img src="https://freeforcommercialuse.net/wp-content/uploads/2018/02/msp_1711_8601.jpg" alt="">

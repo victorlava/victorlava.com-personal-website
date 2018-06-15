@@ -2861,6 +2861,38 @@ svg path {
   padding-bottom: 2.5rem;
 }
 
+.article-feed .article-title,
+.article-feed .article-feed-title {
+  font-size: 2.441em;
+  margin-bottom: .7rem;
+}
+
+.article-feed .article-title a,
+.article-feed .article-feed-title a {
+  color: #06041D !important;
+}
+
+.article-feed .article-title a:hover,
+.article-feed .article-feed-title a:hover {
+  color: #da4033 !important;
+}
+
+.article-feed h1.article-title,
+.article-feed .article-feed-title {
+  font-size: 2.369rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem !important;
+}
+
+.article-feed .article-title,
+.article-feed .article-information,
+.article-feed .article-content,
+.article-feed .article-footer,
+.article-feed .article-feed-title {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
 .article .article-return {
   padding-left: 0;
   padding-top: 32px;
@@ -2872,20 +2904,12 @@ svg path {
   margin-top: 0;
 }
 
-.article .article-title,
-.article .article-information,
-.article .article-content {
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-
-.article .article-title {
-  font-size: 2.441em;
-  margin-bottom: .7rem;
-}
-
 .article .article-content {
   border-bottom: 1px solid #D7D7D7;
+}
+
+.article .article-footer {
+  margin-top: 1rem;
 }
 
 .article .article-image {
@@ -3263,7 +3287,7 @@ Main Components
 
 .btn.btn-text {
   background: transparent;
-  color: #06041D;
+  color: #c7c7c7;
 }
 
 @keyframes scale {
