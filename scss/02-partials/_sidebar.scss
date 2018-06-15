@@ -1,4 +1,9 @@
 .sidebar {
     background-color: #eee;
-    padding: 4em 3.5em;
+    padding: 1.5rem $container-padding-x;
+    text-align: center;
+
+    .sidebar-title {
+        margin-top: .25rem;
+    }
 }

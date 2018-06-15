@@ -2818,8 +2818,8 @@ svg path {
   position: relative;
   background-color: white;
   border-bottom: 1px solid #D7D7D7;
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .navigation-blog a {
@@ -2848,17 +2848,17 @@ svg path {
 
 .sidebar {
   background-color: #eee;
-  padding: 4em 3.5em;
+  padding: 1.5rem 2rem;
+  text-align: center;
+}
+
+.sidebar .sidebar-title {
+  margin-top: .25rem;
 }
 
 .article-feed {
   background-color: white;
   padding-bottom: 2.5rem;
-}
-
-.article a {
-  color: #c7c7c7;
-  letter-spacing: 1px;
 }
 
 .article .article-title,
@@ -2902,6 +2902,13 @@ svg path {
   display: block;
   background-color: #da4033;
   color: white;
+  border: 1px solid #DFDFDF;
+  border-right: 0;
+  transition: background-color .2s ease;
+}
+
+.article-information .article-information-category:hover {
+  background-color: white;
 }
 
 .article-information .article-information-tags {
@@ -2912,11 +2919,15 @@ svg path {
   color: #06041D;
 }
 
+.article-information .article-information-tags a:hover {
+  color: #da4033;
+}
+
 .date {
   position: absolute;
   display: block;
-  margin-left: -4em;
-  top: 0;
+  margin-left: -83px;
+  top: -63px;
   z-index: 1;
   padding-top: 0;
   width: 0;
@@ -2927,7 +2938,7 @@ svg path {
 }
 
 .date .date-number {
-  background: #da4033;
+  background: #06041D;
   color: white;
   width: 58px;
   height: 58px;
@@ -2935,7 +2946,7 @@ svg path {
   text-align: center;
   line-height: 50px;
   font-size: 21px;
-  border: 5px solid white;
+  border: 5px solid #eeeeef;
   font-family: 'Varela Round', sans-serif;
   position: absolute;
 }
@@ -2954,6 +2965,7 @@ svg path {
 .sticky {
   background-color: white;
   padding-top: 1.75rem;
+  padding-right: 2rem;
 }
 
 /* 03. Components */
@@ -3407,6 +3419,25 @@ p.text span:nth-child(4) {
   fill: black !important;
 }
 
+.author-widget img {
+  border-radius: 50%;
+  max-width: 177px;
+}
+
+.author-widget ul li {
+  display: inline-block;
+}
+
+.author-widget ul li a {
+  padding: 8px;
+  color: #06041D;
+  font-size: 1.25em;
+}
+
+.author-widget ul li a:hover {
+  color: #da4033;
+}
+
 /* 04. Pages */
 #home {
   color: #FFF;
@@ -3477,4 +3508,26 @@ p.text span:nth-child(4) {
 #blog p {
   font-size: 1em;
   line-height: 1.8;
+}
+
+#blog .featured a:hover {
+  color: #da4033;
+}
+
+#blog .article-information-category:hover,
+#blog .date a:hover {
+  color: #da4033;
+}
+
+#blog .sidebar p a,
+#blog .article-title a,
+#blog .article-content a {
+  color: #c7c7c7;
+  letter-spacing: 1px;
+}
+
+#blog .sidebar p a:hover,
+#blog .article-title a:hover,
+#blog .article-content a:hover {
+  color: #da4033;
 }

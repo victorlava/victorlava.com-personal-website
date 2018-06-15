@@ -9,11 +9,6 @@
 
     }
 
-    a {
-        color: $grey-light;
-        letter-spacing: 1px;
-    }
-
     .article-title,
     .article-information,
     .article-content {
@@ -58,6 +53,13 @@
         display: block;
         background-color: $color-primary;
         color: white;
+        border: 1px solid #DFDFDF;
+        border-right: 0;
+        transition: background-color .2s ease;
+        &:hover {
+            background-color: white;
+            // colo
+        }
     }
 
     .article-information-tags {
@@ -65,6 +67,9 @@
 
         a {
             color: $color-secondary;
+            &:hover {
+                color: $color-primary;
+            }
         }
     }
 }
@@ -72,8 +77,8 @@
 .date {
     position: absolute;
     display: block;
-    margin-left: -4em;
-    top: 0;
+    margin-left: -83px;
+    top: -63px;
     z-index: 1;
     padding-top: 0;
     width: 0;
@@ -83,7 +88,7 @@
     }
 
     .date-number {
-        background: $color-primary;
+        background: $color-secondary;
         color: white;
         width: 58px;
         height: 58px;
@@ -91,7 +96,7 @@
         text-align: center;
         line-height: 50px;
         font-size: 21px;
-        border: 5px solid white;
+        border: 5px solid #eeeeef;
         font-family: 'Varela Round', sans-serif;
         position: absolute;
     }

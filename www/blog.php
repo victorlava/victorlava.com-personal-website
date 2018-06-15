@@ -8,9 +8,30 @@
         <div class="row">
 
             <aside class="sidebar col-3">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+                <div class="author-widget">
+                    <img src="/img/victor-lava.jpeg" alt="">
+                    <h5 class="sidebar-title">About the author</h5>
+                    <p>
+                        I'm Victor Lava, the author of this blog. I'm a full-stack web developer, lecturer at Baltic Talents Academy and a private consultant. You can read more about me <a href="#">here</a>.
+                    </p>
+                    <ul>
+                        <li>
+                            <a href="https://www.linkedin.com/in/victorlava/">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/victor_lava/ ">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/victor-lava">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </aside>
 
             <section class="article-feed col-6">
@@ -52,7 +73,7 @@
 
                     <div class="article-content">
 
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        <p>Lorem <a href="https://www.google.com/">ipsum</a> dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     </div>
                 </article>
                 <?php endforeach; ?>

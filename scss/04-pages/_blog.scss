@@ -1,9 +1,30 @@
 #blog {
     color: $color-secondary;
     font-size: $font-size-blog-base;
-    
+
     p {
         font-size: $font-size-blog-5;
         line-height: 1.8;
     }
+
+    .featured a:hover {
+        color: $color-primary;
+    }
+
+    .article-information-category:hover,
+    .date a:hover {
+        color: $color-primary;
+    }
+
+    .sidebar p a, 
+    .article-title a,
+    .article-content a{
+        color: $grey-light;
+        letter-spacing: 1px;
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+
 }
