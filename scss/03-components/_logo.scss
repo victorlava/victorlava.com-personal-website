@@ -1,0 +1,21 @@
+.logo {
+
+    &.logo-xs {
+        svg {
+            width: 57px;
+            height: 37px;
+        }
+    }
+
+    &.logo-white {
+        svg path {
+            fill: white !important;
+        }
+    }
+
+    &.logo-black {
+        svg path {
+            fill: black !important;
+        }
+    }
+}
