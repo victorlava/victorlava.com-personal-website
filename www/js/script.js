@@ -74,3 +74,7 @@ var app = {
     }
 
 }
+
+$(document).ready(function() {
+    $('#sticky').scrollspy();
+});

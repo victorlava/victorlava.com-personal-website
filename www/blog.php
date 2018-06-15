@@ -1,6 +1,6 @@
 <?php include('partials/head.php'); ?>
 
-<body id="blog" data-hijacking="off" data-animation="parallax">
+<body id="blog" data-hijacking="off" data-animation="parallax" style="position:relative;">
     <?php include('partials/navigation.php'); ?>
     <!-- start of #home-page -->
     <main class="container-fluid">
@@ -28,7 +28,7 @@
 
             </section>
 
-            <aside class="sticky col-3">
+            <aside id="sticky" class="sticky col-3" data-spy="scroll" data-target="#navigation" data-offset="0">
                 <div class="featured">
                     <h3 class="featured-title">Weekly Web Development Goodies</h3>
                     <div class="featured-content col-md-12">
