@@ -1,9 +1,7 @@
 <?php include('partials/head.php'); ?>
 
-<body id="blog" data-hijacking="off" data-animation="parallax" style="position:relative;">
-
+<body id="blog" data-hijacking="off" data-animation="parallax">
     <?php include('partials/navigation-blog.php'); ?>
-
     <!-- start of #home-page -->
     <main class="container-fluid">
 
@@ -12,10 +10,11 @@
             <?php include('partials/sidebar.php'); ?>
 
             <section class="article-feed col-6">
+
                 <?php foreach (range(1, 5) as $x) : ?>
                 <article class="article">
 
-                    <?php include('partials/feed-header.php'); ?>
+                    <?php include('partials/category-header.php'); ?>
 
                     <div class="article-image">
                         <img src="https://freeforcommercialuse.net/wp-content/uploads/2018/02/msp_1711_8601.jpg" alt="">
@@ -30,7 +29,7 @@
 
             </section>
 
-            <aside id="sticky" class="sticky col-3" data-spy="scroll" data-target="#navigation" data-offset="0">
+            <aside class="sticky col-3">
                 <div class="featured">
                     <h3 class="featured-title">Weekly Web Development Goodies</h3>
                     <div class="featured-content col-md-12">

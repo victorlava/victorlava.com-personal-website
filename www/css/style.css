@@ -2820,6 +2820,12 @@ svg path {
   border-bottom: 1px solid #D7D7D7;
   padding-left: 2rem;
   padding-right: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation-blog .logo {
+  display: block;
 }
 
 .navigation-blog a {
@@ -3448,6 +3454,10 @@ p.text span:nth-child(4) {
 
 .featured .featured-image img {
   width: 100%;
+}
+
+.logo {
+  max-height: 37px;
 }
 
 .logo.logo-xs svg {

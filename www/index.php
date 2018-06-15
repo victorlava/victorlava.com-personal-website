@@ -3,7 +3,7 @@
 <body id="home" data-hijacking="off" data-animation="parallax">
 <!-- start of #home-page -->
     <main>
-        <?php include('partials/navigation.php'); ?>
+            <?php include('partials/navigation.php'); ?>
 
             <section id="start" class="section section-full">
 

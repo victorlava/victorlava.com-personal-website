@@ -1,4 +1,4 @@
-<nav id="navigation" class="navigation navigation-blog">
+<nav id="navigation" class="navigation">
 
     <div id="navigation-open" class="hamburger hamburger--spring" type="button" onclick="app.openNavigation();">
       <div class="hamburger-box">
@@ -18,7 +18,7 @@
             </a>
         </li>
         <li class="logo-wrapper slide-down d-none d-lg-block">
-            <a href="#" class="logo logo-black logo-xs">
+            <a href="#" class="logo logo-white logo-xs">
                 <?php include('components/logo.php'); ?>
             </a>
         </li>
