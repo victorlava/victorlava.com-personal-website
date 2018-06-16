@@ -84,11 +84,14 @@ svg path {
 .navigation-blog {
 	position: relative;
 	background-color: white;
-	border-bottom: 1px solid #D7D7D7;
 	padding-left: $container-padding-x;
 	padding-right: $container-padding-x;
 	display: flex;
 	justify-content: space-between;
+
+	@include media-breakpoint-up(md) {
+		border-bottom: 1px solid #D7D7D7;
+	}
 
 	.logo {
 		display: block;

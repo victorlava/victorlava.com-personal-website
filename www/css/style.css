@@ -2561,6 +2561,7 @@ h5 {
   font-size: 1rem;
   margin-bottom: .86rem;
   font-weight: 500;
+  line-height: 1.4;
 }
 
 h6 {
@@ -2817,11 +2818,16 @@ svg path {
 .navigation-blog {
   position: relative;
   background-color: white;
-  border-bottom: 1px solid #D7D7D7;
   padding-left: 2rem;
   padding-right: 2rem;
   display: flex;
   justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .navigation-blog {
+    border-bottom: 1px solid #D7D7D7;
+  }
 }
 
 .navigation-blog .logo {
@@ -2854,7 +2860,7 @@ svg path {
 
 .sidebar {
   background-color: #eee;
-  padding: 1.5rem 2rem;
+  padding: 1.5rem;
   text-align: center;
   order: 3;
 }
@@ -2862,6 +2868,12 @@ svg path {
 @media (min-width: 768px) {
   .sidebar {
     order: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .sidebar {
+    padding: 1.5rem 2rem;
   }
 }
 
@@ -2998,7 +3010,7 @@ svg path {
 
 .date {
   position: absolute;
-  margin-left: -83px;
+  margin-left: -84px;
   top: -63px;
   z-index: 1;
   padding-top: 0;

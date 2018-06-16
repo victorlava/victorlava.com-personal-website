@@ -1,11 +1,15 @@
 .sidebar {
     background-color: #eee;
-    padding: 1.5rem $container-padding-x;
+    padding: 1.5rem;
     text-align: center;
     order: 3;
 
     @include media-breakpoint-up(md) {
         order: 0;
+    }
+
+    @include media-breakpoint-up(lg) {
+        padding: 1.5rem $container-padding-x;
     }
 
     .sidebar-title {
