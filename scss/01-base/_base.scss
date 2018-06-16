@@ -1,5 +1,5 @@
 html {
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(sm) {
         border: 12px solid white;
     }
 }

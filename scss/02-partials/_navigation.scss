@@ -23,7 +23,7 @@ svg path {
 		background-color: white;
 		height: 45px;
 
-		@include media-breakpoint-up(lg) {
+		@include media-breakpoint-up(md) {
 			display: none;
 		}
 
@@ -50,7 +50,7 @@ svg path {
 
 	ul {
 		display: none;
-		@include media-breakpoint-down(md) {
+		@include media-breakpoint-down(sm) {
 			// display: none;
 			// background: black;
 			width: calc(100% - 24px);
@@ -63,14 +63,14 @@ svg path {
 			a { color: black; }
 		}
 
-		@include media-breakpoint-up(lg) {
+		@include media-breakpoint-up(md) {
 			display: flex;
 			justify-content: space-around;
 			list-style: none;
 		}
 
 		li {
-			@include media-breakpoint-down(md) {
+			@include media-breakpoint-down(sm) {
 				display: block;
 				padding: 2rem 0;
 			}
@@ -109,10 +109,16 @@ svg path {
 		li {
 			padding-left: .75rem;
 			padding-right: .75rem;
+			
+			&:last-child {
+				padding-right: 0;
+			}
+
 			&.logo-wrapper {
 				order: 1;
 				padding-left: 0;
 			}
+
 			&:not(.logo-wrapper) {
 				order: 2;
 			}

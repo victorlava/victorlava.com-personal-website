@@ -17,7 +17,7 @@
                 Projects
             </a>
         </li>
-        <li class="logo-wrapper slide-down d-none d-lg-block">
+        <li class="logo-wrapper slide-down d-none d-md-block">
             <a href="#" class="logo logo-white logo-xs">
                 <?php include('components/logo.php'); ?>
             </a>

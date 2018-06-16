@@ -2481,7 +2481,7 @@ html {
 }
 
 /* 01. Base */
-@media (max-width: 991.98px) {
+@media (max-width: 767.98px) {
   html {
     border: 12px solid white;
   }
@@ -2754,7 +2754,7 @@ svg path {
   height: 45px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .navigation #navigation-open {
     display: none;
   }
@@ -2782,7 +2782,7 @@ svg path {
   display: none;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 767.98px) {
   .navigation ul {
     width: calc(100% - 24px);
     height: 100vh;
@@ -2796,7 +2796,7 @@ svg path {
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .navigation ul {
     display: flex;
     justify-content: space-around;
@@ -2804,7 +2804,7 @@ svg path {
   }
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 767.98px) {
   .navigation ul li {
     display: block;
     padding: 2rem 0;
@@ -2847,6 +2847,10 @@ svg path {
 .navigation-blog ul li {
   padding-left: .75rem;
   padding-right: .75rem;
+}
+
+.navigation-blog ul li:last-child {
+  padding-right: 0;
 }
 
 .navigation-blog ul li.logo-wrapper {
