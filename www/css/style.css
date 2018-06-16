@@ -2856,6 +2856,13 @@ svg path {
   background-color: #eee;
   padding: 1.5rem 2rem;
   text-align: center;
+  order: 3;
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    order: 0;
+  }
 }
 
 .sidebar .sidebar-title {
@@ -2890,13 +2897,15 @@ svg path {
   margin-top: 1rem !important;
 }
 
-.article-feed .article-title,
-.article-feed .article-information,
-.article-feed .article-content,
-.article-feed .article-footer,
-.article-feed .article-feed-title {
-  margin-left: 2rem;
-  margin-right: 2rem;
+@media (min-width: 768px) {
+  .article-feed .article-title,
+  .article-feed .article-information,
+  .article-feed .article-content,
+  .article-feed .article-footer,
+  .article-feed .article-feed-title {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
 }
 
 .article .article-return {
@@ -2923,15 +2932,25 @@ svg path {
   max-height: 207px;
   overflow: hidden;
   margin-top: 1rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+}
+
+@media (min-width: 768px) {
+  .article .article-image {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 
 .article-information {
   font-family: "Raleway", serif;
-  display: flex;
   position: relative;
   line-height: 1;
+}
+
+@media (min-width: 768px) {
+  .article-information {
+    display: flex;
+  }
 }
 
 .article-information .article-information-category,
@@ -2940,12 +2959,25 @@ svg path {
 }
 
 .article-information .article-information-category {
-  display: block;
+  display: inline-block;
   background-color: #da4033;
   color: white;
   border: 1px solid #DFDFDF;
   border-right: 0;
   transition: background-color .2s ease;
+}
+
+@media (max-width: 767.98px) {
+  .article-information .article-information-category {
+    margin-top: .5rem;
+    margin-bottom: .25rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .article-information .article-information-category {
+    display: block;
+  }
 }
 
 .article-information .article-information-category:hover {
@@ -2966,12 +2998,18 @@ svg path {
 
 .date {
   position: absolute;
-  display: block;
   margin-left: -83px;
   top: -63px;
   z-index: 1;
   padding-top: 0;
   width: 0;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .date {
+    display: block;
+  }
 }
 
 .date a {
@@ -3006,7 +3044,24 @@ svg path {
 .sticky {
   background-color: white;
   padding-top: 1.75rem;
-  padding-right: 2rem;
+}
+
+@media (max-width: 767.98px) {
+  .sticky {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .sticky {
+    padding-bottom: 2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .sticky {
+    padding-right: 2rem;
+  }
 }
 
 /* 03. Components */

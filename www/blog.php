@@ -11,7 +11,7 @@
 
             <?php include('partials/sidebar.php'); ?>
 
-            <section class="article-feed col-6">
+            <section class="article-feed col-12 col-md-8 col-lg-6">
                 <?php foreach (range(1, 5) as $x) : ?>
                 <article class="article">
 
@@ -30,7 +30,7 @@
 
             </section>
 
-            <aside id="sticky" class="sticky col-3" data-spy="scroll" data-target="#navigation" data-offset="0">
+            <aside id="sticky" class="sticky col-12 col-lg-3" data-spy="scroll" data-target="#navigation" data-offset="0">
                 <div class="featured">
                     <h3 class="featured-title">Weekly Web Development Goodies</h3>
                     <div class="featured-content col-md-12">

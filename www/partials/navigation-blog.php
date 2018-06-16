@@ -42,6 +42,11 @@
     <ul class="menu menu-left">
         <li>
             <a href="#">
+                Intro page <i class="fas fa-arrow-right"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#">
                 <i class="far fa-newspaper"></i>
             </a>
         </li>
@@ -53,11 +58,6 @@
         <li>
             <a href="#">
                 <i class="fab fa-github"></i>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                Intro page <i class="fas fa-arrow-right"></i>
             </a>
         </li>
     </ul>

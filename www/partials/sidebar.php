@@ -1,4 +1,4 @@
-<aside class="sidebar col-3">
+<aside class="sidebar col-12 col-md-4 col-lg-3">
     <div class="author-widget">
         <img src="/img/victor-lava.jpeg" alt="">
         <h5 class="sidebar-title">About the author</h5>
