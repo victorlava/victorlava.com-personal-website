@@ -2733,16 +2733,41 @@ svg path {
 .navigation {
   font-family: "Raleway", serif;
   text-transform: uppercase;
-  font-size: .63rem;
-  letter-spacing: 2.5px;
-  padding: 11px 0;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  font-weight: bold;
+  padding: 6px 0;
   position: absolute;
   width: 100%;
   z-index: 4;
 }
 
+.navigation a {
+  transition: color .3s ease;
+}
+
+.navigation a:hover {
+  color: #c7c7c7;
+}
+
 .navigation .logo-mobile .logo {
   margin: 0 auto;
+}
+
+.navigation .menu.menu-left li {
+  min-width: 44px;
+  padding: 0;
+  text-align: center;
+  background-color: #eee;
+}
+
+.navigation .menu.menu-left li:first-child {
+  background-color: transparent;
+  margin-right: 10px;
+}
+
+.navigation .menu.menu-left li:first-child a {
+  color: #c7c7c7;
 }
 
 .navigation #navigation-open {
@@ -2826,7 +2851,7 @@ svg path {
 
 @media (min-width: 768px) {
   .navigation-blog {
-    border-bottom: 1px solid #D7D7D7;
+    border-bottom: 1px solid #eee;
   }
 }
 
@@ -2834,8 +2859,17 @@ svg path {
   display: block;
 }
 
+.navigation-blog .logo svg {
+  width: 47px !important;
+  height: 39px !important;
+}
+
 .navigation-blog a {
   color: #06041D;
+}
+
+.navigation-blog .menu.menu-left a {
+  display: block;
 }
 
 @media (min-width: 992px) {
@@ -2845,12 +2879,13 @@ svg path {
 }
 
 .navigation-blog ul li {
-  padding-left: .75rem;
-  padding-right: .75rem;
+  padding-left: .35rem;
+  padding-right: .35rem;
+  margin: 0 5px;
 }
 
 .navigation-blog ul li:last-child {
-  padding-right: 0;
+  margin-right: 0;
 }
 
 .navigation-blog ul li.logo-wrapper {
@@ -3542,6 +3577,11 @@ p.text span:nth-child(4) {
 
 .logo.logo-black svg path {
   fill: black !important;
+}
+
+.logo:hover svg path {
+  transition: all .3s ease;
+  fill: #da4033 !important;
 }
 
 .author-widget img {

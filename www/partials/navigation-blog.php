@@ -12,11 +12,6 @@
                 <?php include('components/logo.php'); ?>
             </a>
         </li>
-        <li>
-            <a href="#" class="slide-in-parent">
-                Home
-            </a>
-        </li>
         <li class="logo-wrapper slide-down d-none d-md-block">
             <a href="#" class="logo logo-black logo-xs">
                 <?php include('components/logo.php'); ?>
@@ -24,7 +19,7 @@
         </li>
         <li>
             <a href="#" class="slide-in-parent">
-                About
+                About Me
             </a>
         </li>
         <li>
@@ -42,7 +37,7 @@
     <ul class="menu menu-left">
         <li>
             <a href="#">
-                Intro page <i class="fas fa-arrow-right"></i>
+                <i class="fas fa-arrow-left"></i> Back to Intro
             </a>
         </li>
         <li>

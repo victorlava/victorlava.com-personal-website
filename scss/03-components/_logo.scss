@@ -19,4 +19,11 @@
             fill: black !important;
         }
     }
+
+    &:hover {
+        svg path {
+            transition: all .3s ease;
+            fill: $color-primary !important;
+        }
+    }
 }

@@ -4,15 +4,41 @@ svg path {
 .navigation {
 	font-family: $primary-font;
 	text-transform: uppercase;
-	font-size: .63rem;
-	letter-spacing: 2.5px;
-	padding: 11px 0;
+	font-size: 11px;
+	letter-spacing: 1.5px;
+	font-weight: bold;
+	padding: 6px 0;
 	position: absolute;
 	width: 100%;
 	z-index: 4;
 
+	a {
+		transition: color .3s ease;
+		&:hover {
+			color: $grey-light;
+		}
+	}
+
 	.logo-mobile .logo {
 		margin: 0 auto;
+	}
+
+	.menu {
+		&.menu-left {
+			li {
+				min-width: 44px;
+				padding: 0;
+				text-align: center;
+				background-color: #eee;
+				&:first-child {
+					background-color: transparent;
+					margin-right: 10px;
+					a {
+						color: $grey-light;
+					}
+				}
+			}
+		}
 	}
 
 	#navigation-open {
@@ -90,15 +116,23 @@ svg path {
 	justify-content: space-between;
 
 	@include media-breakpoint-up(md) {
-		border-bottom: 1px solid #D7D7D7;
+		border-bottom: 1px solid #eee;
 	}
 
 	.logo {
 		display: block;
+		svg {
+			width: 47px !important;
+			height: 39px !important;
+		}
 	}
 
 	a {
 		color: $color-secondary;
+	}
+
+	.menu.menu-left a {
+		display: block;
 	}
 
 	ul {
@@ -107,11 +141,12 @@ svg path {
 		}
 
 		li {
-			padding-left: .75rem;
-			padding-right: .75rem;
-			
+			padding-left: .35rem;
+			padding-right: .35rem;
+			margin: 0 5px;
+
 			&:last-child {
-				padding-right: 0;
+				margin-right: 0;
 			}
 
 			&.logo-wrapper {
