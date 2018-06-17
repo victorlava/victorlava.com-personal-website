@@ -8,6 +8,7 @@
     "grunt-contrib-cssmin": "^2.2.1",
     "grunt-contrib-uglify": "^3.1.0",
     "grunt-contrib-watch": "~0.6.1",
+    "grunt-php": "^1.5.1",
     "grunt-sass": "^1.0.0",
     "grunt-serve": "^0.1.6",
     "node-sass": "^3.3.2"

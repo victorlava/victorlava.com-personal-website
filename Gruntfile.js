@@ -2,17 +2,22 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
-    serve: {
-        options: {
-            port: 9000
-        }
-    },
+    php: {
+		dist: {
+			options: {
+				port: 90,
+                hostname: '0.0.0.0',
+                keepalive: true,
+                base: 'www'
+			}
+		},
+	},
 
     sass: {
      options: {
            includePaths: ['bower_components/bootstrap/scss',
                           'bower_components/bourbon/core',
-                          'bower_components/css-hamburgers/_sass/hamburgers']  
+                          'bower_components/css-hamburgers/_sass/hamburgers']
       },
       dist: {
         options: {
@@ -71,7 +76,9 @@ grunt.loadNpmTasks('grunt-contrib-watch');
 grunt.loadNpmTasks('grunt-serve');
 grunt.loadNpmTasks('grunt-contrib-uglify');
 grunt.loadNpmTasks('grunt-contrib-cssmin');
+grunt.loadNpmTasks('grunt-php');
 
+grunt.registerTask('serve', ['php']);
 grunt.registerTask('default', 'watch');
 grunt.registerTask('production', ['sass', 'cssmin', 'uglify']);
 };
