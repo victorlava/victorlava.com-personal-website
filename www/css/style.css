@@ -2954,6 +2954,24 @@ svg path {
 .article-feed {
   background-color: white;
   padding-bottom: 2.5rem;
+  padding-top: .5rem;
+}
+
+.article-feed .article-return {
+  padding-left: 0;
+  margin-top: 10px;
+  display: inline-block;
+}
+
+@media (min-width: 768px) {
+  .article-feed .article-return {
+    padding-top: 32px;
+    margin-left: 2rem;
+  }
+}
+
+.article-feed .article-return + .article-title {
+  margin-top: 0;
 }
 
 .article-feed .article-title,
@@ -2972,11 +2990,15 @@ svg path {
   color: #da4033 !important;
 }
 
+.article-feed .article-title,
+.article-feed .article-feed-title {
+  margin-top: 1rem !important;
+}
+
 .article-feed h1.article-title,
 .article-feed .article-feed-title {
   font-size: 2.369rem;
   margin-bottom: 1rem;
-  margin-top: 1rem !important;
 }
 
 @media (min-width: 768px) {
@@ -2990,20 +3012,8 @@ svg path {
   }
 }
 
-.article .article-return {
-  padding-left: 0;
-  padding-top: 32px;
-  display: inline-block;
-}
-
-@media (min-width: 768px) {
-  .article .article-return {
-    margin-left: 2rem;
-  }
-}
-
-.article .article-return + .article-title {
-  margin-top: 0;
+.article {
+  padding-bottom: 1rem;
 }
 
 .article .article-content {

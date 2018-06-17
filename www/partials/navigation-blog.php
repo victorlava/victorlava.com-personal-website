@@ -28,7 +28,7 @@
             </a>
         </li>
         <li>
-            <a href="#" class="slide-in-parent">
+            <a href="single.php" class="slide-in-parent">
                 Newsletter
             </a>
         </li>

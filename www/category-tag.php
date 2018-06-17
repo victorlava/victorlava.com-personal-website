@@ -10,6 +10,10 @@
             <?php include('partials/sidebar.php'); ?>
 
             <section class="article-feed col-12 col-md-8 col-lg-6">
+                <a href="blog.php" class="article-return btn btn-primary btn-text btn-xs">
+                    Category: unkown (2)
+                </a>
+
 
                 <?php foreach (range(1, 5) as $x) : ?>
                 <article class="article">

@@ -1,7 +1,3 @@
-<a href="blog.php" class="article-return btn btn-primary btn-text btn-xs">
-    Category: unkown (2)
-</a>
-
 <header class="article-header">
 
     <h2 class="article-title">
