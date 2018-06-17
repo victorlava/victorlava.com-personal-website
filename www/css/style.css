@@ -2708,7 +2708,7 @@ blockquote {
 }
 
 #footer p {
-  font-size: 0.563rem;
+  font-size: 0.563rem !important;
   text-align: center;
   width: 100%;
   color: rgba(202, 200, 226, 0.5);

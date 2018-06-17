@@ -32,31 +32,6 @@
                 Newsletter
             </a>
         </li>
-        <li>
-            <a href="#" class="slide-in-parent">
-                Newsletter
-            </a>
-        </li>
-        <li>
-            <a href="#" class="slide-in-parent">
-                Newsletter
-            </a>
-        </li>
-        <li>
-            <a href="#" class="slide-in-parent">
-                Newsletter
-            </a>
-        </li>
-        <li>
-            <a href="#" class="slide-in-parent">
-                Newsletter
-            </a>
-        </li>
-        <li>
-            <a href="#" class="slide-in-parent">
-                Newsletter
-            </a>
-        </li>
     </ul>
 
     <ul class="menu menu-right">

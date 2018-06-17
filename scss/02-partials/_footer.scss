@@ -67,7 +67,7 @@ $gray-more: rgba($grey, 0.75);
 	}
 
 	p {
-		font-size: $font-size-4;
+		font-size: $font-size-4 !important;
 		text-align: center;
 		width: 100%;
 		color: rgba($gray-more, 0.5);
