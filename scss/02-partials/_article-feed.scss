@@ -41,8 +41,10 @@
     .article-return {
         padding-left: 0;
         padding-top: 32px;
-        margin-left: $container-padding-x;
         display: inline-block;
+        @include media-breakpoint-up(md) {
+            margin-left: $container-padding-x;
+        }
     }
 
     .article-return + .article-title {

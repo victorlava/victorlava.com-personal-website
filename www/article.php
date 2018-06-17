@@ -9,7 +9,7 @@
 
             <?php include('partials/sidebar.php'); ?>
 
-            <section class="article-feed col-9">
+            <section class="article-feed col-12 col-md-8 col-lg-9">
                 <article class="article">
 
                     <?php include('partials/article-header.php'); ?>
@@ -52,8 +52,6 @@
         </div>
 
     </main> <!-- .container -->
-
-    <?php include('components/cta.php'); ?>
 
     <script src="/js/main.js"></script> <!-- Resource jQuery -->
 <!-- end of #home-page -->

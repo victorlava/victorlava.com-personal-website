@@ -2993,8 +2993,13 @@ svg path {
 .article .article-return {
   padding-left: 0;
   padding-top: 32px;
-  margin-left: 2rem;
   display: inline-block;
+}
+
+@media (min-width: 768px) {
+  .article .article-return {
+    margin-left: 2rem;
+  }
 }
 
 .article .article-return + .article-title {
