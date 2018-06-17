@@ -13,12 +13,12 @@
             </a>
         </li>
         <li>
-            <a href="#" class="slide-in-parent">
-                Projects
+            <a href="portfolio.php" class="slide-in-parent">
+                Portfolio
             </a>
         </li>
         <li class="logo-wrapper slide-down d-none d-md-block">
-            <a href="#" class="logo logo-white logo-xs">
+            <a href="index.php" class="logo logo-white logo-xs">
                 <?php include('components/logo.php'); ?>
             </a>
         </li>

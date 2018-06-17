@@ -23,11 +23,6 @@
             </a>
         </li>
         <li>
-            <a href="about.php" class="slide-in-parent">
-                About Me
-            </a>
-        </li>
-        <li>
             <a href="single.php" class="slide-in-parent">
                 Newsletter
             </a>
