@@ -13,13 +13,13 @@ var app = {
             // app.animateLinks
 
             if(open.hasClass('is-active')) {
-                alert('opened');
+                // alert('opened');
                 setTimeout(function() {
                     this.animateLinks(nav);
                 }.bind(this), 600);
             }
             else {
-                alert('closed');
+                // alert('closed');
                 this.hideLinks();
             }
         // menu.show();
