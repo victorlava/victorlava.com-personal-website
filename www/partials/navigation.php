@@ -6,7 +6,7 @@
       </div>
     </div>
 
-    <ul>
+    <ul class="menu menu-left">
         <li class="logo-mobile d-sm-block d-md-none">
             <a href="#" class="logo logo-black logo-xs">
                 <?php include('components/logo.php'); ?>
@@ -23,7 +23,7 @@
             </a>
         </li>
         <li>
-            <a href="#" class="slide-in-parent">
+            <a href="blog.php" class="slide-in-parent">
                 Blog
             </a>
         </li>

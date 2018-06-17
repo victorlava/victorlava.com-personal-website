@@ -6,7 +6,7 @@
       </div>
     </div>
 
-    <ul>
+    <ul class="menu menu-left">
         <li class="logo-mobile d-sm-block d-md-none">
             <a href="#" class="logo logo-black logo-xs">
                 <?php include('components/logo.php'); ?>
@@ -34,7 +34,7 @@
         </li>
     </ul>
 
-    <ul class="menu menu-left">
+    <ul class="menu menu-right">
         <li>
             <a href="#">
                 <i class="fas fa-arrow-left"></i> Back to Intro
