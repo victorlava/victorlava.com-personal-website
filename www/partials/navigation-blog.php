@@ -8,23 +8,23 @@
 
     <ul class="menu menu-left">
         <li class="logo-mobile d-sm-block d-md-none">
-            <a href="#" class="logo logo-black logo-xs">
+            <a href="index.php" class="logo logo-black logo-xs">
                 <?php include('components/logo.php'); ?>
             </a>
         </li>
         <li class="logo-wrapper slide-down d-none d-md-block">
-            <a href="#" class="logo logo-black logo-xs">
+            <a href="index.php" class="logo logo-black logo-xs">
                 <?php include('components/logo.php'); ?>
             </a>
         </li>
-        <li>
-            <a href="#" class="slide-in-parent">
-                About Me
+        <li class="active">
+            <a href="blog.php" class="slide-in-parent">
+                Blog
             </a>
         </li>
         <li>
-            <a href="#" class="slide-in-parent">
-                Blog
+            <a href="about.php" class="slide-in-parent">
+                About Me
             </a>
         </li>
         <li>
@@ -36,7 +36,7 @@
 
     <ul class="menu menu-right">
         <li>
-            <a href="#">
+            <a href="index.php">
                 <i class="fas fa-arrow-left"></i> Back to Intro
             </a>
         </li>
@@ -51,7 +51,7 @@
             </a>
         </li>
         <li>
-            <a href="#">
+            <a href="http://github.com/">
                 <i class="fab fa-github"></i>
             </a>
         </li>

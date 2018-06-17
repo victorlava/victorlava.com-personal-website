@@ -2742,12 +2742,16 @@ svg path {
   z-index: 4;
 }
 
+.navigation li.active a {
+  color: #da4033;
+}
+
 .navigation a {
   transition: color .3s ease;
 }
 
-.navigation a:hover {
-  color: #c7c7c7;
+.navigation a:hover, .navigation a:active {
+  color: #c7c7c7 !important;
 }
 
 .navigation .logo-mobile .logo {
@@ -2796,7 +2800,6 @@ svg path {
   .navigation .menu.menu-right li {
     display: inline-block;
     padding: 6px 0px !important;
-    margin: 0 6px;
   }
   .navigation .menu.menu-right li:first-child {
     display: block;
@@ -2863,6 +2866,7 @@ svg path {
   padding: 0;
   text-align: center;
   background-color: #eee;
+  margin: 0 6px;
 }
 
 .navigation-blog .menu.menu-right li:first-child {

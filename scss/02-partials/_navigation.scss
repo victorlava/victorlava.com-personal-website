@@ -12,10 +12,16 @@ svg path {
 	width: 100%;
 	z-index: 4;
 
+	li.active {
+		a {
+			color: $color-primary;
+		}
+	}
+
 	a {
 		transition: color .3s ease;
-		&:hover {
-			color: $grey-light;
+		&:hover,&:active {
+			color: $grey-light !important;
 		}
 	}
 
@@ -61,7 +67,6 @@ svg path {
 				li {
 					display: inline-block;
 					padding: 6px 0px !important;
-					margin: 0 6px;
 				}
 				li:first-child {
 					display: block;
@@ -137,6 +142,7 @@ svg path {
 				padding: 0;
 				text-align: center;
 				background-color: #eee;
+				margin: 0 6px;
 
 				&:first-child {
 					background-color: transparent;
