@@ -4,7 +4,8 @@ var app = {
 
         let nav = $('#navigation'),
             open = nav.find('#navigation-open'),
-            menu = nav.find('ul');
+            menu = nav.find('ul'),
+            logo = nav.find('.logo-mobile');
 
             nav.find('a').css('color', 'transparent');
 
@@ -17,11 +18,12 @@ var app = {
             if(open.hasClass('is-active')) {
                 // alert('opened');
                 setTimeout(function() {
+                    logo.addClass('animated');
                     this.animateLinks(nav);
                 }.bind(this), 600);
             }
             else {
-                // alert('closed');
+                logo.removeClass('animated');
                 this.hideLinks();
             }
         // menu.show();

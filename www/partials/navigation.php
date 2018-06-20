@@ -7,7 +7,7 @@
     </div>
 
     <ul class="menu menu-left">
-        <li class="logo-mobile d-sm-block d-md-none">
+        <li class="logo-mobile slide-down d-sm-block d-md-none">
             <a href="#" class="logo logo-black logo-xs">
                 <?php include('components/logo.php'); ?>
             </a>
