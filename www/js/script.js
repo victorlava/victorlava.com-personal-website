@@ -2,7 +2,7 @@ var app = {
     navigationOpened: false,
     openNavigation: function() {
 
-        var nav = $('#navigation'),
+        let nav = $('#navigation'),
             open = nav.find('#navigation-open'),
             menu = nav.find('ul');
 
@@ -54,13 +54,17 @@ var app = {
 
             // element.css('position', 'relative');
 
+            slideIn.css('left', '0px');
+
             slideIn.animate({
                 width: '100%'
             }, function(){
 
                 element.css({
                     color: ''
-                })
+                });
+
+                slideIn.css('left', '');
 
                 slideIn.css('right', '0px');
                 slideIn.animate({
