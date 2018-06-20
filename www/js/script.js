@@ -6,6 +6,8 @@ var app = {
             open = nav.find('#navigation-open'),
             menu = nav.find('ul');
 
+            nav.find('a').css('color', 'transparent');
+
             open.toggleClass('animated is-active');
             menu.toggle();
             // this.navigationOpened = true;
