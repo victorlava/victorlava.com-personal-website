@@ -3,7 +3,7 @@
 			<div class="row">
 				<div class="col-sm-12 col-md-3">
 					<a href="/" title="Web Developer &amp; UI Designer">
-						<img class="logo" src="/img/logo.png" width="67" height="67" alt="Web Developer &amp; UI Designer">
+						<img class="logo" src="img/logo.png" width="67" height="67" alt="Web Developer &amp; UI Designer">
 					</a>
 					<!-- TODO: change quote -->
 					<blockquote>
@@ -134,6 +134,6 @@
 	})
 	</script>
 
-	<script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
+	<!-- <script type="text/javascript" src="http://localhost:35729/livereload.js"></script> -->
 </body>
 </html>

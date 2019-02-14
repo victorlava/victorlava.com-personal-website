@@ -84,7 +84,7 @@
 
     <?php include('components/cta.php'); ?>
 
-    <script src="/js/velocity.min.js"></script>
+    <script src="js/velocity.min.js"></script>
     <script type="text/javascript" src="js/typed.min.js"></script>
     <script type="text/javascript" src="js/depth.js"></script>
     <script type="text/javascript">
@@ -96,6 +96,6 @@
         })
 
     </script>
-    <script src="/js/main.js"></script> <!-- Resource jQuery -->
+    <script src="js/main.js"></script> <!-- Resource jQuery -->
 <!-- end of #home-page -->
 <?php include('partials/footer.php') ?>

@@ -3146,7 +3146,7 @@ p.text span:nth-child(4) {
 .victor {
   width: 400px;
   height: 613px;
-  background-image: url("/img/victor-lava.png");
+  background-image: url("../img/victor-lava.png");
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -3238,7 +3238,7 @@ p.text span:nth-child(4) {
   height: 105%;
   left: -2%;
   top: -4%;
-  background-image: url("/img/background.jpg");
+  background-image: url("../img/background.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
 }
