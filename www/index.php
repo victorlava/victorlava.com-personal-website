@@ -84,9 +84,9 @@
 
     <?php include('components/cta.php'); ?>
 
-    <script src="/js/velocity.min.js"></script>
-    <script type="text/javascript" src="js/typed.min.js"></script>
-    <script type="text/javascript" src="js/depth.js"></script>
+    <script src="/www/js/velocity.min.js"></script>
+    <script type="text/javascript" src="/www/js/typed.min.js"></script>
+    <script type="text/javascript" src="/www/js/depth.js"></script>
     <script type="text/javascript">
 
         var depth = new Depth({
@@ -96,6 +96,6 @@
         })
 
     </script>
-    <script src="/js/main.js"></script> <!-- Resource jQuery -->
+    <script src="/www/js/main.js"></script> <!-- Resource jQuery -->
 <!-- end of #home-page -->
 <?php include('partials/footer.php') ?>
