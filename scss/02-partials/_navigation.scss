@@ -7,7 +7,6 @@ svg path {
 	font-size: 11px;
 	letter-spacing: 1.5px;
 	font-weight: bold;
-	padding: 6px 0;
 	position: absolute;
 	width: 100%;
 	z-index: 4;
@@ -32,7 +31,18 @@ svg path {
 	.menu {
 		display: none;
 
-		li .logo {vertical-align: middle; }
+		li .logo {
+			height: 67px;
+			width: 67px;
+			background: $color-primary;
+			display: block;
+			text-align: center;
+			vertical-align: middle;
+			max-width: none;
+			max-height: none;
+
+			svg { height: 62px; }
+		}
 
 		@include media-breakpoint-up(sm) {
 			&.menu-right li:first-child {
@@ -43,7 +53,7 @@ svg path {
 
 		@include media-breakpoint-up(md) {
 			display: flex;
-			justify-content: space-around;
+			// justify-content: space-around;
 			list-style: none;
 		}
 
@@ -105,8 +115,8 @@ svg path {
 .navigation-blog {
 	position: relative;
 	background-color: white;
-	padding-left: $container-padding-x;
-	padding-right: $container-padding-x;
+	// padding-left: $container-padding-x;
+	// padding-right: $container-padding-x;
 	display: flex;
 	justify-content: space-between;
 
@@ -180,13 +190,13 @@ svg path {
 #navigation-open {
 	position: fixed;
 	top: 0;
-	left: 0;
+	right: 0;
 	z-index: 1;
 	background-color: white;
 	height: 45px;
 
 	@include media-breakpoint-up(md) {
-		display: none;
+		// display: none;
 	}
 
 	&.animated:before {

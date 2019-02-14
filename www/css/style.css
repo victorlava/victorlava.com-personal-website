@@ -1523,6 +1523,16 @@ html {
   opacity: 0.7;
 }
 
+.hamburger.is-active:hover {
+  opacity: 0.7;
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background-color: #000;
+}
+
 .hamburger-box {
   width: 40px;
   height: 24px;
@@ -1576,7 +1586,7 @@ html {
 }
 
 .hamburger--3dx.is-active .hamburger-inner {
-  background-color: transparent;
+  background-color: transparent !important;
   transform: rotateY(180deg);
 }
 
@@ -1604,7 +1614,7 @@ html {
 }
 
 .hamburger--3dx-r.is-active .hamburger-inner {
-  background-color: transparent;
+  background-color: transparent !important;
   transform: rotateY(-180deg);
 }
 
@@ -1632,7 +1642,7 @@ html {
 }
 
 .hamburger--3dy.is-active .hamburger-inner {
-  background-color: transparent;
+  background-color: transparent !important;
   transform: rotateX(-180deg);
 }
 
@@ -1660,7 +1670,7 @@ html {
 }
 
 .hamburger--3dy-r.is-active .hamburger-inner {
-  background-color: transparent;
+  background-color: transparent !important;
   transform: rotateX(180deg);
 }
 
@@ -1688,7 +1698,7 @@ html {
 }
 
 .hamburger--3dxy.is-active .hamburger-inner {
-  background-color: transparent;
+  background-color: transparent !important;
   transform: rotateX(180deg) rotateY(180deg);
 }
 
@@ -1716,7 +1726,7 @@ html {
 }
 
 .hamburger--3dxy-r.is-active .hamburger-inner {
-  background-color: transparent;
+  background-color: transparent !important;
   transform: rotateX(180deg) rotateY(180deg) rotateZ(-180deg);
 }
 
@@ -2016,7 +2026,7 @@ html {
 .hamburger--emphatic.is-active .hamburger-inner {
   transition-delay: 0s;
   transition-timing-function: ease-out;
-  background-color: transparent;
+  background-color: transparent !important;
 }
 
 .hamburger--emphatic.is-active .hamburger-inner::before {
@@ -2058,7 +2068,7 @@ html {
 .hamburger--emphatic-r.is-active .hamburger-inner {
   transition-delay: 0s;
   transition-timing-function: ease-out;
-  background-color: transparent;
+  background-color: transparent !important;
 }
 
 .hamburger--emphatic-r.is-active .hamburger-inner::before {
@@ -2245,7 +2255,7 @@ html {
 
 .hamburger--spring.is-active .hamburger-inner {
   transition-delay: 0.22s;
-  background-color: transparent;
+  background-color: transparent !important;
 }
 
 .hamburger--spring.is-active .hamburger-inner::before {
@@ -2315,7 +2325,7 @@ html {
 
 .hamburger--stand.is-active .hamburger-inner {
   transform: rotate(90deg);
-  background-color: transparent;
+  background-color: transparent !important;
   transition: transform 0.075s 0s cubic-bezier(0.215, 0.61, 0.355, 1), background-color 0s 0.15s linear;
 }
 
@@ -2348,7 +2358,7 @@ html {
 
 .hamburger--stand-r.is-active .hamburger-inner {
   transform: rotate(-90deg);
-  background-color: transparent;
+  background-color: transparent !important;
   transition: transform 0.075s 0s cubic-bezier(0.215, 0.61, 0.355, 1), background-color 0s 0.15s linear;
 }
 
@@ -2733,7 +2743,6 @@ svg path {
   font-size: 11px;
   letter-spacing: 1.5px;
   font-weight: bold;
-  padding: 6px 0;
   position: absolute;
   width: 100%;
   z-index: 4;
@@ -2760,7 +2769,18 @@ svg path {
 }
 
 .navigation .menu li .logo {
+  height: 67px;
+  width: 67px;
+  background: #da4033;
+  display: block;
+  text-align: center;
   vertical-align: middle;
+  max-width: none;
+  max-height: none;
+}
+
+.navigation .menu li .logo svg {
+  height: 62px;
 }
 
 @media (min-width: 576px) {
@@ -2773,7 +2793,6 @@ svg path {
 @media (min-width: 768px) {
   .navigation .menu {
     display: flex;
-    justify-content: space-around;
     list-style: none;
   }
 }
@@ -2824,8 +2843,6 @@ svg path {
 .navigation-blog {
   position: relative;
   background-color: white;
-  padding-left: 2rem;
-  padding-right: 2rem;
   display: flex;
   justify-content: space-between;
 }
@@ -2898,16 +2915,10 @@ svg path {
 #navigation-open {
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   z-index: 1;
   background-color: white;
   height: 45px;
-}
-
-@media (min-width: 768px) {
-  #navigation-open {
-    display: none;
-  }
 }
 
 #navigation-open.animated:before {

@@ -1,8 +1,8 @@
 @import 'bourbon'; // For home page cd section (parallax)
 @import "bootstrap-grid";
-@import "hamburgers";
+@import "05-vendors/css-hamburgers/_sass/hamburgers/hamburgers";
 
-/* 01. Base */
+/* 01. Base */ 
 @import "01-base/settings";
 @import "01-base/base";
 @import "01-base/fonts";

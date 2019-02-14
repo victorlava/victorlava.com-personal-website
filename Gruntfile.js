@@ -16,8 +16,7 @@ module.exports = function(grunt) {
     sass: {
      options: {
            includePaths: ['bower_components/bootstrap/scss',
-                          'bower_components/bourbon/core',
-                          'bower_components/css-hamburgers/_sass/hamburgers']
+                          'bower_components/bourbon/core']
       },
       dist: {
         options: {
