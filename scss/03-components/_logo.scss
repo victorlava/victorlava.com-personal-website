@@ -1,5 +1,14 @@
 .logo {
-    max-height: 37px;
+    height: 67px;
+    width: 67px;
+    background: $color-secondary;
+    
+
+    svg {
+        height: 62px;
+        width: 42px;
+    }
+
 
     &.logo-xs {
         svg {
@@ -18,6 +27,10 @@
         svg path {
             fill: black !important;
         }
+    }
+
+    &.logo-no-bg {
+        background-color: transparent;
     }
 
     &:hover {

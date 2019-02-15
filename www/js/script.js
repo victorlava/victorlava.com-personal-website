@@ -1,13 +1,13 @@
 var app = {
     navigationOpened: false,
-    openNav: function(element) {
+    openMobileNav: function(element) {
             console.log(element);
 
             var li = $(element),
                 hamburger = li.find('.hamburger'),
                 isActive = li.hasClass('is-active'),
                 menu = $('.navigation-mobile'),
-                logo = menu.find('.logo-mobile');
+                logo = menu.find('li.slide-down');
 
             if(!isActive) {
                 li.addClass('is-active');
@@ -31,35 +31,6 @@ var app = {
 
                 this.hideLinks();
             }
-
-    },
-    openNavigation: function() {
-
-        let nav = $('#navigation'),
-            open = nav.find('#navigation-open'),
-            menu = nav.find('ul'),
-            logo = nav.find('.logo-mobile');
-
-            nav.find('a').css('color', 'transparent');
-
-            open.toggleClass('animated is-active');
-            menu.toggle();
-            // this.navigationOpened = true;
-
-            // app.animateLinks
-
-            if(open.hasClass('is-active')) {
-                // alert('opened');
-                setTimeout(function() {
-                    logo.addClass('animated');
-                    this.animateLinks(nav);
-                }.bind(this), 600);
-            }
-            else {
-                logo.removeClass('animated');
-                this.hideLinks();
-            }
-        // menu.show();
 
     },
     animateHomePage: function() {

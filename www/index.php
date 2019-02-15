@@ -1,5 +1,5 @@
 <?php include('partials/head.php'); ?>
-
+<?php $whiteMenu = false; ?>
 <body id="home" data-hijacking="off" data-animation="parallax">
 <!-- start of #home-page -->
     <main>

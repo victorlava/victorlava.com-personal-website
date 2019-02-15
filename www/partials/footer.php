@@ -2,7 +2,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12 col-md-3">
-					<a href="/" title="Web Developer &amp; UI Designer" class="logo logo-white logo-xs">
+					<a href="/" title="Web Developer &amp; UI Designer" class="logo logo-white logo-xs logo-no-bg">
 						<?php include('components/logo.php'); ?>
 					</a>
 					<!-- TODO: change quote -->

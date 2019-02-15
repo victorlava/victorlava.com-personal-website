@@ -1,8 +1,8 @@
 <?php include('partials/head.php'); ?>
+<?php $whiteMenu = true; ?>
+<body id="blog" class="padding-top" data-hijacking="off" data-animation="parallax" style="position:relative;">
 
-<body id="blog" data-hijacking="off" data-animation="parallax" style="position:relative;">
-
-    <?php include('partials/navigation-blog.php'); ?>
+    <?php include('partials/navigation.php'); ?>
 
     <!-- start of #home-page -->
     <main class="container-fluid">

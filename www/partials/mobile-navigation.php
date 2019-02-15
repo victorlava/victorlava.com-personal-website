@@ -1,7 +1,7 @@
 <nav class="navigation navigation-mobile">
     <div class="container-fluid d-flex justify-content-center">
         <ul class="menu">
-            <li class="logo-mobile slide-down">
+            <li class="slide-down">
                 <a href="index.php" class="logo logo-white">
                     <?php include('components/logo.php'); ?>
                 </a>

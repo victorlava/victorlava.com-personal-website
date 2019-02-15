@@ -5,9 +5,17 @@ html {
 }
 
 body {
-    background: grey;
+    background: white;
     margin: 0;
     overflow-x: hidden;
+    &.padding-top {
+        padding-top: 68px;
+        main {
+            @include media-breakpoint-up(md) {
+                border-top: 1px solid #eee;
+            }
+        }
+    }
 }
 
 main {
