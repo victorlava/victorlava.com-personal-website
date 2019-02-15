@@ -17,7 +17,7 @@
             <li>
 
             </li>
-            <!-- <li>
+            <li>
                 <a href="portfolio.php" class="slide-in-parent">
                     Portfolio
                 </a>
@@ -26,7 +26,7 @@
                 <a href="blog.php" class="slide-in-parent">
                     Blog
                 </a>
-            </li> -->
+            </li>
         </ul>
         <div id="navigation-open" class="hamburger hamburger--spring" type="button" onclick="app.openNavigation();">
             <div class="hamburger-box">

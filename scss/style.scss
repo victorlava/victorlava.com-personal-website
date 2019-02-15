@@ -2,7 +2,7 @@
 @import "bootstrap-grid";
 @import "05-vendors/css-hamburgers/_sass/hamburgers/hamburgers";
 
-/* 01. Base */ 
+/* 01. Base */
 @import "01-base/settings";
 @import "01-base/base";
 @import "01-base/fonts";
@@ -17,6 +17,7 @@
 @import "02-partials/sidebar";
 @import "02-partials/article-feed";
 @import "02-partials/sticky";
+@import "02-partials/mobile-navigation";
 
 /* 03. Components */
 @import "03-components/tiny"; // Very small components

@@ -1,6 +1,7 @@
 svg path {
 	fill: black !important;
 }
+
 .navigation {
 	font-family: $primary-font;
 	text-transform: uppercase;
@@ -10,6 +11,33 @@ svg path {
 	position: absolute;
 	width: 100%;
 	z-index: 4;
+
+	.menu-background {
+
+		&:after {
+			content: " ";
+			display: block;
+			width: 100%;
+			border-radius: 10rem;
+			top: 0;
+			left: 0;
+			height: 100%;
+			background-color: $color-secondary;
+			position: absolute;
+			z-index: 0;
+			transition: all 0.77s ease;
+		}
+
+		&.is-active:after {
+			transform: scale(100);
+		}
+
+		position: relative;
+		margin-left: 1rem;
+		min-width: 54px;
+		border: 5px solid #eeeeef;
+		border-radius: 10rem;
+	}
 
 	li.active {
 		a {
@@ -34,14 +62,17 @@ svg path {
 		li .logo {
 			height: 67px;
 			width: 67px;
-			background: $color-primary;
+			background: $color-secondary;
 			display: block;
 			text-align: center;
 			vertical-align: middle;
 			max-width: none;
 			max-height: none;
 
-			svg { height: 62px; }
+			svg {
+				height: 62px;
+				width: 42px;
+			}
 		}
 
 		@include media-breakpoint-up(sm) {
@@ -126,10 +157,7 @@ svg path {
 
 	.logo {
 		display: block;
-		svg {
-			width: 47px !important;
-			height: 39px !important;
-		}
+
 	}
 
 	a {
@@ -140,11 +168,12 @@ svg path {
 		&.menu-left {
 			@include media-breakpoint-up(lg) {
 				justify-content: flex-start;
+				align-items: center;
 			}
 
 			li {
-				padding-left: .35rem;
-				padding-right: .35rem;
+				padding-left: .65rem;
+				padding-right: .65rem;
 				margin: 0 5px;
 
 				&:last-child {
@@ -163,20 +192,20 @@ svg path {
 		}
 
 		&.menu-right {
+			align-items: center;
+
 			li {
-				min-width: 44px;
 				padding: 0;
 				text-align: center;
-				background-color: #eee;
 				margin: 0 6px;
 
-				&:first-child {
-					background-color: transparent;
-					margin-right: 10px;
-					a {
-						color: $grey-light;
-					}
-				}
+				// &:first-child {
+				// 	background-color: transparent;
+				// 	margin-right: 35px;
+				// 	a {
+				// 		color: $grey-light;
+				// 	}
+				// }
 
 				a {
 					display: block;

@@ -1,6 +1,8 @@
 // Hamburger
 // ==================================================
 .hamburger {
+  z-index: 1;
+  position: relative;
   padding: $hamburger-padding-y $hamburger-padding-x;
   display: inline-block;
   cursor: pointer;
@@ -46,8 +48,10 @@
 }
 
 .hamburger-box {
+
   width: $hamburger-layer-width;
-  height: $hamburger-layer-height * 3 + $hamburger-layer-spacing * 2;
+  // height: $hamburger-layer-height * 3 + $hamburger-layer-spacing * 2;
+  height: 12px;
   display: inline-block;
   position: relative;
 }

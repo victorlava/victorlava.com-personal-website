@@ -1,5 +1,34 @@
 var app = {
     navigationOpened: false,
+    openNav: function(element) {
+            console.log(element);
+
+            var li = $(element),
+                hamburger = li.find('.hamburger'),
+                isActive = li.hasClass('is-active'),
+                menu = $('.navigation-mobile'),
+                logo = menu.find('.logo-mobile');
+
+            if(!isActive) {
+                li.addClass('is-active');
+                hamburger.addClass('is-active');
+                menu.addClass('is-active');
+                logo.addClass('animated');
+
+                setTimeout(function() {
+                    // logo.addClass('animated');
+                    this.animateLinks(menu);
+                }.bind(this), 600);
+            } else {
+                li.removeClass('is-active');
+                hamburger.removeClass('is-active');
+                menu.removeClass('is-active');
+                logo.removeClass('animated');
+
+                this.hideLinks();
+            }
+
+    },
     openNavigation: function() {
 
         let nav = $('#navigation'),

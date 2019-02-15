@@ -14,3 +14,4 @@
 		app.hideLinks();
 	</script>
 </head>
+<?php include('partials/mobile-navigation.php'); ?>

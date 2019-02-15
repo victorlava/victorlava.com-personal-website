@@ -1,5 +1,5 @@
 <nav id="navigation" class="navigation navigation-blog">
-    <div class="container-fluid d-flex justify-content-between">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
         <!-- <div id="navigation-open" class="hamburger hamburger--spring" type="button" onclick="app.openNavigation();">
           <div class="hamburger-box">
             <div class="hamburger-inner"></div>
@@ -8,16 +8,16 @@
 
         <ul class="menu menu-left">
             <li class="logo-mobile slide-down d-sm-block d-md-none">
-                <a href="index.php" class="logo logo-black logo-xs">
+                <a href="index.php" class="logo logo-white logo-xs">
                     <?php include('components/logo.php'); ?>
                 </a>
             </li>
             <li class="logo-wrapper slide-down d-none d-md-block">
-                <a href="index.php" class="logo logo-black logo-xs">
+                <a href="index.php" class="logo logo-white logo-xs">
                     <?php include('components/logo.php'); ?>
                 </a>
             </li>
-            <li class="active">
+            <!-- <li class="active">
                 <a href="blog.php" class="slide-in-parent">
                     Blog
                 </a>
@@ -26,33 +26,18 @@
                 <a href="single.php" class="slide-in-parent">
                     Newsletter
                 </a>
-            </li>
+            </li> -->
         </ul>
 
         <ul class="menu menu-right">
             <li>
-                <a href="index.php">
-                    <i class="fas fa-arrow-left"></i> Back to Intro
-                </a>
+                <a href="/paslaugos/web-dizainas/" class="btn btn-xs btn-primary">Contact</a>
             </li>
-            <li>
-                <a href="#">
-                    <i class="far fa-newspaper"></i>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <i class="fas fa-rss"></i>
-                </a>
-            </li>
-            <li>
-                <a href="http://github.com/">
-                    <i class="fab fa-github"></i>
-                </a>
-            </li>
-            <li>
-                <div class="hamburger-box">
-                  <div class="hamburger-inner"></div>
+            <li class="menu-background" onclick="app.openNav(this);">
+                <div class="hamburger hamburger--spring" type="button">
+                    <div class="hamburger-box">
+                      <div class="hamburger-inner"></div>
+                    </div>
                 </div>
             </li>
         </ul>
