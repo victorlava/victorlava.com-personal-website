@@ -15,12 +15,16 @@
         background-color: $color-primary;
     }
 
+    .logo-mobile.slide-down:not(.animated) {
+        transform: translateY(-85px);
+    }
+
     .menu {
         text-align: center;
         list-style: none;
         flex-direction: column;
         justify-content: space-between;
-        padding: 0.47rem 0 3rem;
+        padding: 0.47rem 0 5rem;
 
         ul {
 

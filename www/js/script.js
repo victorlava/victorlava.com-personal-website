@@ -22,8 +22,12 @@ var app = {
             } else {
                 li.removeClass('is-active');
                 hamburger.removeClass('is-active');
-                menu.removeClass('is-active');
+                // menu.removeClass('is-active');
                 logo.removeClass('animated');
+
+                setTimeout(function() {
+                    menu.removeClass('is-active');
+                }.bind(this), 600);
 
                 this.hideLinks();
             }

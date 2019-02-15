@@ -3208,12 +3208,16 @@ svg path {
   background-color: #da4033;
 }
 
+.navigation-mobile .logo-mobile.slide-down:not(.animated) {
+  transform: translateY(-85px);
+}
+
 .navigation-mobile .menu {
   text-align: center;
   list-style: none;
   flex-direction: column;
   justify-content: space-between;
-  padding: 0.47rem 0 3rem;
+  padding: 0.47rem 0 5rem;
 }
 
 .navigation-mobile.is-active {
