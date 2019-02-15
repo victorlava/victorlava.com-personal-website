@@ -215,36 +215,3 @@ svg path {
 	}
 
 }
-
-#navigation-open {
-	position: fixed;
-	top: 0;
-	right: 0;
-	z-index: 1;
-	background-color: white;
-	height: 45px;
-
-	@include media-breakpoint-up(md) {
-		// display: none;
-	}
-
-	&.animated:before {
-		display: block;
-		transform: scale(30);
-		width: 100%;
-		height: 100%;
-	}
-
-	&:before {
-		width: 0;
-		height: 0;
-		transform: scale(1);
-		background-color: white;
-		content: " ";
-		// display: none;
-		position: absolute;
-		transition: all .6s ease;
-		position: absolute;
-
-	}
-}
