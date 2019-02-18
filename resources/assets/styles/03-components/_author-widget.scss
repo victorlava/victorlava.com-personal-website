@@ -1,0 +1,24 @@
+.author-widget {
+    img {
+        border-radius: 50%;
+        max-width: 177px;
+        // border: 10px solid white;
+    }
+
+    ul li {
+        display: inline-block;
+        // padding: 0 8px;
+    }
+
+    ul li a {
+        padding: 8px;
+        color: $color-secondary;
+        font-size: $font-size-blog-4;
+        &:hover {
+            color: $color-primary;
+        }
+    }
+    // a {
+    //     color: $color-secondary;
+    // }
+}

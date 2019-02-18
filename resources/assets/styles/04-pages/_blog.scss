@@ -1,0 +1,36 @@
+#blog {
+    color: $color-secondary;
+    font-size: $font-size-blog-base;
+
+    main {
+        p {
+            font-size: $font-size-blog-5;
+            line-height: 1.8;
+        }
+    }
+
+    .article-feed {
+        padding-top: 3.5em;
+    }
+    
+    .featured a:hover {
+        color: $color-primary;
+    }
+
+    .article-information-category:hover,
+    .date a:hover {
+        color: $color-primary;
+    }
+
+    .sidebar p a,
+    .article-title a,
+    .article-content a{
+        color: $grey-light;
+        letter-spacing: 1px;
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+
+}

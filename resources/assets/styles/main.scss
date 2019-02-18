@@ -1,25 +1,43 @@
-@import "common/variables";
+@import '~bourbon'; // For home page cd section (parallax)
+@import "~bootstrap/scss/bootstrap-grid";
+@import "05-vendors/css-hamburgers/_sass/hamburgers/hamburgers";
+@import "05-vendors/jquery-sexymenu/sexymenu";
 
-/** Import everything from autoload */
-@import "./autoload/**/*";
+/* 01. Base */
+@import "01-base/settings";
+@import "01-base/base";
+@import "01-base/fonts";
+@import "01-base/mixins";
+@import "01-base/helpers";
+@import "01-base/animations";
+@import "01-base/IE9";
 
-/**
- * Import npm dependencies
- *
- * Prefix your imports with `~` to grab from node_modules/
- * @see https://github.com/webpack-contrib/sass-loader#imports
- */
-// @import "~some-node-module";
+/* 02. Partials/Layout */
+@import "02-partials/footer";
+@import "02-partials/navigation";
+@import "02-partials/sidebar";
+@import "02-partials/article-feed";
+@import "02-partials/sticky";
+@import "02-partials/navigation-mobile";
 
-/** Import theme styles */
-@import "common/global";
-@import "components/buttons";
-@import "components/comments";
-@import "components/forms";
-@import "components/wp-classes";
-@import "layouts/header";
-@import "layouts/sidebar";
-@import "layouts/footer";
-@import "layouts/pages";
-@import "layouts/posts";
-@import "layouts/tinymce";
+/* 03. Components */
+@import "03-components/tiny"; // Very small components
+@import "03-components/heading";
+@import "03-components/section";
+@import "03-components/section-parallax";
+@import "03-components/buttons";
+@import "03-components/cta";
+@import "03-components/text";
+@import "03-components/cursor";
+@import "03-components/victor";
+@import "03-components/icon-mouse";
+@import "03-components/image";
+@import "03-components/featured";
+@import "03-components/logo";
+@import "03-components/author-widget";
+
+/* 04. Pages */
+@import "04-pages/home";
+@import "04-pages/contact";
+@import "04-pages/blog";
+@import "04-pages/404";

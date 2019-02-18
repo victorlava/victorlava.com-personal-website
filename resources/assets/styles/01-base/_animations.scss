@@ -1,0 +1,108 @@
+body {
+    .logo-wrapper {
+        transition: all .3s ease;
+        transform: translateY(-175px);
+    }
+
+    .navigation-mobile {
+        transition: all .3s ease;
+        .menu {
+            margin-top: -2rem;
+        }
+    }
+
+    &[data-menu="opened"] {
+        overflow: hidden;
+
+        .navigation-mobile-background {
+            &:after { transform: scale(100); }
+        }
+
+        .navigation-mobile {
+            display: flex;
+            z-index: 5;
+
+            .menu {
+                opacity: 1;
+            }
+
+            .logo-wrapper {
+                transform: translateY(-40px);
+                width: 200px;
+                margin: 0 auto;
+                @include media-breakpoint-up(md) {
+                    transform: translateY(-60px);
+                }
+            }
+        }
+    }
+
+    &[data-menu="closed"] {
+
+        .navigation-mobile {
+            .menu {
+                opacity: 0;
+            }
+            .logo-wrapper {
+                transform: translateY(-175px);
+            }
+        }
+    }
+}
+
+.slide-in-parent {
+    position: relative;
+}
+.slide-in {
+    // position: relative;
+    content: " ";
+    top: 0;
+    // left: 0;
+    height: 100%;
+    display: block;
+    background-color: $color-primary;
+    position: absolute;
+    color: red !important;
+    // transition: all 0.3s ease;
+
+}
+
+.slide-up, .slide-down {
+    transition: transform .3s ease;
+}
+
+// For menu navigation
+.slide-down {
+    transform: translateY(-70px);
+    &.animated {
+        transform: translateY(0px);
+    }
+}
+
+// For mouse icon
+.slide-up {
+    transform: translateY(90px);
+    &.animated {
+        transform: translateY(0px);
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    transition: opacity .3s ease;
+    &.animated {
+        opacity: 1;
+    }
+}
+
+
+@keyframes blink{
+    0%,
+    100% {
+        opacity:1
+    }
+
+    50% {
+        opacity:0
+    }
+}
