@@ -1,5 +1,8 @@
 module.exports = {
   'extends': 'stylelint-config-standard',
+  'ignoreFiles': [
+    'resources/*'
+  ],
   'rules': {
     'no-empty-source': null,
     'string-quotes': 'double',
