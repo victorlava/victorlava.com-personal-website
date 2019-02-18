@@ -2514,12 +2514,6 @@ html {
 }
 
 /* 01. Base */
-@media (max-width: 767.98px) {
-  html {
-    border: 12px solid white;
-  }
-}
-
 body {
   background: white;
   margin: 0;

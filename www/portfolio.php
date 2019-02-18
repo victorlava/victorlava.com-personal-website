@@ -82,9 +82,9 @@
 
 <?php include('components/cta.php'); ?>
 
-<script src="/js/velocity.min.js"></script>
-<script type="text/javascript" src="js/typed.min.js"></script>
-<script type="text/javascript" src="js/depth.js"></script>
+<script src="/www/js/velocity.min.js"></script>
+<script type="text/javascript" src="/www/js/typed.min.js"></script>
+<script type="text/javascript" src="/www/js/depth.js"></script>
 <script type="text/javascript">
 
     var depth = new Depth({
@@ -93,7 +93,12 @@
         intesity: 1
     })
 
+    setTimeout(function() {
+        $('#start .fade-in').addClass('animated');
+        // $('#start .fade-in').addClass('animated');
+    }, 1000);
+
 </script>
-<script src="/js/main.js"></script> <!-- Resource jQuery -->
+<script src="/www/js/main.js"></script> <!-- Resource jQuery -->
 <!-- end of #about-page -->
 <?php include('partials/footer.php') ?>
