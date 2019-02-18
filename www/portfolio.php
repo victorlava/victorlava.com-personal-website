@@ -1,7 +1,7 @@
-<?php include('partials/head.php'); ?>
+<?php include('partials/settings.php'); ?>
+<?php $settings['id'] = 'portfolio';?>
 
-<body id="portfolio">
-<!-- start of #about-page -->
+<?php include('partials/head.php'); ?>
 <main>
         <?php include('partials/navigation.php'); ?>
 

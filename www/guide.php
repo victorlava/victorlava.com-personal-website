@@ -1,7 +1,7 @@
-<?php include('partials/head.php'); ?>
+<?php include('partials/settings.php'); ?>
+<?php $settings['id'] = 'blog'; $settings['whiteMenu'] = true; ?>
 
-<body id="home">
-<!-- start of #home-page -->
+<?php include('partials/head.php'); ?>
     <main class="container">
         <?php include('partials/navigation.php'); ?>
 

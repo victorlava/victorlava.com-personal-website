@@ -15,7 +15,7 @@ var app = {
             btn = $('.navigation-mobile-background'),
             hamburger = btn.find('.hamburger');
 
-            // mobileNavigation.show();
+            mobileNavigation.css('z-index', 5);
 
             // this.debounce(300, this.animateLinks(mobileNavigation))
             setTimeout(function() {
@@ -33,9 +33,9 @@ var app = {
             btn = $('.navigation-mobile-background'),
             hamburger = btn.find('.hamburger');
 
-            // setTimeout(function() {
-            //     mobileNavigation.hide();
-            // }.bind(this), 300);
+            setTimeout(function() {
+                mobileNavigation.css('z-index', 0);
+            }.bind(this), 300);
 
             btn.attr('onclick', 'app.open(this)')
             hamburger.removeClass('is-active');

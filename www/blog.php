@@ -1,10 +1,9 @@
-<?php include('partials/head.php'); ?>
-<?php $whiteMenu = true; ?>
-<body id="blog" class="padding-top" data-hijacking="off" data-animation="parallax" style="position:relative;">
+<?php include('partials/settings.php'); ?>
+<?php $settings['id'] = 'blog'; $settings['whiteMenu'] = true; ?>
 
+<?php include('partials/head.php'); ?>
     <?php include('partials/navigation.php'); ?>
 
-    <!-- start of #home-page -->
     <main id="content" class="container-fluid">
 
         <div class="row">

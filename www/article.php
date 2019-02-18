@@ -1,8 +1,9 @@
+<?php include('partials/settings.php'); ?>
+<?php $settings['id'] = 'blog'; $settings['whiteMenu'] = true; ?>
+
 <?php include('partials/head.php'); ?>
 
-<body id="blog" data-hijacking="off" data-animation="parallax">
-    <?php include('partials/navigation-blog.php'); ?>
-    <!-- start of #home-page -->
+    <?php include('partials/navigation.php'); ?>
     <main class="container-fluid">
 
         <div class="row">
@@ -15,7 +16,7 @@
                     <i class="fas fa-arrow-left"></i>
                     Return back
                 </a>
-                
+
                 <article class="article">
 
                     <?php include('partials/article-header.php'); ?>

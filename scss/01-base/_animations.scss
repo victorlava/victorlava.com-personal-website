@@ -6,6 +6,9 @@ body {
 
     .navigation-mobile {
         transition: all .3s ease;
+        .menu {
+            margin-top: -2rem;
+        }
     }
 
     &[data-menu="opened"] {
@@ -24,7 +27,12 @@ body {
             }
 
             .logo-wrapper {
-                transform: translateY(0);
+                transform: translateY(-40px);
+                width: 200px;
+                margin: 0 auto;
+                @include media-breakpoint-up(md) {
+                    transform: translateY(-60px);
+                }
             }
         }
     }

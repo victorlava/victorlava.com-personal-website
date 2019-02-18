@@ -15,3 +15,7 @@
 	</script>
 </head>
 <?php include('partials/mobile-navigation.php'); ?>
+<body id="<?=$settings['id']?>" data-menu="closed"
+				                data-hijacking="off"
+				                data-animation="parallax">
+<!-- start of #<?=$settings['id']?>-page -->

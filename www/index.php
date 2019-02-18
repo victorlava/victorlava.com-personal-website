@@ -1,9 +1,7 @@
+<?php include('partials/settings.php'); ?>
+<?php $settings['id'] = 'home'; ?>
+
 <?php include('partials/head.php'); ?>
-<?php $whiteMenu = false; ?>
-<body id="home" data-menu="closed"
-                data-hijacking="off"
-                data-animation="parallax">
-<!-- start of #home-page -->
     <main>
             <?php include('partials/navigation.php'); ?>
 

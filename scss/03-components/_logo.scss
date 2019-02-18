@@ -1,12 +1,20 @@
 .logo {
-    height: 67px;
-    width: 67px;
+    height: 57px;
+    width: 57px;
     background: $color-secondary;
-    
+
+    @include media-breakpoint-up(md) {
+        height: 67px;
+        width: 67px;
+    }
 
     svg {
-        height: 62px;
-        width: 42px;
+        height: 55px;
+        width: 33px;
+        @include media-breakpoint-up(md) {
+            height: 62px;
+            width: 42px;
+        }
     }
 
 

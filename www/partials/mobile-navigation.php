@@ -1,5 +1,5 @@
-<nav class="navigation navigation-mobile">
-    <div class="container-fluid d-flex flex-column">
+<nav class="navigation navigation-mobile" style="z-index:0;">
+    <div class="container-fluid">
         <div class="logo-wrapper">
             <a href="index.php" class="logo logo-white">
                 <?php include('components/logo.php'); ?>

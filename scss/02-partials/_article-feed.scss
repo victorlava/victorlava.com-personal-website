@@ -8,7 +8,7 @@
         margin-top: 10px;
         display: inline-block;
         @include media-breakpoint-up(md) {
-            padding-top: 32px;
+            // padding-top: 32px;
             margin-left: $container-padding-x;
         }
     }
@@ -55,7 +55,7 @@
 
 .article {
     padding-bottom: 1rem;
-    
+
     .article-header {}
 
     .article-content {

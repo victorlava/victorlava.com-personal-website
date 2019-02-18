@@ -1,8 +1,8 @@
-<?php $whiteMenu = ($whiteMenu) ? ' navigation-blog' : ''; ?>
-<nav id="navigation" class="navigation<?=$whiteMenu?>">
+<?php $settings['whiteMenu'] = ($settings['whiteMenu']) ? ' navigation-blog' : ''; ?>
+<nav id="navigation" class="navigation<?=$settings['whiteMenu']?>">
     <div class="container d-flex justify-content-between align-items-center">
         <ul class="menu menu-left">
-            <li class="logo-wrapper slide-down d-none d-md-block">
+            <li class="logo-wrapper slide-down">
                 <a href="index.php" class="logo logo-white">
                     <?php include('components/logo.php'); ?>
                 </a>

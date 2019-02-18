@@ -37,10 +37,8 @@ svg path {
 	}
 
 	.menu {
-		@include media-breakpoint-up(md) {
-			display: flex;
-			list-style: none;
-		}
+		display: flex;
+		list-style: none;
 
 		&.menu-right {
 			align-items: center;
