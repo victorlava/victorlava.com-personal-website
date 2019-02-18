@@ -1,117 +1,117 @@
 // TODO animations broken
 .btn {
-    font-size: .7rem;
-    letter-spacing: 2.5px;
-    text-transform: uppercase;
-    font-family: $primary-font;
-    padding: .6rem 1.03rem;
-    line-height: 1.2;
-    border-radius: 47px;
-    font-weight: 800;
+  font-size: .7rem;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  font-family: $primary-font;
+  padding: .6rem 1.03rem;
+  line-height: 1.2;
+  border-radius: 47px;
+  font-weight: 800;
 
-    &.btn-square {
-        border-radius: 0;
+  &.btn-square {
+    border-radius: 0;
+  }
+
+
+  &.btn-primary,
+  &.btn-secondary {
+    &:hover {
+      background-color: white;
+      transition: background-color .1s .3s,color .1s .3s;
+    }
+  }
+
+  &.btn-primary {
+    background-color: $color-primary;
+    color: white;
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  &.btn-secondary {
+    background-color: $black;
+    color: white;
+
+    &:hover {
+      color: $black;
+    }
+  }
+
+  &.btn-line {
+    min-width: 77px;
+    height: 1px;
+    background-color: $white;
+    padding: 0;
+    margin: 0 3rem;
+    @include media-breakpoint-up(lg) {
+      min-width: 277px;
+    }
+  }
+
+  &.btn-animate-boom {
+    position: relative;
+
+    &:hover {
+      &:before {
+        animation: boom .3s .3s forwards;
+      }
+    }
+  }
+
+  &.btn-animate-scale {
+    position: relative;
+
+    // &:before {
+    //     content: '';
+    //     position: absolute;
+    //     top: -20px;
+    //     left: -20px;
+    //     bottom: -20px;
+    //     right: -20px;
+    //     // background: inherit;
+    //     border-radius: 47px;
+    //     z-index: -1;
+    //     opacity: .6;
+    //     transform: scale3d(.8,.5,1);
+    // }
+
+    &:hover {
+      &:before {
+        animation: scale .3s .3s forwards;
+      }
     }
 
+  }
 
-    &.btn-primary,
-    &.btn-secondary {
-        &:hover {
-            background-color: white;
-            transition: background-color .1s .3s,color .1s .3s;
-        }
-    }
-
-    &.btn-primary {
-        background-color: $color-primary;
-        color: white;
-
-        &:hover {
-            color: $color-primary;
-        }
-    }
-
-    &.btn-secondary {
-        background-color: $black;
-        color: white;
-
-        &:hover {
-            color: $black;
-        }
-    }
-
-    &.btn-line {
-        min-width: 77px;
-        height: 1px;
-        background-color: $white;
-        padding: 0;
-        margin: 0 3rem;
-        @include media-breakpoint-up(lg) {
-            min-width: 277px;
-        }
-    }
-
-    &.btn-animate-boom {
-        position: relative;
-
-        &:hover {
-            &:before {
-                animation: boom .3s .3s forwards;
-            }
-        }
-    }
-
-    &.btn-animate-scale {
-        position: relative;
-
-        // &:before {
-        //     content: '';
-        //     position: absolute;
-        //     top: -20px;
-        //     left: -20px;
-        //     bottom: -20px;
-        //     right: -20px;
-        //     // background: inherit;
-        //     border-radius: 47px;
-        //     z-index: -1;
-        //     opacity: .6;
-        //     transform: scale3d(.8,.5,1);
-        // }
-
-        &:hover {
-            &:before {
-                animation: scale .3s .3s forwards;
-            }
-        }
-
-    }
-
-    &.btn-xs {
-        font-size: $font-size-blog-5;
-    }
+  &.btn-xs {
+    font-size: $font-size-blog-5;
+  }
 
 
-    &.btn-text {
-        background: transparent;
-        color: $grey-light;
-    }
+  &.btn-text {
+    background: transparent;
+    color: $grey-light;
+  }
 }
 
 @keyframes scale {
-    60% {
-        transform: scale3d(.8,.8,1);
-    }
-    85% {
-        transform: scale3d(1.1,1.1,1);
-    }
-    100%{
-        transform: scale3d(1,1,1);
-    }
+  60% {
+    transform: scale3d(.8,.8,1);
+  }
+  85% {
+    transform: scale3d(1.1,1.1,1);
+  }
+  100%{
+    transform: scale3d(1,1,1);
+  }
 }
 
 @keyframes boom {
-    to {
-        opacity: 0;
-        transform: scale3d(1,1,1);
-    }
+  to {
+    opacity: 0;
+    transform: scale3d(1,1,1);
+  }
 }

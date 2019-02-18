@@ -1,50 +1,50 @@
 .logo {
-    height: 57px;
-    width: 57px;
-    background: $color-secondary;
+  height: 57px;
+  width: 57px;
+  background: $color-secondary;
 
+  @include media-breakpoint-up(md) {
+    height: 67px;
+    width: 67px;
+  }
+
+  svg {
+    height: 55px;
+    width: 33px;
     @include media-breakpoint-up(md) {
-        height: 67px;
-        width: 67px;
+      height: 62px;
+      width: 42px;
     }
+  }
 
+
+  &.logo-xs {
     svg {
-        height: 55px;
-        width: 33px;
-        @include media-breakpoint-up(md) {
-            height: 62px;
-            width: 42px;
-        }
+      width: 57px;
+      height: 37px;
     }
+  }
 
-
-    &.logo-xs {
-        svg {
-            width: 57px;
-            height: 37px;
-        }
+  &.logo-white {
+    svg path {
+      fill: white !important;
     }
+  }
 
-    &.logo-white {
-        svg path {
-            fill: white !important;
-        }
+  &.logo-black {
+    svg path {
+      fill: black !important;
     }
+  }
 
-    &.logo-black {
-        svg path {
-            fill: black !important;
-        }
-    }
+  &.logo-no-bg {
+    background-color: transparent;
+  }
 
-    &.logo-no-bg {
-        background-color: transparent;
+  &:hover {
+    svg path {
+      transition: all .3s ease;
+      fill: $color-primary !important;
     }
-
-    &:hover {
-        svg path {
-            transition: all .3s ease;
-            fill: $color-primary !important;
-        }
-    }
+  }
 }

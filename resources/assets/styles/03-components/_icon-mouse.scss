@@ -1,31 +1,31 @@
 .icon {
 
-    &.icon-mouse {
-        height: 47px;
-        width: 27px;
-        border: 2px solid #FFF;
-        border-radius: 10em;
-        position: relative;
-        display: inline-block;
+  &.icon-mouse {
+    height: 47px;
+    width: 27px;
+    border: 2px solid #FFF;
+    border-radius: 10em;
+    position: relative;
+    display: inline-block;
 
-        &:before {
-            content: " ";
-            position: absolute;
-            width: 5px;
-            height: 8px;
-            background: #FFF;
-            border-radius: 10em;
-            left: 0;
-            right: 0;
-            margin: auto;
-            top: 10px;
-            transition: transform .2s ease;
-            transform: translateY(0);
-        }
-
-        &:hover:before {
-            transform: translateY(15px);
-        }
+    &:before {
+      content: " ";
+      position: absolute;
+      width: 5px;
+      height: 8px;
+      background: #FFF;
+      border-radius: 10em;
+      left: 0;
+      right: 0;
+      margin: auto;
+      top: 10px;
+      transition: transform .2s ease;
+      transform: translateY(0);
     }
+
+    &:hover:before {
+      transform: translateY(15px);
+    }
+  }
 
 }

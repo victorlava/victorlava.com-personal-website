@@ -8,33 +8,33 @@ $L:     1050px;
 
 @mixin MQ($canvas) {
   @if $canvas == S {
-   @media only screen and (min-width: $S) { @content; }
+    @media only screen and (min-width: $S) { @content; }
   }
   @else if $canvas == M {
-   @media only screen and (min-width: $M) { @content; }
+    @media only screen and (min-width: $M) { @content; }
   }
   @else if $canvas == L {
-   @media only screen and (min-width: $L) { @content; }
+    @media only screen and (min-width: $L) { @content; }
   }
 }
 
 body {
 
-	@include font-smoothing;
+  @include font-smoothing;
 
-	&::before {
-		/* never visible - this is used in jQuery to check the current MQ */
-		content: 'mobile';
-		display: none;
-	}
+  &::before {
+    /* never visible - this is used in jQuery to check the current MQ */
+    content: 'mobile';
+    display: none;
+  }
 
-	@include MQ(L) {
+  @include MQ(L) {
 
-		&::before {
-			/* never visible - this is used in jQuery to check the current MQ */
-			content: 'desktop';
-		}
-	}
+    &::before {
+      /* never visible - this is used in jQuery to check the current MQ */
+      content: 'desktop';
+    }
+  }
 }
 
 /* --------------------------------
@@ -45,142 +45,142 @@ Main Components
 
 body[data-hijacking="on"] {
 
-	@include MQ(L) {
-		overflow: hidden;
-	}
+  @include MQ(L) {
+    overflow: hidden;
+  }
 }
 
 .section-parallax {
-	position: relative;
-    
-    @include media-breakpoint-up(lg) {
-        height: 150vh;
+  position: relative;
+
+  @include media-breakpoint-up(lg) {
+    height: 150vh;
+  }
+
+  @include media-breakpoint-up(xl) {
+    height: 200vh;
+  }
+
+  &:first-of-type > div {
+
+    &::before {
+      /* alert -> all scrolling effects are not visible on small devices */
+      content: 'Effects not visible on mobile!';
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      top: 20px;
+      z-index: 2;
+      font-weight: bold;
+      font-size: 1.3rem;
+      text-transform: uppercase;
+    }
+  }
+
+  [data-animation="parallax"] & > div,
+  [data-animation="fixed"] & > div,
+  [data-animation="opacity"] & > div {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  @include MQ(L) {
+
+    [data-hijacking="on"] & {
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+
+      > div {
+        visibility: visible;
+      }
     }
 
-    @include media-breakpoint-up(xl) {
-        height: 200vh;
+    [data-hijacking="off"] & > div {
+      opacity: 0;
     }
 
-	&:first-of-type > div {
+    [data-animation="rotate"] & {
+      /* enable a 3D-space for children elements */
+      perspective: 1800px;
+    }
 
-		&::before {
-			/* alert -> all scrolling effects are not visible on small devices */
-			content: 'Effects not visible on mobile!';
-			position: absolute;
-			width: 100%;
-			text-align: center;
-			top: 20px;
-			z-index: 2;
-			font-weight: bold;
-			font-size: 1.3rem;
-			text-transform: uppercase;
-		}
-	}
+    [data-hijacking="on"][data-animation="rotate"] &:not(:first-of-type) {
+      perspective-origin: center 0;
+    }
 
-	[data-animation="parallax"] & > div,
-	[data-animation="fixed"] & > div,
-	[data-animation="opacity"] & > div {
-		background-position: center center;
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-
-	@include MQ(L) {
-
-		[data-hijacking="on"] & {
-			opacity: 0;
-			visibility: hidden;
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-
-			> div {
-				visibility: visible;
-			}
-		}
-
-		[data-hijacking="off"] & > div {
-			opacity: 0;
-		}
-
-		[data-animation="rotate"] & {
-			/* enable a 3D-space for children elements */
-			perspective: 1800px;
-		}
-
-		[data-hijacking="on"][data-animation="rotate"] &:not(:first-of-type) {
-			perspective-origin: center 0;
-		}
-
-		[data-animation="opacity"] &.visible > div {
-			z-index: 1;
-		}
-	}
+    [data-animation="opacity"] &.visible > div {
+      z-index: 1;
+    }
+  }
 }
 
 @include MQ(L) {
-	.section-parallax:first-of-type > div::before {
-		display: none;
-	}
+  .section-parallax:first-of-type > div::before {
+    display: none;
+  }
 }
 
 .section-parallax > div {
 
-	@include MQ(L) {
-		position: fixed;
-		top: 0;
-		left: 0;
-		width: 100%;
-		right: 0;
+  @include MQ(L) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    right: 0;
 
-		/* Force Hardware Acceleration */
-		transform: translateZ(0);
-		backface-visibility: hidden;
+    /* Force Hardware Acceleration */
+    transform: translateZ(0);
+    backface-visibility: hidden;
 
-		[data-hijacking="on"] & {
-			position: absolute;
-		}
+    [data-hijacking="on"] & {
+      position: absolute;
+    }
 
-		[data-animation="rotate"] & {
-			transform-origin: center bottom;
-		}
-	}
+    [data-animation="rotate"] & {
+      transform-origin: center bottom;
+    }
+  }
 }
 
 .cd-vertical-nav {
-	/* lateral navigation */
-	position: fixed;
-	z-index: 1;
-	right: 3%;
-	@include center(y);
-	display: none;
+  /* lateral navigation */
+  position: fixed;
+  z-index: 1;
+  right: 3%;
+  @include center(y);
+  display: none;
 
-	a {
-		display: block;
-		height: 40px;
-		width: 40px;
+  a {
+    display: block;
+    height: 40px;
+    width: 40px;
 
-		/* image replace */
-		overflow: hidden;
-		text-indent: 100%;
-		white-space: nowrap;
+    /* image replace */
+    overflow: hidden;
+    text-indent: 100%;
+    white-space: nowrap;
 
-		background: url(../img/cd-icon-arrow.svg) no-repeat center center;
+    background: url(../img/cd-icon-arrow.svg) no-repeat center center;
 
-		&.cd-prev {
-			transform: rotate(180deg);
-			margin-bottom: 10px;
-		}
+    &.cd-prev {
+      transform: rotate(180deg);
+      margin-bottom: 10px;
+    }
 
-		&.inactive {
-			visibility: hidden;
-			opacity: 0;
-			transition: opacity 0.2s 0s, visibility 0s 0.2s;
-		}
-	}
+    &.inactive {
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 0.2s 0s, visibility 0s 0.2s;
+    }
+  }
 
-	@include MQ(L) {
-		display: block;
-	}
+  @include MQ(L) {
+    display: block;
+  }
 }

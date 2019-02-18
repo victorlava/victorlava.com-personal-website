@@ -1,36 +1,31 @@
 #blog {
-    color: $color-secondary;
-    font-size: $font-size-blog-base;
+  color: $color-secondary;
+  font-size: $font-size-blog-base;
 
-    main {
-        p {
-            font-size: $font-size-blog-5;
-            line-height: 1.8;
-        }
+  main {
+    p {
+      font-size: $font-size-blog-5;
+      line-height: 1.8;
     }
 
-    .article-feed {
-        padding-top: 3.5em;
+    a:hover {
+      color: $color-primary;
     }
-    
-    .featured a:hover {
-        color: $color-primary;
-    }
+  }
 
-    .article-information-category:hover,
-    .date a:hover {
-        color: $color-primary;
-    }
+  .article-title a,
+  .article-content a,
+  .sidebar p a {
+    color: $grey-light;
+    letter-spacing: 1px;
+  }
 
-    .sidebar p a,
-    .article-title a,
-    .article-content a{
-        color: $grey-light;
-        letter-spacing: 1px;
+  .article-feed {
+    padding-top: 3.5em;
+  }
 
-        &:hover {
-            color: $color-primary;
-        }
-    }
-
+  .date a:hover,
+  .article-information-category:hover {
+    color: $color-primary;
+  }
 }

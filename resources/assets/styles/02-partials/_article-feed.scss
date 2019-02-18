@@ -1,173 +1,173 @@
 .article-feed {
-    background-color: white;
-    padding-bottom: 2.5rem;
-    padding-top: .5rem;
+  background-color: white;
+  padding-bottom: 2.5rem;
+  padding-top: .5rem;
 
-    .article-return {
-        padding-left: 0;
-        margin-top: 10px;
-        display: inline-block;
-        @include media-breakpoint-up(md) {
-            // padding-top: 32px;
-            margin-left: $container-padding-x;
-        }
+  .article-return {
+    padding-left: 0;
+    margin-top: 10px;
+    display: inline-block;
+    @include media-breakpoint-up(md) {
+      // padding-top: 32px;
+      margin-left: $container-padding-x;
     }
+  }
 
-    .article-return + .article-title {
-        margin-top: 0;
+  .article-return + .article-title {
+    margin-top: 0;
+  }
+
+  .article-title,
+  .article-feed-title {
+    font-size: $font-size-blog-1;
+    margin-bottom: .7rem;
+    a {
+      color: $color-secondary !important;
+      &:hover {
+        color: $color-primary !important;
+      }
     }
+  }
 
-    .article-title,
-    .article-feed-title {
-        font-size: $font-size-blog-1;
-        margin-bottom: .7rem;
-        a {
-            color: $color-secondary !important;
-            &:hover {
-                color: $color-primary !important;
-            }
-        }
+  .article-title,
+  .article-feed-title { margin-top: 1rem !important; }
+
+  h1.article-title,
+  .article-feed-title {
+    font-size:$font-size-2;
+    margin-bottom: 1rem;
+  }
+
+
+  .article-title,
+  .article-information,
+  .article-content,
+  .article-footer,
+  .article-feed-title {
+    @include media-breakpoint-up(md) {
+      margin-left: 2rem;
+      margin-right: 2rem;
     }
-
-    .article-title,
-    .article-feed-title { margin-top: 1rem !important; }
-
-    h1.article-title,
-    .article-feed-title {
-        font-size:$font-size-2;
-        margin-bottom: 1rem;
-    }
-
-
-    .article-title,
-    .article-information,
-    .article-content,
-    .article-footer,
-    .article-feed-title {
-        @include media-breakpoint-up(md) {
-            margin-left: 2rem;
-            margin-right: 2rem;
-        }
-    }
+  }
 
 }
 
 
 .article {
-    padding-bottom: 1rem;
+  padding-bottom: 1rem;
 
-    .article-header {}
+  .article-header {}
 
-    .article-content {
-        border-bottom: 1px solid #D7D7D7;
+  .article-content {
+    border-bottom: 1px solid #D7D7D7;
+  }
+
+  .article-footer {
+    margin-top: 1rem;
+  }
+
+  .article-image {
+    width: 100%;
+    max-height: 207px;
+    overflow:hidden;
+    margin-top: 1rem;
+
+    @include media-breakpoint-up(md) {
+      padding-left: 2rem;
+      padding-right: 2rem;
     }
-
-    .article-footer {
-        margin-top: 1rem;
-    }
-
-    .article-image {
-        width: 100%;
-        max-height: 207px;
-        overflow:hidden;
-        margin-top: 1rem;
-
-        @include media-breakpoint-up(md) {
-            padding-left: 2rem;
-            padding-right: 2rem;
-        }
-    }
+  }
 
 }
 
 .article-information {
-    font-family: $primary-font;
-    position: relative;
-    line-height: 1;
+  font-family: $primary-font;
+  position: relative;
+  line-height: 1;
+
+  @include media-breakpoint-up(md) {
+    display: flex;
+  }
+
+  .article-information-category,
+  .article-information-tags {
+    padding: .55rem .75rem;
+  }
+
+  .article-information-category {
+    display: inline-block;
+    background-color: $color-primary;
+    color: white;
+    border: 1px solid #DFDFDF;
+    border-right: 0;
+    transition: background-color .2s ease;
+
+    @include media-breakpoint-down(sm) {
+      margin-top: .5rem;
+      margin-bottom: .25rem;
+    }
 
     @include media-breakpoint-up(md) {
-        display: flex;
+      display: block;
     }
 
-    .article-information-category,
-    .article-information-tags {
-        padding: .55rem .75rem;
+    &:hover {
+      background-color: white;
+      // colo
     }
+  }
 
-    .article-information-category {
-        display: inline-block;
-        background-color: $color-primary;
-        color: white;
-        border: 1px solid #DFDFDF;
-        border-right: 0;
-        transition: background-color .2s ease;
+  .article-information-tags {
+    border: 1px solid #DFDFDF;
 
-        @include media-breakpoint-down(sm) {
-            margin-top: .5rem;
-            margin-bottom: .25rem;
-        }
-
-        @include media-breakpoint-up(md) {
-            display: block;
-        }
-
-        &:hover {
-            background-color: white;
-            // colo
-        }
+    a {
+      color: $color-secondary;
+      &:hover {
+        color: $color-primary;
+      }
     }
-
-    .article-information-tags {
-        border: 1px solid #DFDFDF;
-
-        a {
-            color: $color-secondary;
-            &:hover {
-                color: $color-primary;
-            }
-        }
-    }
+  }
 }
 
 .date {
+  position: absolute;
+  margin-left: -84px;
+  top: -63px;
+  z-index: 1;
+  padding-top: 0;
+  width: 0;
+  display: none;
+
+  @include media-breakpoint-up(md) {
+    display: block;
+  }
+
+  a {
+    color: $color-secondary;
+  }
+
+  .date-number {
+    background: $color-secondary;
+    color: white;
+    width: 58px;
+    height: 58px;
+    border-radius: 10em;
+    text-align: center;
+    line-height: 50px;
+    font-size: 21px;
+    border: 5px solid #eeeeef;
+    font-family: 'Varela Round', sans-serif;
     position: absolute;
-    margin-left: -84px;
-    top: -63px;
-    z-index: 1;
-    padding-top: 0;
-    width: 0;
-    display: none;
+  }
 
-    @include media-breakpoint-up(md) {
-        display: block;
-    }
-
-    a {
-        color: $color-secondary;
-    }
-
-    .date-number {
-        background: $color-secondary;
-        color: white;
-        width: 58px;
-        height: 58px;
-        border-radius: 10em;
-        text-align: center;
-        line-height: 50px;
-        font-size: 21px;
-        border: 5px solid #eeeeef;
-        font-family: 'Varela Round', sans-serif;
-        position: absolute;
-    }
-
-    .date-month {
-        margin-top: 47px;
-        padding: 0;
-        left: -70px;
-        top: 107px;
-        position: relative;
-        width: 200px;
-        display: table;
-        transform: rotate(90deg);
-    }
+  .date-month {
+    margin-top: 47px;
+    padding: 0;
+    left: -70px;
+    top: 107px;
+    position: relative;
+    width: 200px;
+    display: table;
+    transform: rotate(90deg);
+  }
 }

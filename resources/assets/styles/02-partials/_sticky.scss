@@ -1,17 +1,17 @@
 .sticky {
-    background-color: white;
-    padding-top: 3.5rem;
+  background-color: white;
+  padding-top: 3.5rem;
 
-    @include media-breakpoint-down(sm) {
-        padding-top: 0;
-    }
+  @include media-breakpoint-down(sm) {
+    padding-top: 0;
+  }
 
-    @include media-breakpoint-down(md) {
-        padding-bottom: 2rem;
-    }
+  @include media-breakpoint-down(md) {
+    padding-bottom: 2rem;
+  }
 
-    @include media-breakpoint-up(lg) {
-        padding-right: $container-padding-x;
-    }
+  @include media-breakpoint-up(lg) {
+    padding-right: $container-padding-x;
+  }
 
 }
