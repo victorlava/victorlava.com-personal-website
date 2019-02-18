@@ -2,9 +2,11 @@
     color: $color-secondary;
     font-size: $font-size-blog-base;
 
-    p {
-        font-size: $font-size-blog-5;
-        line-height: 1.8;
+    main {
+        p {
+            font-size: $font-size-blog-5;
+            line-height: 1.8;
+        }
     }
 
     .featured a:hover {
@@ -16,7 +18,7 @@
         color: $color-primary;
     }
 
-    .sidebar p a, 
+    .sidebar p a,
     .article-title a,
     .article-content a{
         color: $grey-light;

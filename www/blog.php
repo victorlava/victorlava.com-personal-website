@@ -5,7 +5,7 @@
     <?php include('partials/navigation.php'); ?>
 
     <!-- start of #home-page -->
-    <main class="container-fluid">
+    <main id="content" class="container-fluid">
 
         <div class="row">
 
@@ -36,6 +36,5 @@
 
     </main> <!-- .container -->
 
-    <script src="/js/main.js"></script> <!-- Resource jQuery -->
-<!-- end of #home-page -->
+<!-- end of #blog-page -->
 <?php include('partials/footer.php') ?>

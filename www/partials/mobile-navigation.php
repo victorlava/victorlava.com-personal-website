@@ -1,11 +1,12 @@
 <nav class="navigation navigation-mobile">
-    <div class="container-fluid d-flex justify-content-center">
+    <div class="container-fluid d-flex flex-column">
+        <div class="logo-wrapper">
+            <a href="index.php" class="logo logo-white">
+                <?php include('components/logo.php'); ?>
+            </a>
+            <p class="headline">Victor Lava</p>
+        </div>
         <ul class="menu">
-            <li class="slide-down">
-                <a href="index.php" class="logo logo-white">
-                    <?php include('components/logo.php'); ?>
-                </a>
-            </li>
             <li>
                 <a href="index.php" class="slide-in-parent">
                     Home

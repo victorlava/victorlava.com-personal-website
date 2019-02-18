@@ -92,64 +92,29 @@
 
 	$(document).ready(function(){
 
-		var sectionOffset = 300;
-
 		app.animateHomePage();
 
 		setTimeout(function() {
 			app.animateLinks('#navigation'); // animate navigation links
 		}, 400);
 
-		setTimeout(function() {
-			$('#start .fade-in').addClass('animated');
-			// $('#start .fade-in').addClass('animated');
-		}, 1000);
+		$('#navigation').sexymenu({
+			classes: {
+			  visible: 'visible',
+			  detached: 'detached'
+			},
 
-		// Lenndy waypoint
-		var waypoint = new Waypoint({
-		  element: document.getElementById('lenndy'),
-		  offset: sectionOffset,
-		  handler: function(direction) {
+			topOffset: 250,
+			bottomOffset: 150,
+			hideShowOffset: 10,
 
-			  if(direction == 'down') {
-				  app.animateLinks('#lenndy');
-			  }
+			delay: 30
+		});
 
-		  }
-		})
+	});
 
-		// Amplify waypoint
-		var waypoint = new Waypoint({
-		  element: document.getElementById('amplify'),
-		  offset: sectionOffset,
-		  handler: function(direction) {
-
-			  if(direction == 'down') {
-				  app.animateLinks('#amplify');
-			  }
-
-		  }
-		})
-
-        // Footer waypoint
-		var waypoint = new Waypoint({
-		  element: document.getElementById('cta'),
-		  handler: function(direction) {
-			  if(direction == 'down') {
-				  app.animateLinks('#footer');
-			  }
-		  }
-		})
-
-		$(".js-typed").typed({
-				strings: ["Sveiki...", "Hallå...", "Hello...", "Bonjour...", "¡Hola..."],
-				typeSpeed: 150,
-				backSpeed: 100,
-				loop: true
-			});
-	})
 	</script>
-
+	<script type="text/javascript" src="/www/js/jquery.sexy-menu.min.js"></script>
 	<script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
 </body>
 </html>

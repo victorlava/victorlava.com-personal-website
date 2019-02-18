@@ -1,3 +1,47 @@
+body {
+    .logo-wrapper {
+        transition: all .3s ease;
+        transform: translateY(-175px);
+    }
+
+    .navigation-mobile {
+        transition: all .3s ease;
+    }
+
+    &[data-menu="opened"] {
+        overflow: hidden;
+
+        .navigation-mobile-background {
+            &:after { transform: scale(100); }
+        }
+
+        .navigation-mobile {
+            display: flex;
+            z-index: 5;
+
+            .menu {
+                opacity: 1;
+            }
+
+            .logo-wrapper {
+                transform: translateY(0);
+            }
+        }
+    }
+
+    &[data-menu="closed"] {
+
+        .navigation-mobile {
+            .menu {
+                opacity: 0;
+            }
+            .logo-wrapper {
+                transform: translateY(-175px);
+            }
+        }
+    }
+}
+
 .slide-in-parent {
     position: relative;
 }

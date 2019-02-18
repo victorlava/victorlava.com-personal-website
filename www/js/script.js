@@ -1,29 +1,85 @@
 var app = {
     navigationOpened: false,
+    bodyOverflow: function (show) {
+        var body = $('body');
+
+        if(show) {
+            body.removeClass('overflow-hidden');
+        } else {
+            body.addClass('overflow-hidden');
+        }
+    },
+    open: function(element) {
+        var body = $('body'),
+            mobileNavigation = $('.navigation-mobile'),
+            btn = $('.navigation-mobile-background'),
+            hamburger = btn.find('.hamburger');
+
+            // mobileNavigation.show();
+
+            // this.debounce(300, this.animateLinks(mobileNavigation))
+            setTimeout(function() {
+                this.animateLinks(mobileNavigation);
+            }.bind(this), 300);
+
+            btn.attr('onclick', 'app.close(this)');
+
+            hamburger.addClass('is-active');
+            body.attr('data-menu', 'opened');
+    },
+    close: function(element) {
+        var body = $('body'),
+            mobileNavigation = $('.navigation-mobile'),
+            btn = $('.navigation-mobile-background'),
+            hamburger = btn.find('.hamburger');
+
+            // setTimeout(function() {
+            //     mobileNavigation.hide();
+            // }.bind(this), 300);
+
+            btn.attr('onclick', 'app.open(this)')
+            hamburger.removeClass('is-active');
+            body.attr('data-menu', 'closed');
+            this.hideLinks();
+
+    },
     openMobileNav: function(element) {
             console.log(element);
+            var body = $('body'),
+                menuStatus = body.data('menu');
 
-            var li = $(element),
-                hamburger = li.find('.hamburger'),
-                isActive = li.hasClass('is-active'),
+            var nav = $('#navigation'),
                 menu = $('.navigation-mobile'),
-                logo = menu.find('li.slide-down');
+                logo = menu.find('.slide-down'),
+                li = $(element),
+                hamburger = li.find('.hamburger'),
+                isActive = li.hasClass('is-active');
 
-            if(!isActive) {
+            if(menuStatus === 'opened') {
+                alert('open');
+                menu.addClass('is-active');
                 li.addClass('is-active');
                 hamburger.addClass('is-active');
-                menu.addClass('is-active');
+                nav.addClass('is-active');
                 logo.addClass('animated');
+
+                this.bodyOverflow(false);
 
                 setTimeout(function() {
                     // logo.addClass('animated');
                     this.animateLinks(menu);
                 }.bind(this), 600);
-            } else {
+                body.data('menu', 'closed');
+            } else if (menuStatus === 'closed') {
+                body.data('menu', 'opened');
+
+                nav.removeClass('animated');
                 li.removeClass('is-active');
                 hamburger.removeClass('is-active');
                 // menu.removeClass('is-active');
                 logo.removeClass('animated');
+
+                this.bodyOverflow(true);
 
                 setTimeout(function() {
                     menu.removeClass('is-active');
@@ -32,6 +88,36 @@ var app = {
                 this.hideLinks();
             }
 
+            //
+            // if(!isActive) {
+            //     menu.addClass('is-active');
+            //     li.addClass('is-active');
+            //     hamburger.addClass('is-active');
+            //     nav.addClass('is-active');
+            //     logo.addClass('animated');
+            //
+            //     this.bodyOverflow(false);
+            //
+            //     setTimeout(function() {
+            //         // logo.addClass('animated');
+            //         this.animateLinks(menu);
+            //     }.bind(this), 600);
+            // } else {
+            //     nav.removeClass('animated');
+            //     li.removeClass('is-active');
+            //     hamburger.removeClass('is-active');
+            //     // menu.removeClass('is-active');
+            //     logo.removeClass('animated');
+            //
+            //     this.bodyOverflow(true);
+            //
+            //     setTimeout(function() {
+            //         menu.removeClass('is-active');
+            //     }.bind(this), 600);
+            //
+            //     this.hideLinks();
+            // }
+
     },
     animateHomePage: function() {
         $('#navigation .logo-wrapper').addClass('animated'); // Animate navigation on page load
@@ -39,8 +125,6 @@ var app = {
     },
     hideLinks: function(){
         var elements = document.querySelectorAll('body .slide-in-parent');
-
-        console.log(elements);
         for(i = 0; i < elements.length; i++) {
             elements[i].style.color = 'rgba(0,0,0,0)';
         }

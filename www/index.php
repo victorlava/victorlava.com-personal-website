@@ -1,6 +1,8 @@
 <?php include('partials/head.php'); ?>
 <?php $whiteMenu = false; ?>
-<body id="home" data-hijacking="off" data-animation="parallax">
+<body id="home" data-menu="closed"
+                data-hijacking="off"
+                data-animation="parallax">
 <!-- start of #home-page -->
     <main>
             <?php include('partials/navigation.php'); ?>
@@ -93,7 +95,61 @@
             parent: "#start",
             children: '.depth-js',
             intesity: 1
-        })
+        });
+
+        $(document).ready(function(){
+
+    		var sectionOffset = 300;
+
+    		setTimeout(function() {
+    			$('#start .fade-in').addClass('animated');
+    			// $('#start .fade-in').addClass('animated');
+    		}, 1000);
+
+    		// Lenndy waypoint
+    		var waypoint = new Waypoint({
+    		  element: document.getElementById('lenndy'),
+    		  offset: sectionOffset,
+    		  handler: function(direction) {
+
+    			  if(direction == 'down') {
+    				  app.animateLinks('#lenndy');
+    			  }
+
+    		  }
+    		})
+
+    		// Amplify waypoint
+    		var waypoint = new Waypoint({
+    		  element: document.getElementById('amplify'),
+    		  offset: sectionOffset,
+    		  handler: function(direction) {
+
+    			  if(direction == 'down') {
+    				  app.animateLinks('#amplify');
+    			  }
+
+    		  }
+    		})
+
+            // Footer waypoint
+    		var waypoint = new Waypoint({
+    		  element: document.getElementById('cta'),
+    		  handler: function(direction) {
+    			  if(direction == 'down') {
+    				  app.animateLinks('#footer');
+    			  }
+    		  }
+    		})
+
+    		$(".js-typed").typed({
+    				strings: ["Sveiki...", "Hallå...", "Hello...", "Bonjour...", "¡Hola..."],
+    				typeSpeed: 150,
+    				backSpeed: 100,
+    				loop: true
+    		});
+
+    	});
 
     </script>
     <script src="/www/js/main.js"></script> <!-- Resource jQuery -->
